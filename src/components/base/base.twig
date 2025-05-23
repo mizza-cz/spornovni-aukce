@@ -10,13 +10,6 @@
     <meta name="format-detection" content="telephone=no" />
 
     <!--****** Favicon ******-->
-    <!--****** Fonts ******-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
 
     <!--****** Styles  ******-->
     <link rel="preload" href="css/styles.css" as="style" />
@@ -42,10 +35,8 @@
   </head>
   <body>
     <div class="base">
-      {% include "@components/header/header.twig" %}
-        {% block main %}{% endblock %}
-      
-      {% include "@components/footer/footer.twig" %}
+      {% include "@components/header/header.twig" %} {% block main %}{% endblock
+      %} {% include "@components/footer/footer.twig" %}
     </div>
     <script
       defer

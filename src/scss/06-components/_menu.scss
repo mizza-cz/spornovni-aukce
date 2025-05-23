@@ -77,7 +77,9 @@
     transition: color 0.2s ease, background-color 0.2s ease;
   }
 }
-
+.menu-link.active {
+  color: var(--color-primary-500);
+}
 .menu-toggler {
   display: block;
   position: relative;

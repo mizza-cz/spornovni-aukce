@@ -8,7 +8,7 @@
   @include media-breakpoint-up(sm) {
     padding-top: 176px;
   }
-   
+
   .h2 {
     @include media-breakpoint-down(md) {
       font-size: 1.5rem;

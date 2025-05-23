@@ -49,6 +49,9 @@
 .bg-gray-100b {
   background-color: var(--color-gray-100b);
 }
+.bg-gray-100 {
+  background-color: var(--color-gray-100);
+}
 .bg-gray-200 {
   background-color: var(--color-gray-200);
 }
@@ -80,13 +83,17 @@
   }
 }
 .flex-1 {
-  flex: 1 1 0%;
+  -webkit-box-flex: 1;
 }
 .flex-3 {
   flex: 3;
 }
 .underline {
   text-decoration: underline;
+  transition: all 0.2s;
+  &:hover {
+    text-decoration-color: transparent;
+  }
 }
 .underline-hover {
   text-decoration: underline;
@@ -112,5 +119,9 @@
     0px 10px 10px rgba(0, 0, 0, 0.04), 0px 22px 13px rgba(0, 0, 0, 0.02),
     0px 39px 16px rgba(0, 0, 0, 0.01);
 }
-
+.shadow-box {
+  box-shadow: 0px 13.37px 29.3px 0px #0000001f,
+    0px 53.47px 53.47px 0px #0000001a, 0px 120.3px 72.49px 0px #0000000f,
+    0px 214.39px 85.86px 0px #00000005, 0px 334.69px 93.57px 0px #00000000;
+}
 /*! purgecss end ignore */

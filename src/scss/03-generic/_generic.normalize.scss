@@ -67,10 +67,9 @@ picture {
 
 /* Inherit fonts for inputs and buttons */
 
-body,
-html {
-  background-color: #fff;
-  background-image: url("../images/content/top-gradient-to-white.webp");
+body {
+  background-color: var(--color-gray-200);
+  background-image: url("../images/content/top-gradient-to-white.png");
   background-position: 100% 0;
   background-repeat: no-repeat;
 

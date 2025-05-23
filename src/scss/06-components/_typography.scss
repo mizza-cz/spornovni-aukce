@@ -8,6 +8,16 @@
     letter-spacing: -0.02em;
   }
 }
+.h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+  letter-spacing: -0.02em;
+  @include media-breakpoint-down(md) {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: -0.02em;
+  }
+}
 
 .h3 {
   font-size: 2.5rem;

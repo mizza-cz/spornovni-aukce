@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>01.0_homepage - Sportovní aukce</title>
+	<title>03.0_registration - Sportovní aukce</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta name="format-detection" content="telephone=no" />
 
@@ -174,123 +174,147 @@
 				</div>
 			</div>
 		</header>
-		<main id="main-content" class="main ignore-top-offset" aria-label="Hlavní obsah">
-			<section class="hero pb-20">
-				<div class="container d-flex flex-column align-items-center justify-content-center pb-14">
-					<div class="badge-secondary-100 mb-5 d-flex gap-1 flex-wrap justify-content-center align-items-center">
-						Spouštíme novou verzi!
-						<span class="fw-medium">Děkujeme za zpětnou vazbu</span>
-					</div>
 
-					<h1 class="h1 mb-3 text-center fw-bold">
-						Originální hrané sportovní dresy
-					</h1>
-					<h2 class="h4 mb-8 text-center fw-semibold">
-						či jiné sběratelské artefakty
-					</h2>
+		<main id="main-content" class="main" aria-label="Hlavní obsah">
+			<section class="container pb-20 pt-14">
+				<h1 class="h2 mb-14 text-center fw-semibold">Vytvořit účet</h1>
+				<div class="registration-section rounded-xl overflow-hidden">
+					<div class="row g-0">
+						<div class="col-lg-6">
+							<form aria-labelledby="form-title" class="bg-light px-4 py-6 p-sm-8 p-xl-16 registration-form">
+								<h2 id="form-title" class="h5 fw-semibold mb-4">Základní údaje</h2>
 
-					<div class="d-flex w-100 justify-content-center gap-sm-4 gap-2 flex-sm-row flex-column">
-						<a href="#" class="button-primary-500">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M17 17H7v2h10v-2zM5 15v4a2 2 0 002 2h10a2 2 0 002-2v-4H5z" fill="#fff" />
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M12 3a1 1 0 01.857.486l2.412 4.018 4.106-3.285a1 1 0 011.609.96L18.834 17H5.166L3.016 5.179a1 1 0 011.609-.96L8.73 7.504l2.412-4.018A1 1 0 0112 3zm0 2.944l-2.731 4.552L5.462 7.45 6.835 15h10.33l1.373-7.55-3.807 3.046L12 5.944z" fill="#fff" />
-							</svg> Všechny funkce
-						</a>
-						<a href="#" class="button-stroke">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M12 4a1 1 0 00-1 1v6H5a1 1 0 100 2h6v6a1 1 0 102 0v-6h6a1 1 0 100-2h-6V5a1 1 0 00-1-1z" fill="#1A1D1F" />
-							</svg> Porovnání s konkurencí
-						</a>
+								<div class="d-grid gap-4 mb-8">
+									<div class="d-grid gap-1">
+										<label class="text-sm-semibold" for="mail">Váš email <sup class="text-primary-500">*</sup></label>
+										<input placeholder="Vyplňte" type="email" id="mail" required />
+									</div>
+									<div class="d-grid gap-1">
+										<label class="text-sm-semibold" for="pass">Heslo <sup class="text-primary-500">*</sup></label>
+										<input placeholder="Vyplňte" type="password" id="pass" required />
+									</div>
+									<div class="d-grid gap-1">
+										<label class="text-sm-semibold" for="pass2">Heslo znovu pro kontrolu
+											<sup class="text-primary-500">*</sup></label>
+										<input placeholder="Vyplňte" type="password" id="pass2" />
+									</div>
+								</div>
+
+								<h3 id="form-subtitle" class="h5 fw-semibold mb-4">Kontaktní údaje</h3>
+
+								<div class="d-grid gap-4 mb-8">
+									<div class="row g-4">
+										<div class="col-sm-6">
+											<div class="d-grid gap-1">
+												<label for="name">Vaše jméno<sup class="text-primary-500">*</sup></label>
+												<input placeholder="Vyplňte" type="text" id="name" required />
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="d-grid gap-1">
+												<label for="surname">Vaše příjmení <sup class="text-primary-500">*</sup></label>
+												<input type="text" placeholder="Vyplňte" id="surname" required />
+											</div>
+										</div>
+									</div>
+									<div class="d-grid gap-1">
+										<label class="text-sm-semibold" for="mobile">Mobil <sup class="text-primary-500">*</sup></label>
+										<input placeholder="Vyplňte" type="tel" id="mobile" required />
+									</div>
+									<div class="d-grid gap-1">
+										<label class="text-sm-semibold" for="street">Ulice <sup class="text-primary-500">*</sup></label>
+										<input placeholder="Vyplňte" type="text" id="street" required />
+									</div>
+									<div class="row g-4">
+										<div class="col-sm-8">
+											<div class="d-grid gap-1">
+												<label for="city">Město <sup class="text-primary-500">*</sup></label>
+												<input placeholder="Vyplňte" type="text" id="city" required />
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="d-grid gap-1">
+												<label for="psc">PSČ <sup class="text-primary-500">*</sup></label>
+												<input type="text" placeholder="Vyplňte" id="psc" required />
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="d-flex gap-3 mb-4">
+									<label class="custom-checkbox">
+										<input type="checkbox" />
+										<span class="checkmark"></span>
+									</label>
+									<div class="text-sm-medium text-gray-700">
+										Prohlašuji, že jsem se seznámil/a a souhlasím s
+										<a href="#" class="text-primary-500 underline">
+											Obchodními podmínkami </a>. a
+										<a href="#" class="text-primary-500 underline">
+											Pravidly ochrany osobních údajů
+										</a>
+									</div>
+								</div>
+								<div class="d-flex gap-3 mb-8">
+									<label class="custom-checkbox">
+										<input type="checkbox" />
+										<span class="checkmark"></span>
+									</label>
+									<div class="text-sm-medium text-gray-700">
+										<div class="fw-semibold">Chci vyzkoušet PRO účet</div>
+										19 Kč / měsíc (placeno ročně)
+									</div>
+								</div>
+
+								<button class="button-primary-500 w-100">Odeslat zprávu</button>
+							</form>
+						</div>
+						<div class="col-lg-6">
+							<div class="h-100 bg-gray-100 px-4 py-6 p-sm-8 p-xl-16">
+								<img src="https://placehold.co/356x356" class="aspect-square object-fit-cover mx-auto rounded-xl border border-gray-300 mb-9" alt="" />
+								<h4 class="h4 text-gray-700 fw-semibold mb-3">Vyzkoušejte PRO účet</h4>
+								<p class="text-base-medium mb-8">
+									Výtěžek slouží pouze na pokrytí výdajů spojených s provozem portálu.
+								</p>
+								<div class="text-xl-semibold text-gray-700 mb-4">
+									PRO účet obsahuje:
+								</div>
+
+								<ul role="list" class="text-sm-medium mb-8 d-flex flex-column flex-wrap gap-4">
+									<li class="d-flex align-items-center gap-2">
+										<img src="images/ico/check-circle.svg" width="24" height="24" class="object-fit-contain" alt="" />
+										Kompletně bez reklam
+									</li>
+									<li class="d-flex align-items-center gap-2">
+										<img src="images/ico/check-circle.svg" width="24" height="24" class="object-fit-contain" alt="" />
+										Upozornění na email, když vás někdo přehodí
+									</li>
+									<li class="d-flex align-items-center gap-2">
+										<img src="images/ico/check-circle.svg" width="24" height="24" class="object-fit-contain" alt="" />
+										Přidávání aukcí do oblíbených
+									</li>
+									<li class="d-flex align-items-center gap-2">
+										<img src="images/ico/check-circle.svg" width="24" height="24" class="object-fit-contain" alt="" />
+										Možnost přepnout web do darkmodu
+									</li>
+									<li class="d-flex align-items-center gap-2">
+										<img src="images/ico/check-circle.svg" width="24" height="24" class="object-fit-contain" alt="" />
+										Automatické přihazování do mého maxima
+									</li>
+								</ul>
+								<div class="text-base-semibold">Pouze 8 Kč / měsíc</div>
+								<div class="text-gray-400 text-xs-medium">
+									Placeno ročně (96 Kč / rok)
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
+
 			<section class="py-20 bg-light position-relative">
-				<h3 class="h4 mb-14 px-5 text-center fw-semibold">
-					Sportovní artefakty podle klubů
-				</h3>
-
-				<div class="swiper reference-swiper mb-16">
-					<ul role="list" class="swiper-wrapper infinite-scroll-swiper">
-						<li class="swiper-slide">
-							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
-								<img src="https://www.slavia.cz/build/image/logo-with-outline.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
-							</a>
-						</li>
-						<li class="swiper-slide">
-							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
-								<img src="https://www.fkvz.cz/assets/images/vz-logo.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
-							</a>
-						</li>
-						<li class="swiper-slide">
-							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
-								<img src="https://www.hcsparta.cz/znaky/spa.png" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
-							</a>
-						</li>
-						<li class="swiper-slide">
-							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
-								<img src="https://www.slavia.cz/build/image/logo-with-outline.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
-							</a>
-						</li>
-						<li class="swiper-slide">
-							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
-								<img src="https://www.fkvz.cz/assets/images/vz-logo.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
-							</a>
-						</li>
-						<li class="swiper-slide">
-							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
-								<img src="https://www.hcsparta.cz/znaky/spa.png" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
-							</a>
-						</li>
-						<li class="swiper-slide">
-							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
-								<img src="https://www.slavia.cz/build/image/logo-with-outline.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
-							</a>
-						</li>
-						<li class="swiper-slide">
-							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
-								<img src="https://www.fkvz.cz/assets/images/vz-logo.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
-							</a>
-						</li>
-						<li class="swiper-slide">
-							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
-								<img src="https://www.hcsparta.cz/znaky/spa.png" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
-							</a>
-						</li>
-						<li class="swiper-slide">
-							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
-								<img src="https://www.slavia.cz/build/image/logo-with-outline.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
-							</a>
-						</li>
-						<li class="swiper-slide">
-							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
-								<img src="https://www.fkvz.cz/assets/images/vz-logo.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
-							</a>
-						</li>
-						<li class="swiper-slide">
-							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
-								<img src="https://www.hcsparta.cz/znaky/spa.png" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
-							</a>
-						</li>
-						<li class="swiper-slide">
-							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
-								<img src="https://www.slavia.cz/build/image/logo-with-outline.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
-							</a>
-						</li>
-						<li class="swiper-slide">
-							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
-								<img src="https://www.fkvz.cz/assets/images/vz-logo.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
-							</a>
-						</li>
-						<li class="swiper-slide">
-							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
-								<img src="https://www.hcsparta.cz/znaky/spa.png" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
-							</a>
-						</li>
-					</ul>
-				</div>
-
 				<div class="container">
-					<ul role="list" class="pt-16 mb-20 d-flex flex-wrap justify-content-center gap-7 reference-cards border-top border-gray-300">
+					<ul role="list" class="mb-20 d-flex flex-wrap justify-content-center gap-7 reference-cards">
 						<li class="flex-3">
 							<article class="min-w-80 rounded-xl bg-gray-100b p-6">
 								<header class="position-relative mb-4 d-flex gap-2 gap-sm-4 flex-md-row flex-column">
@@ -354,7 +378,7 @@
 							</article>
 						</li>
 					</ul>
-					<div class="position-relative z-index-3 rounded-xl bg-primary py-sm-16 py-12 px-sm-20 px-8 d-flex gap-lg-20 gap-10 align-items-center w-fit-content mx-auto flex-wrap justify-content-center">
+					<div class="rounded-xl bg-primary py-sm-16 py-12 px-sm-20 px-8 d-flex gap-lg-20 gap-10 align-items-center w-fit-content mx-auto flex-wrap justify-content-center">
 						<div class="d-flex gap-8 justify-content-center align-items-center flex-wrap flex-md-nowrap flex-md-row flex-column">
 							<div class="rounded-xxl bg-light p-6">
 								<img src="images/ico/bookmark.svg" class="object-fit-content" width="35" height="35" alt="" />
