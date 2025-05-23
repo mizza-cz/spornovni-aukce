@@ -1,0 +1,22 @@
+.infinite-scroll-swiper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+.reference-swiper {
+  max-width: 1920px;
+  .swiper-slide {
+    width: max-content;
+    padding: 10px;
+
+    img {
+      height: 60px;
+      object-fit: contain;
+      margin-inline: 24px;
+    }
+  }
+}
+
+.reference-cards {
+}

@@ -1,0 +1,123 @@
+/* Menu */
+.main-menu {
+  @include media-breakpoint-down(xl) {
+    position: fixed;
+    height: calc(100dvh - 112px);
+    overflow-y: auto;
+    inset: 112px 0 0 0;
+    opacity: 0;
+    visibility: hidden;
+    touch-action: none;
+    padding-top: 52px;
+    transition: all 0.2s;
+
+    &.visible {
+      opacity: 1;
+      visibility: visible;
+      touch-action: auto;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    inset: 80px 0 0 0;
+  }
+
+  & > ul {
+    display: grid;
+
+    @include media-breakpoint-down(xl) {
+      gap: 1.5rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      display: inline-flex;
+    }
+  }
+}
+/* Menu item */
+.menu-item {
+  position: relative;
+
+  @include media-breakpoint-up(xl) {
+    &:hover,
+    &:focus-within {
+      .menu-link {
+        color: var(--color-primary-500);
+        background-color: transparent;
+      }
+
+      .submenu {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+/* Menu link */
+.menu-link {
+  display: block;
+  padding: 0 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  letter-spacing: -0.14px;
+  text-decoration: none;
+  text-decoration-color: transparent;
+
+  @include media-breakpoint-down(xl) {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: -0.03em;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 0.5rem 1rem;
+    transition: color 0.2s ease, background-color 0.2s ease;
+  }
+}
+
+.menu-toggler {
+  display: block;
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-primary-500);
+  color: var(--color-light);
+  border: none;
+  cursor: pointer;
+  @include media-breakpoint-up(xl) {
+    display: none;
+  }
+
+  &[aria-expanded="true"] svg {
+    &:first-child {
+      opacity: 0;
+      transform: scale(0);
+    }
+    &:last-child {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &[aria-expanded="false"] svg {
+    &:first-child {
+      transform: scale(1);
+      opacity: 1;
+    }
+    &:last-child {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+
+  svg {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    transition: 0.2s ease;
+  }
+}

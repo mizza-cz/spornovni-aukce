@@ -1,0 +1,83 @@
+<section class="bids-section mb-xl-16">
+  <h3 class="h4 mb-9 px-5 text-center fw-semibold">Poslední příhozy</h3>
+  <div class="container">
+    <div class="swiper bids-swiper">
+      <ul role="list" class="swiper-wrapper infinite-scroll-swiper">
+        {% for i in 1..5 %}
+        <li class="swiper-slide">
+          <div class="rounded-xl bg-gray-200 p-8 bidsItem">
+            <div class="badge-primary-300 mb-3">Nyní</div>
+            <a class="text-xl-semibold mb-3 d-block underline-hover" href="#">
+              Hrané hokejky českých reprezentantů
+            </a>
+            <div class="text-gray-400 text-sm-medium mb-6">
+              # Hokejka Marka Židlického
+            </div>
+            <div class="d-flex gap-4 align-items-center flex-wrap mb-6">
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  src="images/ico/user-b.svg"
+                  width="24"
+                  height="24"
+                  class="object-fit-content"
+                  alt=""
+                />
+                <h3 class="text-base-semibold">Martin P.</h3>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  src="images/ico/coins.svg"
+                  width="24"
+                  height="24"
+                  class="object-fit-content"
+                  alt=""
+                />
+                <h3 class="text-base-semibold">5 000 Kč</h3>
+              </div>
+            </div>
+            <a href="#" class="button-gray-800">
+              {% include "@images/plus.svg" %} Přihodit
+            </a>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="rounded-xl bg-gray-200 p-8 bidsItem">
+            <div class="badge-gray-400 mb-3">před 5 min</div>
+            <a class="text-xl-semibold mb-3 d-block underline-hover" href="#">
+              Hrané hokejky českých reprezentantů
+            </a>
+            <div class="text-gray-400 text-sm-medium mb-6">
+              # Hokejka Marka Židlického
+            </div>
+            <div class="d-flex gap-4 align-items-center flex-wrap mb-6">
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  src="images/ico/user-b.svg"
+                  width="24"
+                  height="24"
+                  class="object-fit-content"
+                  alt=""
+                />
+                <h3 class="text-base-semibold">Martin P.</h3>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  src="images/ico/coins.svg"
+                  width="24"
+                  height="24"
+                  class="object-fit-content"
+                  alt=""
+                />
+                <h3 class="text-base-semibold">5 000 Kč</h3>
+              </div>
+            </div>
+            <a href="#" class="button-gray-800">
+              {% include "@images/plus.svg" %} Přihodit
+            </a>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

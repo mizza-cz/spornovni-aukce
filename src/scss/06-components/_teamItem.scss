@@ -1,0 +1,11 @@
+.teamItem {
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+  overflow: visible;
+  height: 100%;
+  &:hover {
+    border-color: var(--color-gray-700);
+  }
+}
+

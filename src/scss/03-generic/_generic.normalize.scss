@@ -1,0 +1,79 @@
+/* Box sizing rules */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+// Prevent adjustments of font size after orientation changes in iOS.
+html {
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  font-family: "Inter", sans-serif !important;
+  color: var(--color-gray-800);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+
+body,
+html {
+  background-color: #fff;
+  background-image: url("../images/content/top-gradient-to-white.webp");
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+
+  min-block-size: 100vh;
+  scroll-padding-top: 112px;
+}

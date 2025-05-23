@@ -1,0 +1,57 @@
+.lang-dropdown {
+  position: relative;
+
+  & > summary {
+    cursor: pointer;
+    list-style: none;
+    border-radius: 8px;
+    background-color: var(--color-gray-100);
+    padding: 11px 12px;
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &:focus-visible {
+      outline-color: var(--color-primary-500);
+      outline-offset: 2px;
+    }
+  }
+
+  ul {
+    display: grid;
+    position: absolute;
+    top: calc(100% + 1rem);
+    right: -1rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px 0 rgb(0 0 0 / 20%);
+    padding: 0.5rem;
+    width: max-content;
+
+    li {
+      &[aria-selected="true"] > a {
+        color: var(--color-primary-500);
+
+        &:hover {
+          color: var(--color-primary-500);
+        }
+      }
+
+      & > a {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.25rem;
+        transition: color 0.2s, background-color 0.2s;
+        color: var(--color-gray-400);
+        text-decoration: none;
+
+        &:hover {
+          background-color: var(--color-gray-200);
+          color: var(--color-gray-700);
+        }
+      }
+    }
+  }
+}

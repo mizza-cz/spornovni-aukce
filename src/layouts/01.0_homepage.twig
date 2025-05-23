@@ -1,0 +1,12 @@
+{% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
+block main %}
+<main
+  id="main-content"
+  class="main ignore-top-offset"
+  aria-label="Hlavní obsah"
+>
+  {% include "@components/hero-section/hero-section.twig" %} {% include
+  "@components/reference-section/reference-section.twig" %}
+</main>
+
+{% endblock %}

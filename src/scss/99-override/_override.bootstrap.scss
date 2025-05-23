@@ -1,0 +1,116 @@
+/*! purgecss start ignore */
+@media (min-width: 1548px) {
+  .container {
+    max-width: 1548px !important;
+  }
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  width: 100%;
+  max-width: 100% !important;
+}
+.min-w-80 {
+  min-width: 20rem;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+.rounded-xxl {
+  border-radius: 1rem;
+}
+.bg-light {
+  background-color: var(--color-light) !important;
+}
+.w-max-content {
+  width: max-content;
+}
+.w-fit-content {
+  width: fit-content;
+}
+.bg-primary {
+  background-color: var(--color-primary-500) !important;
+}
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.focus-visible\:opacity-70:focus-visible {
+  opacity: 0.7;
+}
+.aspect-square {
+  aspect-ratio: 1/1;
+}
+.bg-gray-100b {
+  background-color: var(--color-gray-100b);
+}
+.bg-gray-200 {
+  background-color: var(--color-gray-200);
+}
+
+.text-light {
+  color: var(--color-light) !important;
+}
+
+.text-gray-400 {
+  color: var(--color-gray-400);
+}
+.text-gray-500 {
+  color: var(--color-gray-500);
+}
+.text-primary-500 {
+  color: var(--color-primary-500);
+}
+.text-gray-700 {
+  color: var(--color-gray-700);
+}
+.size-10 {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.size-md-12 {
+  @include media-breakpoint-up(md) {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+.flex-1 {
+  flex: 1 1 0%;
+}
+.flex-3 {
+  flex: 3;
+}
+.underline {
+  text-decoration: underline;
+}
+.underline-hover {
+  text-decoration: underline;
+  transition: text-decoration 0.2s;
+  text-decoration-color: transparent !important;
+  &:hover {
+    text-decoration-color: inherit !important;
+  }
+}
+.not-italic {
+  font-style: normal;
+}
+.transition-all {
+  transition-duration: 0.15s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.duration-200 {
+  transition-duration: 0.2s;
+}
+.ring-1 {
+  box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.03), 0px 2px 5px rgba(0, 0, 0, 0.04),
+    0px 10px 10px rgba(0, 0, 0, 0.04), 0px 22px 13px rgba(0, 0, 0, 0.02),
+    0px 39px 16px rgba(0, 0, 0, 0.01);
+}
+
+/*! purgecss end ignore */

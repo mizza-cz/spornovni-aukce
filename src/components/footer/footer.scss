@@ -1,0 +1,44 @@
+@layer components {
+  .main-footer {
+    box-shadow: -3px -18px 41px 0px #1113150a, -11px -74px 74px 0px #1113150a,
+      -25px -166px 100px 0px #11131505, -44px -294px 119px 0px #11131503,
+      -68px -460px 130px 0px #11131500;
+  }
+  .footer-bottom {
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: 1fr auto 1fr;
+    }
+    @include media-breakpoint-down(lg) {
+      place-items: center;
+    }
+  }
+  .footer-menu {
+    @include media-breakpoint-down(md) {
+      grid-column: span 1 / span 1;
+    }
+  }
+  .footer-content {
+    @include media-breakpoint-up(xl) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    @include media-breakpoint-down(md) {
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .footer-app {
+    grid-template-columns: 1fr auto;
+    @include media-breakpoint-down(md) {
+      grid-column: span 2 / span 2;
+    }
+  }
+  .footer-app-img {
+    object-position: right bottom;
+    max-height: 188px;
+  }
+  .footer-service {
+    @include media-breakpoint-down(md) {
+      grid-column: span 2 / span 2;
+    }
+  }
+}

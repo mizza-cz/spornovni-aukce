@@ -1,0 +1,60 @@
+[class^="badge-"] {
+  display: inline-flex;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.12px;
+  border-radius: 0.375rem;
+  padding: 0.25rem 0.5rem;
+  width: fit-content;
+  &.has-hover {
+    cursor: pointer;
+    transition: color 0.2s, background-color 0.2s;
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+  }
+}
+
+.badge-secondary-100 {
+  background-color: var(--color-secondary-100);
+}
+
+.badge-gray-300 {
+  background-color: var(--color-gray-300);
+
+  &.has-hover:hover {
+    background-color: var(--color-gray-800);
+    color: var(--color-light);
+  }
+
+  &:focus-visible {
+    outline: solid 2px var(--color-gray-800);
+  }
+}
+.badge-gray-400 {
+  background-color: var(--color-gray-400);
+  color: var(--color-light);
+
+  &.has-hover:hover {
+    background-color: var(--color-gray-800);
+    color: var(--color-light);
+  }
+
+  &:focus-visible {
+    outline: solid 2px var(--color-gray-800);
+  }
+}
+.badge-primary-300 {
+  background-color: var(--color-primary-300);
+  color: var(--color-light);
+
+  &.has-hover:hover {
+    background-color: var(--color-primary-600);
+  }
+
+  &:focus-visible {
+    background-color: var(--color-primary-500);
+  }
+}

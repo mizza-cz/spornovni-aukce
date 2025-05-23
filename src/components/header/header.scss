@@ -1,0 +1,60 @@
+@layer components {
+  .main-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    transition: all 0.2s;
+    .container {
+      @include media-breakpoint-down(sm) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+    }
+    &__inner {
+      @include media-breakpoint-up(xl) {
+        grid-template-columns: 1fr auto 1fr;
+      }
+      grid-template-columns: 1fr 1fr;
+    }
+    &.scrolled {
+      &::before {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .main-header__inner {
+        padding-top: 1.25rem !important;
+        padding-bottom: 1.25rem !important;
+      }
+    }
+
+    &::before {
+      position: absolute;
+    }
+
+    &::after {
+      position: fixed;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      inset: 0;
+      z-index: -1;
+      backdrop-filter: blur(0.5rem);
+      background-color: hsla(0, 0%, 100%, 0.8);
+      opacity: 0;
+      visibility: hidden;
+      touch-action: none;
+      transition: all 0.2s;
+    }
+  }
+
+  .menu-visible {
+    .main-header::after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

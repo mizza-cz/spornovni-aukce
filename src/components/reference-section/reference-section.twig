@@ -1,0 +1,195 @@
+<section class="py-20">
+  <h3 class="h4 mb-14 px-5 text-center fw-semibold">
+    Sportovní artefakty podle klubů
+  </h3>
+
+  <div class="swiper reference-swiper mb-16">
+    <ul role="list" class="swiper-wrapper infinite-scroll-swiper">
+      {% for i in 1..5 %}
+      <li class="swiper-slide">
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="outline-none focus-visible:opacity-70"
+          tabindex="-1"
+        >
+          <img
+            src="https://www.slavia.cz/build/image/logo-with-outline.svg"
+            width="60"
+            height="60"
+            class="no-placeholder aspect-square"
+            loading="lazy"
+            alt=""
+          />
+        </a>
+      </li>
+      <li class="swiper-slide">
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="outline-none focus-visible:opacity-70"
+          tabindex="-1"
+        >
+          <img
+            src="https://www.fkvz.cz/assets/images/vz-logo.svg"
+            width="60"
+            height="60"
+            class="no-placeholder aspect-square"
+            loading="lazy"
+            alt=""
+          />
+        </a>
+      </li>
+      <li class="swiper-slide">
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="outline-none focus-visible:opacity-70"
+          tabindex="-1"
+        >
+          <img
+            src="https://www.hcsparta.cz/znaky/spa.png"
+            width="60"
+            height="60"
+            class="no-placeholder aspect-square"
+            loading="lazy"
+            alt=""
+          />
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="container">
+    <ul
+      role="list"
+      class="pt-16 mb-20 d-flex flex-wrap justify-content-center gap-7 reference-cards border-top border-gray-300"
+    >
+      <li class="flex-3">
+        <article class="min-w-80 rounded-xl bg-gray-100b p-6">
+          <header
+            class="position-relative mb-4 d-flex gap-2 gap-sm-4 flex-md-row flex-column"
+          >
+            <img
+              src="images/content/ava-1.png"
+              width="48"
+              height="48"
+              class="aspect-square size-10 flex-shrink-0 object-fit-contain p-1 size-md-12"
+              loading="lazy"
+              alt=""
+            />
+            <div
+              class="d-flex flex-1 justify-content-between gap-2 max-lg:flex-col"
+            >
+              <div>
+                <h3 class="text-base-semibold text-gray-700">Jakub Novák</h3>
+                <p class="text-sm-medium text-gray-400 underline">
+                  Dres Jaromíra Jágra z MS v hokeji 2010
+                </p>
+              </div>
+            </div>
+          </header>
+          <div class="text-base-medium ps-md-16 text-gray-500">
+            Neuvěřitelný kousek historie. Dres je v perfektním stavu, a když ho
+            mám na sobě, cítím se, jako bych byl součástí týmu. Skvělý nákup pro
+            každého fanouška, který chce mít doma skutečný kus sportovní
+            historie!“
+          </div>
+        </article>
+      </li>
+      <li class="flex-3">
+        <article class="min-w-80 rounded-xl bg-gray-100b p-6">
+          <header
+            class="position-relative mb-4 d-flex gap-2 gap-sm-4 flex-md-row flex-column"
+          >
+            <img
+              src="images/content/ava-2.png"
+              width="48"
+              height="48"
+              class="aspect-square size-10 flex-shrink-0 object-fit-contain p-1 size-md-12"
+              loading="lazy"
+              alt=""
+            />
+            <div
+              class="d-flex flex-1 justify-content-between gap-2 max-lg:flex-col"
+            >
+              <div>
+                <h3 class="text-base-semibold text-gray-700">Lukáš Horák</h3>
+                <p class="text-sm-medium text-gray-400 underline">
+                  Hrané hokejky českých reprezentantů
+                </p>
+              </div>
+            </div>
+          </header>
+          <div class="text-base-medium ps-md-16 text-gray-500">
+            Fakt super kousek historie! Ten dres je v parádním stavu a když si
+            ho obleču, mám pocit, že patřím do týmu. Skvělý úlovek pro každého
+            fanouška, co chce mít doma kousek sportovní historie!
+          </div>
+        </article>
+      </li>
+      <li class="flex-3">
+        <article class="min-w-80 rounded-xl bg-gray-100b p-6">
+          <header
+            class="position-relative mb-4 d-flex gap-2 gap-sm-4 flex-md-row flex-column"
+          >
+            <img
+              src="images/content/ava-3.png"
+              width="48"
+              height="48"
+              class="aspect-square size-10 flex-shrink-0 object-fit-contain p-1 size-md-12"
+              loading="lazy"
+              alt=""
+            />
+            <div
+              class="d-flex flex-1 justify-content-between gap-2 max-lg:flex-col"
+            >
+              <div>
+                <h3 class="text-base-semibold text-gray-700">Petr Svoboda</h3>
+                <p class="text-sm-medium text-gray-400 underline">
+                  Berani Zlín - mistrovský dres naší hokejové legendy
+                </p>
+              </div>
+            </div>
+          </header>
+          <div class="text-base-medium ps-md-16 text-gray-500">
+            Úžasný kousek historie! Tenhle dres je v naprosto skvělém stavu a
+            když si ho obléknu, mám pocit, že patřím přímo do týmu. Je to
+            perfektní nákup pro každého fanouška, který chce mít doma opravdový
+            kousek sportovní historie!
+          </div>
+        </article>
+      </li>
+    </ul>
+    <div
+      class="rounded-xl bg-primary py-sm-16 py-12 px-sm-20 px-8 d-flex gap-lg-20 gap-10 align-items-center w-fit-content mx-auto flex-wrap justify-content-center"
+    >
+      <div
+        class="d-flex gap-8 justify-content-center align-items-center flex-wrap flex-md-nowrap flex-md-row flex-column"
+      >
+        <div class="rounded-xxl bg-light p-6">
+          <img
+            src="images/ico/bookmark.svg"
+            class="object-fit-content"
+            width="35"
+            height="35"
+            alt=""
+          />
+        </div>
+        <div class="text-light">
+          <h4 class="h4 mb-1">Chcete vytvořit vlastní aukci?</h4>
+          <p class="text-base-medium">
+            ... a vydělat balík na sběratelském artefaktu?
+          </p>
+        </div>
+      </div>
+      <a href="#" class="button-gray-800">
+        {% include "@images/mail.svg" %} Kontaktujte nás
+      </a>
+    </div>
+  </div>
+</section>

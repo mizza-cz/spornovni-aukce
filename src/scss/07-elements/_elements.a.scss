@@ -1,0 +1,7 @@
+a {
+  color: inherit;
+}
+a:focus-visible {
+  outline-color: var(--color-primary-500);
+  outline-offset: 2px;
+}

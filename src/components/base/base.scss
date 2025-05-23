@@ -1,0 +1,6 @@
+#main-content:not(.ignore-top-offset) {
+  padding-top: 112px;
+  @include media-breakpoint-down(md) {
+    padding-top: 80px;
+  }
+}

@@ -1,0 +1,21 @@
+.bids-swiper {
+  max-width: 1920px;
+  overflow: visible;
+  .swiper-wrapper {
+    margin-left: -14px;
+  }
+  .swiper-slide {
+    width: 356px;
+    padding: 0 14px;
+    @include media-breakpoint-down(lg) {
+      max-width: 320px;
+      width: 100%;
+    }
+  }
+}
+
+.bidsItem {
+  .button-gray-800 {
+    width: -webkit-fill-available;
+  }
+}
