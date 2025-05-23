@@ -1,0 +1,46 @@
+{% extends "@components/base/base.twig" %} {% set title =
+"04.0_registration-confirm" %} {% block main %}
+
+<main id="main-content" class="main" aria-label="Hlavní obsah">
+  <section class="container pb-20 pt-14">
+    <div class="registration-confirm">
+      <div class="registration-confirm__check p-md-6 p-4 mb-md-8 mb-6 bg-light">
+        <img
+          src="images/ico/check-stroke.svg"
+          width="56"
+          height="56"
+          class="object-fit-contain"
+          alt=""
+        />
+      </div>
+      <h1 class="h3 mb-8 fw-semibold">Účet úspěšně vytvořen</h1>
+      <p class="text-xl-regular fw-medium mb-8">
+        Na váš e-mail někdo@něco.cz
+        <span class="fw-semibold">jsme vám poslali aktivační odkaz.</span>
+      </p>
+      <p class="text-xl-regular fw-medium mb-5">
+        Pro dokončení registrace je nutné na něj kliknout.
+      </p>
+      <div class="d-flex gap-2 mb-8 text-sm-medium">
+        <img
+          src="images/ico/cr-fr.svg"
+          class="object-fit-contain"
+          width="16"
+          height="16"
+          alt=""
+        />
+        Pokud aktivační e-mail nedorazil, zkuste chvíli počkat a nebo
+        zkontrolovat složku se spamem. ☝🏻
+      </div>
+      <a href="#" class="button-primary-500 w-100 mb-3">
+        Zpět na přehled aukcí
+      </a>
+      <button class="button-stroke w-100">
+        Poslat aktivační e-mail znovu
+        <div class="fw-medium">(39)</div>
+      </button>
+    </div>
+  </section>
+</main>
+
+{% endblock %}
