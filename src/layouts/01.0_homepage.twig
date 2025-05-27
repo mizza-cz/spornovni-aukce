@@ -5,8 +5,127 @@ block main %}
   class="main ignore-top-offset"
   aria-label="Hlavní obsah"
 >
-  {% include "@components/hero-section/hero-section.twig" %} {% include
-  "@components/reference-section/reference-section.twig" %}
+  {% include "@components/hero-section/hero-section.twig" %}
+  <div class="container">
+    <form
+      class="mb-7 filterMenu d-flex justify-content-between align-items-center gap-4 pt-5"
+    >
+      <input type="hidden" name="category" value="1" />
+
+      <div role="tablist" class="d-flex flex-wrap gap-4 filterMenu-categories">
+        <button
+          name="category"
+          value="all"
+          class="badge-primary-500 has-hover"
+          role="tab"
+          aria-selected="true"
+        >
+          Vše
+          <span>48</span>
+        </button>
+        <button
+          name="category"
+          value="1"
+          class="badge-gray-100 has-hover"
+          role="tab"
+        >
+          Klubové aukce
+          <span>12</span>
+        </button>
+        <button
+          name="category"
+          value="2"
+          class="badge-gray-100 has-hover"
+          role="tab"
+        >
+          Fotbalové dresy
+          <span>5</span>
+        </button>
+        <button
+          name="category"
+          value="3"
+          class="badge-gray-100 has-hover"
+          role="tab"
+        >
+          Hokejové dresy
+          <span>4</span>
+        </button>
+        <button
+          name="category"
+          value="4"
+          class="badge-gray-100 has-hover"
+          role="tab"
+        >
+          Artefakty
+          <span>6</span>
+        </button>
+        <button
+          name="category"
+          value="5"
+          class="badge-gray-100 has-hover"
+          role="tab"
+        >
+          Repre
+          <span>2</span>
+        </button>
+        <button
+          name="category"
+          value="6"
+          class="badge-gray-100 has-hover"
+          role="tab"
+        >
+          Originální dresy
+          <span>1</span>
+        </button>
+        <button
+          name="category"
+          value="7"
+          class="badge-gray-100 has-hover"
+          role="tab"
+        >
+          Repliky
+          <span>24</span>
+        </button>
+      </div>
+      <select class="js-select">
+        <option value="">Nejnovější</option>
+        <option value="">Doporučujeme</option>
+        <option value="">Podle hodnocení</option>
+      </select>
+    </form>
+    {% include "@components/products/products.twig" %}
+  </div>
+
+  {% include "@components/bids-section/bids-section.twig" %}
+
+  <div class="bg-light pb-20">
+    <div
+      class="position-relative z-index-3 rounded-xl bg-gray-400 py-8 px-sm-16 px-8 d-flex gap-lg-20 gap-10 align-items-center w-fit-content mx-auto flex-wrap justify-content-center"
+    >
+      <div
+        class="d-flex gap-8 justify-content-center align-items-center flex-wrap flex-md-nowrap flex-md-row flex-column"
+      >
+        <img
+          src="images/content/legenda.png"
+          class="object-fit-content"
+          width="101"
+          height="146"
+          alt=""
+        />
+
+        <div class="text-light">
+          <h4 class="h4 mb-1">Získej zbylé hokejové dresy</h4>
+          <p class="text-base-medium">
+            z projektu Legenda pomáhá a pomoz na dobrou věc.
+          </p>
+        </div>
+      </div>
+      <a href="#" class="button-gray-800">
+        Získej nyní {% include "@images/arrow-right.svg" %}
+      </a>
+    </div>
+  </div>
+  {% include "@components/reference-section/reference-section.twig" %}
 </main>
 
 {% endblock %}

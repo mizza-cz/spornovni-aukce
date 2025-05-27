@@ -1,0 +1,25 @@
+.filterMenu {
+}
+.filterMenu-categories {
+  [class^="badge-"] {
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 12px 7px;
+
+    span {
+      display: block;
+      background-color: var(--color-gray-300);
+      color: var(--color-gray-800);
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 16px;
+      border-radius: 6px;
+      padding: 3px 8px 2px;
+    }
+  }
+}

@@ -39,6 +39,9 @@
     outline: 2px solid var(--color-primary-500);
     outline-offset: 2px;
   }
+  svg path {
+    fill: var(--color-gray-100);
+  }
 }
 .button-stroke {
   background-color: var(--color-gray-100);

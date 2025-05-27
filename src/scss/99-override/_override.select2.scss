@@ -1,0 +1,158 @@
+/*! purgecss start ignore */
+.select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: var(--color-gray-100);
+}
+.select2-container {
+  max-width: fit-content;
+  .select2-selection--single {
+    height: auto;
+    padding: 0.3rem 2.2rem 0.4rem 0.5rem;
+    border-color: var(--color-gray-100);
+    outline: solid transparent 1px;
+    transition: all 0.3s;
+  }
+}
+.select2-container--open {
+  .select2-selection--single {
+    border-color: var(--color-gray-400);
+    outline-color: var(--color-gray-400);
+  }
+}
+.-error {
+  .select2-container {
+    .select2-selection--single {
+      border-color: var(--color-gray-100);
+      outline-color: var(--color-gray-100);
+    }
+  }
+}
+.-disabled {
+  cursor: not-allowed;
+  * {
+    cursor: not-allowed;
+  }
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    color: var(--color-gray-400);
+  }
+  .select2-container {
+    .select2-selection--single {
+      background-color: var(--color-gray-100);
+      border-color: #adadad;
+      b {
+        opacity: 0.2;
+      }
+    }
+  }
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  top: 6px;
+  right: 12px;
+  width: 16px;
+  height: 16px;
+  b {
+    background-image: url("../images/ico/select.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    width: 16px;
+    height: 16px;
+  }
+}
+.select2-dropdown {
+  top: 5px;
+  min-width: fit-content;
+  border: 0;
+  border-radius: 8px !important;
+  border: 2px solid var(--color-gray-200);
+  background-color: var(--color-gray-100);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06), 0px 2px 2px rgba(0, 0, 0, 0.04),
+    0px 6px 3px rgba(0, 0, 0, 0.03), 0px 10px 4px rgba(0, 0, 0, 0.01);
+}
+.select2-results__options {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: var(--color-gray-400);
+  min-width: max-content;
+  > li {
+    padding: 6px 12px;
+
+    > span {
+      align-items: center;
+      display: flex;
+      width: 100%;
+      img {
+        margin-right: 16px;
+      }
+    }
+  }
+  .select2-results__option--selected {
+    background-color: var(--color-gray-100) !important;
+    color: var(--color-primary-500) !important;
+  }
+  .select2-results__option--highlighted  {
+    background-color: var(--color-gray-100) !important;
+  }
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-gray-800);
+  padding: 0;
+}
+.select2-container--default .select2-selection--single {
+  height: 40px;
+  border-radius: 8px !important;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+
+  padding: 2px 40px 2px 12px;
+
+  border: none;
+  background-color: var(--color-gray-100);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06), 0px 2px 2px rgba(0, 0, 0, 0.04),
+    0px 6px 3px rgba(0, 0, 0, 0.03), 0px 10px 4px rgba(0, 0, 0, 0.01);
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+  }
+}
+.hp-tabs-section {
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    b {
+      background-image: url("../images/ico/select.svg");
+    }
+  }
+  .select2-container--default .select2-selection--single {
+    border: none !important;
+    background-color: transparent;
+  }
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    top: -1px;
+    right: 20px;
+    width: 12px;
+  }
+  .select2-container--default.select2-container--open.select2-container--below
+    .select2-selection--multiple,
+  .select2-container--default.select2-container--open.select2-container--below
+    .select2-selection--single {
+    background-color: var(--color-gray-100) !important;
+  }
+}
+
+.select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
+  color: var(--color-gray-600);
+}
+/*! purgecss end ignore */

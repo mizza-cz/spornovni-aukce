@@ -7,6 +7,7 @@
   border-radius: 0.375rem;
   padding: 0.25rem 0.5rem;
   width: fit-content;
+  text-decoration: none;
   &.has-hover {
     cursor: pointer;
     transition: color 0.2s, background-color 0.2s;
@@ -57,4 +58,43 @@
   &:focus-visible {
     background-color: var(--color-primary-500);
   }
+}
+
+.badge-gray-100 {
+  color: var(--color-gray-400);
+  border: none;
+  background-color: var(--color-gray-100);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06), 0px 2px 2px rgba(0, 0, 0, 0.04),
+    0px 6px 3px rgba(0, 0, 0, 0.03), 0px 10px 4px rgba(0, 0, 0, 0.01);
+  &.has-hover:hover {
+    background-color: #6e757c;
+    color: var(--color-light);
+  }
+
+  &:focus-visible {
+    outline: solid 2px #6e757c;
+  }
+}
+.badge-primary-500 {
+  background-color: var(--color-primary-500);
+  color: var(--color-light);
+
+  &.has-hover:hover {
+    background-color: var(--color-primary-600);
+  }
+
+  &:focus-visible {
+    background-color: var(--color-primary-500);
+  }
+}
+
+.badge-secondary-200 {
+  background-color: var(--color-secondary-200);
+  &.has-hover:hover {
+    background-color: var(--color-secondary-100);
+  }
+}
+.badge-primary-200 {
+  background-color: var(--color-primary-200);
+  color: var(--color-light);
 }
