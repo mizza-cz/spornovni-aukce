@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>01.0_homepage - Sportovní aukce</title>
+	<title>05.0_club-detail - Sportovní aukce</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta name="format-detection" content="telephone=no" />
 
@@ -174,72 +174,73 @@
 				</div>
 			</div>
 		</header>
-		<main id="main-content" class="main ignore-top-offset" aria-label="Hlavní obsah">
-			<section class="hero">
-				<div class="container d-flex flex-column align-items-center justify-content-center pb-14">
-					<div class="badge-secondary-100 mb-5 d-flex gap-1 flex-wrap justify-content-center align-items-center">
-						Spouštíme novou verzi!
-						<span class="fw-medium">Děkujeme za zpětnou vazbu</span>
-					</div>
 
-					<h1 class="h1 mb-3 text-center fw-bold">
-						Originální hrané sportovní dresy
-					</h1>
-					<h2 class="h4 mb-8 text-center fw-semibold">
-						či jiné sběratelské artefakty
-					</h2>
-
-					<div class="d-flex w-100 justify-content-center gap-sm-4 gap-2 flex-sm-row flex-column">
-						<a href="#" class="button-primary-500">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M17 17H7v2h10v-2zM5 15v4a2 2 0 002 2h10a2 2 0 002-2v-4H5z" fill="#fff" />
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M12 3a1 1 0 01.857.486l2.412 4.018 4.106-3.285a1 1 0 011.609.96L18.834 17H5.166L3.016 5.179a1 1 0 011.609-.96L8.73 7.504l2.412-4.018A1 1 0 0112 3zm0 2.944l-2.731 4.552L5.462 7.45 6.835 15h10.33l1.373-7.55-3.807 3.046L12 5.944z" fill="#fff" />
-							</svg> Všechny funkce
-						</a>
-						<a href="#" class="button-stroke">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M12 4a1 1 0 00-1 1v6H5a1 1 0 100 2h6v6a1 1 0 102 0v-6h6a1 1 0 100-2h-6V5a1 1 0 00-1-1z" fill="#1A1D1F" />
-							</svg> Porovnání s konkurencí
-						</a>
+		<main id="main-content" class="main" aria-label="Hlavní obsah">
+			<section class="container pt-14">
+				<div class="club-detail">
+					<img class="object-fit-contain club-detail__logo" src="images/ico/club-detail.svg" width="120" height="120" alt="club" />
+					<div class="d-flex flex-column gap-3">
+						<div class="d-flex flex-wrap align-items-md-center flex-md-row flex-column">
+							<h1 class="h1 fw-bold me-6">Berani Zlín</h1>
+							<ul class="d-flex gap-3 mt-md-6 mt-4">
+								<li>
+									<a class="d-block" href="#" target="_blank">
+										<img class="object-fit-contain" src="images/ico/instagram.svg" width="16" height="16" alt="" />
+									</a>
+								</li>
+								<li>
+									<a class="d-block" href="#" target="_blank">
+										<img class="object-fit-contain" src="images/ico/tiktok.svg" width="16" height="16" alt="" />
+									</a>
+								</li>
+								<li>
+									<a class="d-block" href="#" target="_blank">
+										<img class="object-fit-contain" src="images/ico/fb-b.svg" width="16" height="16" alt="" />
+									</a>
+								</li>
+								<li>
+									<a class="d-block" href="#" target="_blank">
+										<img class="object-fit-contain" src="images/ico/xx.svg" width="16" height="16" alt="" />
+									</a>
+								</li>
+								<li>
+									<a class="d-block" href="#" target="_blank">
+										<img class="object-fit-contain" src="images/ico/youtube.svg" width="16" height="16" alt="" />
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="h4 fw-semibold">
+							Krátký popis od klubu, který představí stránku / aukce, cokoli.
+						</div>
 					</div>
 				</div>
-			</section>
-			<div class="container">
 				<form class="mb-7 filterMenu d-flex justify-content-between gap-4 pt-5 flex-md-nowrap flex-wrap">
 					<input type="hidden" name="category" value="1" />
 
 					<div role="tablist" class="d-flex flex-wrap gap-4 filterMenu-categories">
 						<button name="category" value="all" class="badge-primary-500 has-hover" role="tab" aria-selected="true">
-							Vše
+							Aktuální aukce
 							<span>48</span>
 						</button>
 						<button name="category" value="1" class="badge-gray-100 has-hover" role="tab">
-							Klubové aukce
+							Ukončené aukce
 							<span>12</span>
 						</button>
 						<button name="category" value="2" class="badge-gray-100 has-hover" role="tab">
-							Fotbalové dresy
-							<span>5</span>
+							Info o klubu
 						</button>
 						<button name="category" value="3" class="badge-gray-100 has-hover" role="tab">
-							Hokejové dresy
-							<span>4</span>
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M10.055 3.772a4.367 4.367 0 016.17 6.182l-1.47 1.469a.833.833 0 01-1.178-1.179l1.469-1.468a2.7 2.7 0 00-3.815-3.823l-1.476 1.47a.833.833 0 01-1.176-1.18l1.476-1.47zM6.421 8.576a.833.833 0 01.003 1.179l-1.47 1.476a2.7 2.7 0 003.822 3.815l1.468-1.469a.833.833 0 011.179 1.179l-1.469 1.468a4.367 4.367 0 01-6.182-6.169l1.47-1.476a.833.833 0 011.18-.003z" fill="#6F767E" />
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M12.256 7.744a.833.833 0 010 1.179l-3.333 3.333a.833.833 0 11-1.179-1.179l3.333-3.333a.833.833 0 011.179 0z" fill="#6F767E" />
+							</svg> Oficiální web
 						</button>
 						<button name="category" value="4" class="badge-gray-100 has-hover" role="tab">
-							Artefakty
-							<span>6</span>
-						</button>
-						<button name="category" value="5" class="badge-gray-100 has-hover" role="tab">
-							Repre
-							<span>2</span>
-						</button>
-						<button name="category" value="6" class="badge-gray-100 has-hover" role="tab">
-							Originální dresy
-							<span>1</span>
-						</button>
-						<button name="category" value="7" class="badge-gray-100 has-hover" role="tab">
-							Repliky
-							<span>24</span>
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M10.055 3.772a4.367 4.367 0 016.17 6.182l-1.47 1.469a.833.833 0 01-1.178-1.179l1.469-1.468a2.7 2.7 0 00-3.815-3.823l-1.476 1.47a.833.833 0 01-1.176-1.18l1.476-1.47zM6.421 8.576a.833.833 0 01.003 1.179l-1.47 1.476a2.7 2.7 0 003.822 3.815l1.468-1.469a.833.833 0 011.179 1.179l-1.469 1.468a4.367 4.367 0 01-6.182-6.169l1.47-1.476a.833.833 0 011.18-.003z" fill="#6F767E" />
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M12.256 7.744a.833.833 0 010 1.179l-3.333 3.333a.833.833 0 11-1.179-1.179l3.333-3.333a.833.833 0 011.179 0z" fill="#6F767E" />
+							</svg> Fanshop
 						</button>
 					</div>
 					<select class="js-select">
@@ -703,10 +704,12 @@
 						const masonryReferenceSource = "/_ajax-products.json";
 					</script>
 				</div>
-			</div>
-
+			</section>
 			<section class="bids-section pb-20 pt-20 bg-light">
-				<h3 class="h4 mb-9 px-5 text-center fw-semibold">Poslední příhozy</h3>
+				<h3 class="h4 mb-9 px-5 text-center fw-semibold">
+					Poslední příhozy
+					<span class="text-primary-500">Berani Zlín</span>
+				</h3>
 				<div class="container">
 					<div class="swiper bids-swiper">
 						<ul role="list" class="swiper-wrapper infinite-scroll-swiper">
@@ -975,25 +978,6 @@
 				</div>
 			</section>
 
-			<div class="bg-light pb-20">
-				<div class="position-relative z-index-3 rounded-xl bg-gray-400 py-8 px-sm-16 px-8 d-flex gap-lg-20 gap-10 align-items-center w-fit-content mx-auto flex-wrap justify-content-center">
-					<div class="d-flex gap-8 justify-content-center align-items-center flex-wrap flex-md-nowrap flex-md-row flex-column">
-						<img src="images/content/legenda.png" class="object-fit-content" width="101" height="146" alt="" />
-
-						<div class="text-light">
-							<h4 class="h4 mb-1">Získej zbylé hokejové dresy</h4>
-							<p class="text-base-medium">
-								z projektu Legenda pomáhá a pomoz na dobrou věc.
-							</p>
-						</div>
-					</div>
-					<a href="#" class="button-gray-800">
-						Získej nyní <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M22 12a1 1 0 01-1 1H3a1 1 0 110-2h18a1 1 0 011 1z" fill="#fff" />
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M21.707 12.707a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L19.586 12l-4.293 4.293a1 1 0 001.414 1.414l5-5z" fill="#fff" />
-						</svg> </a>
-				</div>
-			</div>
 			<section class="py-20 bg-light position-relative">
 				<h3 class="h4 mb-14 px-5 text-center fw-semibold">
 					Sportovní artefakty podle klubů

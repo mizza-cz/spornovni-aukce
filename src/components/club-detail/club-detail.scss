@@ -1,0 +1,27 @@
+.club-detail {
+  max-width: 1252px;
+  margin: 0 auto 56px;
+  display: flex;
+  gap: 32px;
+  @include media-breakpoint-down(sm) {
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+  .h1 {
+    line-height: 100%;
+  }
+  .h4 {
+    @include media-breakpoint-down(md) {
+      font-size: 1.5rem;
+      line-height: 2.3rem;
+      letter-spacing: -0.03em;
+    }
+  }
+  &__logo {
+    @include media-breakpoint-down(md) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
