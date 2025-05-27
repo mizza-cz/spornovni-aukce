@@ -97,12 +97,12 @@
 
 					<div class="d-flex justify-content-end align-items-center gap-6 ms-auto">
 						<div class="d-md-flex align-items-center gap-4 d-none">
-							<a href="#" class="button-primary-500 button-sm">
+							<button data-bs-toggle="modal" data-bs-target="#loginModal" class="button-primary-500 button-sm">
 								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path fill-rule="evenodd" clip-rule="evenodd" d="M12 7a4 4 0 00-2.99 6.659c-1.059.505-1.87 1.236-2.466 1.95a9.097 9.097 0 00-1.398 2.322 5.75 5.75 0 00-.094.249 1.01 1.01 0 00.631 1.269 1 1 0 001.265-.632l.008-.023.043-.112a7.095 7.095 0 011.08-1.792C8.89 15.92 10.131 15 12 15c1.87 0 3.11.92 3.92 1.89a7.095 7.095 0 011.08 1.792l.044.112.008.023v.002a1 1 0 001.897-.636 4.424 4.424 0 00-.095-.252 9.096 9.096 0 00-1.398-2.322c-.596-.714-1.407-1.445-2.467-1.95A4 4 0 0011.999 7zm-2 4a2 2 0 114 0 2 2 0 01-4 0z" fill="#fff" />
 									<path fill-rule="evenodd" clip-rule="evenodd" d="M12 20a8 8 0 100-16 8 8 0 000 16zm0 2c5.522 0 10-4.477 10-10S17.522 2 12 2C6.476 2 2 6.477 2 12s4.477 10 10 10z" fill="#fff" />
 								</svg> Můj účet
-							</a>
+							</button>
 
 							<details class="lang-dropdown" title="Výběr jazyka">
 								<summary>
@@ -174,6 +174,42 @@
 				</div>
 			</div>
 		</header>
+		<div class="modal fade" id="loginModal" aria-labelledby="loginModalLabel" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+						<img src="images/ico/close.svg" alt="" />
+					</button>
+					<h4 class="h4 text-gray-700 fw-semibold mb-6" id="loginModalLabel">
+						Přihlásit se
+					</h4>
+					<form class="mb-8">
+						<div class="input-icon mb-3">
+							<img src="images/ico/mail-g.svg" width="24" height="24" class="object-fit-contain" alt="" />
+							<input type="text" placeholder="Uživatelské jméno nebo email" />
+						</div>
+						<div class="input-icon">
+							<img src="images/ico/lock.svg" width="24" height="24" class="object-fit-contain" alt="" />
+							<input type="password" placeholder="Heslo" />
+						</div>
+						<div class="d-flex my-5 justify-content-between gap-3 flex-wrap align-items-center">
+							<div class="text-sm-semibold text-gray-500">
+								Zapamatovat přihlášení?
+							</div>
+							<input name="agree" checked type="checkbox" class="inputCheck" />
+						</div>
+						<button class="button-primary-500 w-100">Přihlásit se</button>
+					</form>
+
+					<div class="text-center text-sm-semibold text-gray-400">
+						Ještě nemáte účet?
+						<a href="#" class="d-block text-primary-500 underline">
+							Vytvořte si ho
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<main id="main-content" class="main" aria-label="Hlavní obsah">
 			<section class="container pb-20 pt-14">

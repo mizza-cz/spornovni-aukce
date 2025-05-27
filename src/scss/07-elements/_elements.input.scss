@@ -99,3 +99,81 @@ input {
   border-color: var(--color-primary-500);
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='5 13 9 17 19 7'/%3E%3C/svg%3E");
 }
+
+// radio checkbox
+
+.inputCheck {
+  outline: none;
+  appearance: none;
+  width: 48px;
+  height: 24px;
+  border-radius: 32px;
+  background: transparent;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background-color: var(--color-primary-500);
+  vertical-align: middle;
+  transition: all 0.5s;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0;
+}
+.inputCheck::before {
+  display: none;
+}
+.inputCheck:after {
+  transition: all 0.5s;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: 2px;
+  margin: 0 2px;
+  width: 20px;
+  height: 20px;
+  background: var(--color-gray-100);
+  transition: left 0.1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.inputCheck:checked {
+  transition: all 0.5s;
+  background-color: var(--color-primary-200);
+}
+.inputCheck:checked:after {
+  transition: all 0.5s;
+  right: 0px;
+
+  transform: none;
+}
+
+.inputCheck:hover:not(:checked):not(:disabled):after,
+.inputCheck:focus:not(:checked):not(:disabled):after {
+  left: 0px;
+  transition: all 0.5s;
+}
+
+.inputCheck:hover:checked:not(:disabled):after,
+.inputCheck:focus:checked:not(:disabled):after {
+  right: 0px;
+  transition: all 0.5s;
+}
+
+.inputCheck:disabled {
+  opacity: 0.5;
+}
+
+// input icon
+
+.input-icon {
+  width: 100%;
+  position: relative;
+  img {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  input {
+    width: 100%;
+    padding-left: 48px;
+  }
+}
