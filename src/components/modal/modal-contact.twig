@@ -1,0 +1,63 @@
+<div
+  class="modal fade"
+  id="contactModal"
+  aria-labelledby="contactModalLabel"
+  tabindex="-1"
+  role="dialog"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <button
+        type="button"
+        class="close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      >
+        <img src="images/ico/close.svg" alt="" />
+      </button>
+      <h4 class="h4 text-gray-700 fw-semibold mb-6" id="contactModalLabel">
+        Kontaktní formulář
+      </h4>
+      <form class="row g-6">
+        <div class="col-sm-6">
+          <div class="d-grid gap-1">
+            <label for="name"
+              >Vaše jméno a příjmení
+              <sup class="text-primary-500">*</sup></label
+            >
+            <input placeholder="Vyplňte" type="text" id="name" required />
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="d-grid gap-1">
+            <label class="text-sm-semibold" for="mail"
+              >Váš email <sup class="text-primary-500">*</sup></label
+            >
+            <input placeholder="@" type="email" id="mail" required />
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="grid gap-1">
+            <label class="text-sm-semibold" for="message"
+              >Vaše zpráva <sup class="text-primary-500">*</sup></label
+            >
+            <textarea id="message" rows="3" required></textarea>
+          </div>
+        </div>
+        <div class="col-12">
+          <div
+            class="d-flex gap-4 align-items-center flex-wrap flex-sm-row flex-column"
+          >
+            <button class="button-primary-500 w-sm-auto w-100">
+              Odeslat zprávu
+            </button>
+            <div class="text-gray-400 text-xs-medium" style="max-width: 268px">
+              *Odesláním zprávy souhlasíte se zpracováním osobních údajů a
+              <a class="underline" href="#">pravidly GDPR</a>.
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -56,3 +56,9 @@
 body.no-scroll {
   overflow: hidden;
 }
+
+#contactModal {
+  .modal-dialog {
+    max-width: 51.4rem !important;
+  }
+}

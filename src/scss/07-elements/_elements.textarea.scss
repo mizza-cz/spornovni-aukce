@@ -1,0 +1,22 @@
+textarea {
+  line-height: var(--input-line-height);
+  color: var(--input-color);
+  background: var(--input-bg);
+  padding: var(--input-padding-y) var(--input-padding-x);
+  border: var(--input-border);
+  border-radius: var(--input-border-radius);
+  display: block;
+  width: 100%;
+  &::placeholder {
+    color: var(--input-placeholder-color);
+  }
+
+  &:focus-visible {
+    outline: var(--input-focus-outline);
+    outline-offset: 2px;
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}

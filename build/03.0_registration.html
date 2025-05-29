@@ -242,13 +242,13 @@
 									<div class="row g-4">
 										<div class="col-sm-6">
 											<div class="d-grid gap-1">
-												<label for="name">Vaše jméno<sup class="text-primary-500">*</sup></label>
+												<label class="text-sm-semibold" for="name">Vaše jméno<sup class="text-primary-500">*</sup></label>
 												<input placeholder="Vyplňte" type="text" id="name" required />
 											</div>
 										</div>
 										<div class="col-sm-6">
 											<div class="d-grid gap-1">
-												<label for="surname">Vaše příjmení <sup class="text-primary-500">*</sup></label>
+												<label class="text-sm-semibold" for="surname">Vaše příjmení <sup class="text-primary-500">*</sup></label>
 												<input type="text" placeholder="Vyplňte" id="surname" required />
 											</div>
 										</div>
@@ -264,13 +264,13 @@
 									<div class="row g-4">
 										<div class="col-sm-8">
 											<div class="d-grid gap-1">
-												<label for="city">Město <sup class="text-primary-500">*</sup></label>
+												<label class="text-sm-semibold" for="city">Město <sup class="text-primary-500">*</sup></label>
 												<input placeholder="Vyplňte" type="text" id="city" required />
 											</div>
 										</div>
 										<div class="col-sm-4">
 											<div class="d-grid gap-1">
-												<label for="psc">PSČ <sup class="text-primary-500">*</sup></label>
+												<label class="text-sm-semibold" for="psc">PSČ <sup class="text-primary-500">*</sup></label>
 												<input type="text" placeholder="Vyplňte" id="psc" required />
 											</div>
 										</div>
@@ -426,12 +426,56 @@
 								</p>
 							</div>
 						</div>
-						<a href="#" class="button-gray-800">
+						<button data-bs-toggle="modal" data-bs-target="#contactModal" class="button-gray-800">
 							<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M.63 4.007a1 1 0 011.363-.377l7.514 4.26a1 1 0 00.986 0l7.514-4.26a1 1 0 11.986 1.74L11.48 9.63a3 3 0 01-2.96 0L1.007 5.37A1 1 0 01.63 4.007z" fill="#fff" />
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M5.759 0h8.482c.805 0 1.47 0 2.01.044.563.046 1.08.145 1.565.392a4 4 0 011.748 1.748c.247.485.346 1.002.392 1.564C20 4.29 20 4.954 20 5.758v4.483c0 .805 0 1.47-.044 2.01-.046.563-.145 1.08-.392 1.565a4 4 0 01-1.748 1.748c-.485.247-1.002.346-1.564.392-.541.044-1.206.044-2.01.044H5.758c-.805 0-1.47 0-2.01-.044-.563-.046-1.08-.145-1.565-.392a4 4 0 01-1.748-1.748c-.247-.485-.346-1.002-.392-1.564C0 11.71 0 11.046 0 10.242V5.758c0-.805 0-1.47.044-2.01.046-.563.145-1.08.392-1.565A4 4 0 012.184.436C2.669.189 3.186.09 3.748.044 4.29 0 4.954 0 5.758 0zM3.91 2.038c-.438.035-.663.1-.819.18a2 2 0 00-.874.874c-.08.156-.145.38-.18.819C2 4.361 2 4.943 2 5.8v4.4c0 .857 0 1.439.038 1.889.035.438.1.663.18.819a2 2 0 00.874.874c.156.08.38.145.819.18C4.361 14 4.943 14 5.8 14h8.4c.857 0 1.439 0 1.889-.038.438-.035.663-.1.819-.18a2 2 0 00.874-.874c.08-.156.145-.38.18-.819.037-.45.038-1.032.038-1.889V5.8c0-.857 0-1.439-.038-1.889-.035-.438-.1-.663-.18-.819a2 2 0 00-.874-.874c-.156-.08-.38-.145-.819-.18C15.639 2 15.057 2 14.2 2H5.8c-.857 0-1.439 0-1.889.038z" fill="#fff" />
 							</svg> Kontaktujte nás
-						</a>
+						</button>
+					</div>
+				</div>
+				<div class="modal fade" id="contactModal" aria-labelledby="contactModalLabel" tabindex="-1" role="dialog">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+								<img src="images/ico/close.svg" alt="" />
+							</button>
+							<h4 class="h4 text-gray-700 fw-semibold mb-6" id="contactModalLabel">
+								Kontaktní formulář
+							</h4>
+							<form class="row g-6">
+								<div class="col-sm-6">
+									<div class="d-grid gap-1">
+										<label for="name">Vaše jméno a příjmení
+											<sup class="text-primary-500">*</sup></label>
+										<input placeholder="Vyplňte" type="text" id="name" required />
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="d-grid gap-1">
+										<label class="text-sm-semibold" for="mail">Váš email <sup class="text-primary-500">*</sup></label>
+										<input placeholder="@" type="email" id="mail" required />
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="grid gap-1">
+										<label class="text-sm-semibold" for="message">Vaše zpráva <sup class="text-primary-500">*</sup></label>
+										<textarea id="message" rows="3" required></textarea>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="d-flex gap-4 align-items-center flex-wrap flex-sm-row flex-column">
+										<button class="button-primary-500 w-sm-auto w-100">
+											Odeslat zprávu
+										</button>
+										<div class="text-gray-400 text-xs-medium" style="max-width: 268px">
+											*Odesláním zprávy souhlasíte se zpracováním osobních údajů a
+											<a class="underline" href="#">pravidly GDPR</a>.
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</section>

@@ -187,9 +187,14 @@
           </p>
         </div>
       </div>
-      <a href="#" class="button-gray-800">
+      <button
+        data-bs-toggle="modal"
+        data-bs-target="#contactModal"
+        class="button-gray-800"
+      >
         {% include "@images/mail.svg" %} Kontaktujte nás
-      </a>
+      </button>
     </div>
   </div>
+  {% include "@components/modal/modal-contact.twig" %}
 </section>
