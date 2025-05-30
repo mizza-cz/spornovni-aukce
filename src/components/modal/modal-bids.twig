@@ -1,0 +1,81 @@
+<div
+  class="modal fade"
+  id="bidsModal"
+  aria-labelledby="bidsModalLabel"
+  tabindex="-1"
+  role="dialog"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <button
+        type="button"
+        class="close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      >
+        <img src="images/ico/close.svg" alt="" />
+      </button>
+      <h4 class="h4 text-gray-700 fw-semibold mb-6" id="bidsModalLabel">
+        Přihození
+      </h4>
+      <div class="text-sm-bold mb-1">Přihazujete k položce</div>
+      <div class="text-sm-medium mb-5">#21 Baláž Ondřej</div>
+      <div class="text-sm-bold mb-1">Konec aukce</div>
+      <div class="text-sm-medium mb-5">
+        20:00:00 28.2.2025
+        <span class="text-sm-semibold text-primary-500">(2 hod 45 min)</span>
+      </div>
+      <div class="text-sm-bold mb-1">Aktuální cena</div>
+      <div class="text-sm-medium mb-5">3 490 Kč</div>
+
+      <form class="">
+        <div class="row g-5 mb-1">
+          <div class="col-sm-6">
+            <div class="d-grid gap-1">
+              <label class="text-sm-semibold" for="name">Přihodit </label>
+              <input value="200 Kč" type="text" id="prihodit" />
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-grid gap-1">
+              <label class="text-sm-semibold" for="name">Nová cena </label>
+              <input value="3 690 Kč" type="text" id="cena" required />
+            </div>
+          </div>
+        </div>
+        <div class="text-gray-475 text-xs-medium mb-5">100 Kč - 3 0000 Kč</div>
+        <div class="text-sm-semibold d-flex align-items-center gap-1 mb-2">
+          Vaše maximální cena
+          <img
+            src="images/ico/crown-primary.svg"
+            width="16"
+            height="16"
+            class="object-fit-contain"
+            alt=""
+          />
+        </div>
+        <div class="d-grid mb-1">
+          <input value="5 690 Kč" type="text" id="maxcena" />
+        </div>
+        <div class="text-gray-475 text-xs-medium mb-5">
+          Budete automaticky přihazovat, do této hodnoty.
+        </div>
+        <button class="button-primary-500 w-100">Závazně přihodit</button>
+      </form>
+
+      <div class="d-flex gap-2 border-top border-2 border-gray-300 pt-5 mt-5">
+        <img
+          src="images/ico/cr-fr.svg"
+          class="object-fit-contain"
+          width="16"
+          height="16"
+          alt=""
+        />
+        <div class="text-sm-medium">
+          Přihozením na položku projevujete souhlas s
+          <a href="#" class="text-primary-500 underline">pravidly aukce</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
