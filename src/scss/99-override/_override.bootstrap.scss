@@ -49,11 +49,17 @@
 .bg-gray-100b {
   background-color: var(--color-gray-100b);
 }
+.rounded-sm {
+  border-radius: 4px;
+}
 .bg-gray-100 {
   background-color: var(--color-gray-100);
 }
 .bg-gray-200 {
   background-color: var(--color-gray-200);
+}
+.bg-gray-300 {
+  background-color: var(--color-gray-300);
 }
 .bg-gray-400 {
   background-color: var(--color-gray-400);

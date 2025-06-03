@@ -1,0 +1,27 @@
+.aside {
+  max-width: 280px;
+  width: 100%;
+  min-width: fit-content;
+  &__menu {
+    button {
+      border: none;
+      background-color: transparent;
+      transition: all 0.2s;
+      cursor: pointer;
+      &:hover {
+        color: var(--color-gray-700);
+      }
+    }
+    a {
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    a:not(.active):hover {
+      color: var(--color-gray-700);
+    }
+    .active {
+      color: var(--color-gray-700);
+      background-color: var(--color-gray-300);
+    }
+  }
+}

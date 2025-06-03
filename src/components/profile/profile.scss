@@ -1,0 +1,36 @@
+.profile {
+  max-width: 83.467rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04), 0px 10px 10px rgba(0, 0, 0, 0.04),
+    0px 22px 13px rgba(0, 0, 0, 0.02), 0px 39px 16px rgba(0, 0, 0, 0.01);
+  display: flex;
+  gap: 32px;
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
+  &__title {
+    position: relative;
+    padding-left: 32px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      border-radius: 4px;
+      height: 32px;
+      width: 16px;
+      background-color: var(--color-gray-300);
+    }
+  }
+  &__content {
+    width: 100%;
+    @include media-breakpoint-down(md) {
+      order: -1;
+    }
+    table {
+      min-width: max-content;
+    }
+    th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+}
