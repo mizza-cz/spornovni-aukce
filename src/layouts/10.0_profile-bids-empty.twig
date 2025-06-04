@@ -1,0 +1,27 @@
+{% extends "@components/base/base.twig" %} {% set title =
+"10.0_profile-bids-empty" %} {% block main %} {% include
+"@components/header/header-login.twig" %}
+<main id="main-content" class="main pb-lg-20" aria-label="Hlavní obsah">
+  <section class="profile my-14 mx-3 mx-auto p-6 bg-gray-100 rounded-lg">
+    {% include "@components/aside/aside.twig" %}
+    <div class="profile__content">
+      <h1 class="profile__title text-xl-semibold text-gray-700 mb-6">
+        Přihazuji aukce
+      </h1>
+      <div
+        class="p-8 d-flex flex-column justify-content-center align-items-center gap-4"
+      >
+        <img
+          class="object-fit-contain"
+          src="images/ico/empty.svg"
+          width="64"
+          height="64"
+          alt=""
+        />
+        <div class="text-sm-semibold">Nikde nepřihazujete</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% endblock %}

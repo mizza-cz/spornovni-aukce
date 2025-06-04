@@ -123,3 +123,59 @@
     transition: 0.2s ease;
   }
 }
+
+// login dropdown
+
+.dropdown-login {
+  position: relative;
+  .dropdown-menu {
+    background-color: var(--color-light);
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0px 32px 48px -8px rgba(0, 0, 0, 0.1);
+    width: 18.6rem;
+
+    @include media-breakpoint-up(md) {
+      top: calc(100% + 6px) !important ;
+      right: auto !important;
+      left: 50% !important;
+      transform: translate(-50%, 0) !important;
+    }
+    @include media-breakpoint-down(md) {
+      position: relative !important;
+      display: block !important;
+      width: 100%;
+      background-color: transparent;
+      text-align: center;
+      box-shadow: none;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      background-image: url("../images/ico/dropdown-arrow.svg");
+
+      width: 20px;
+      height: 12px;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
+  a {
+    display: block;
+    color: var(--color-gray-400);
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 8px;
+    &:hover {
+      color: var(--color-gray-800);
+      background-color: var(--color-gray-200);
+    }
+  }
+  .active {
+  }
+}

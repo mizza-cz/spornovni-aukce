@@ -32,7 +32,7 @@ table {
   td {
     min-width: 132px;
     @include media-breakpoint-down(lg) {
-      min-width: none;
+      min-width: auto;
     }
   }
   th:first-child,

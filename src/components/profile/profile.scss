@@ -28,9 +28,38 @@
     table {
       min-width: max-content;
     }
+    td {
+      color: var(--color-gray-700);
+    }
     th {
       padding-top: 12px;
       padding-bottom: 12px;
     }
+  }
+}
+
+.profile-pagination {
+  .pagination {
+    gap: 8px;
+  }
+  .page-link {
+    min-width: auto;
+    padding-left: 17px;
+    padding-right: 17px;
+    height: 2.4rem;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 8px;
+  }
+  .page-item.active .page-link {
+    background-color: var(--color-gray-800);
+    color: var(--color-light) !important;
+  }
+  .page-item__prev,
+  .page-item__next {
+    margin: 0;
+    border: none;
+    width: 24px;
+    height: 24px;
   }
 }
