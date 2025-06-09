@@ -1,0 +1,41 @@
+.auctionItems {
+  table td,
+  table th {
+    min-width: auto;
+    white-space: nowrap;
+  }
+
+  &__btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+}
+.auctionItems__btn {
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.auctionItems__btn.active img {
+  transform: rotate(180deg);
+}
+
+.auction-details {
+  transition: all 0.3s ease;
+}
+
+.itemName {
+  width: 368px;
+  min-width: 368px !important;
+  white-space: wrap !important;
+}
+.itemBtn {
+  width: 54px;
+  min-width: 54px !important;
+}
+.itemNum {
+  width: 80px;
+}

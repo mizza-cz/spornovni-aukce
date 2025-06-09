@@ -106,3 +106,10 @@
     width: calc(50% - 15px);
   }
 }
+.products.hide-before {
+  padding-bottom: 40px;
+}
+.products.hide-before::before {
+  display: none !important;
+  content: none !important;
+}

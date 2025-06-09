@@ -51,7 +51,7 @@
   .select2-selection--single
   .select2-selection__arrow {
   top: 6px;
-  right: 12px;
+  right: 15px;
   width: 16px;
   height: 16px;
   b {
@@ -154,5 +154,20 @@
 .select2-container--default
   .select2-results__option--highlighted.select2-results__option--selectable {
   color: var(--color-gray-600);
+}
+
+.select-primary-500 {
+  .select2-selection--single {
+    background-color: var(--color-primary-500);
+  }
+  .select2-container .select2-selection--single .select2-selection__rendered {
+    color: var(--color-light);
+  }
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow
+    b {
+    background-image: url("../images/ico/select-w.svg");
+  }
 }
 /*! purgecss end ignore */

@@ -210,1208 +210,1078 @@
 				</div>
 			</div>
 		</div>
-		<!-- <main id="main-content" class="main" aria-label="Hlavní obsah">
-  <section class="container pt-14 pb-20">
-    <div
-      class="mb-16 d-flex justify-content-between gap-4 pt-5 align-items-center flex-wrap"
-    >
-      <h1 class="h2">Příhozy</h1>
-      <div class="d-flex gap-4 flex-wrap">
-        <select class="js-select">
-          <option value="">Všechny kategorie</option>
-          <option value="">Kategorie 1</option>
-          <option value="">Kategorie 2</option>
-          <option value="">Kategorie 3</option>
-        </select>
-        <select class="js-select">
-          <option value="">Nejnovější</option>
-          <option value="">Doporučujeme</option>
-          <option value="">Podle hodnocení</option>
-        </select>
-      </div>
-    </div>
+		<main id="main-content" class="main" aria-label="Hlavní obsah">
+			<section class="container pt-14 pb-20">
+				<div class="detail-bids mb-lg-14 pb-14">
+					<div class="row g-7 flex-wrap-reverse">
+						<div class="col-xl-6">
+							<div class="gallery-wrapper">
+								<div class="gallerySwiper">
+									<div class="swiper mainPhotoSwiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<a href="#" class="mainPhotoSwiper__item" data-source="/spornovni-aukce/build/ajax-gallery.json" data-gallery-id="1">
+													<img srcset="
+                https://swiperjs.com/demos/images/nature-1.jpg 1384w,
+                https://swiperjs.com/demos/images/nature-1.jpg  692w
+              " alt="Фото 1" width="692" height="438" />
+												</a>
+											</div>
+											<div class="swiper-slide">
+												<a href="#" class="mainPhotoSwiper__item" data-source="/spornovni-aukce/build/ajax-gallery.json" data-gallery-id="1">
+													<img srcset="
+                https://swiperjs.com/demos/images/nature-2.jpg 1384w,
+                https://swiperjs.com/demos/images/nature-2.jpg  692w
+              " alt="Фото 1" width="692" height="438" />
+												</a>
+											</div>
+											<div class="swiper-slide">
+												<a href="#" class="mainPhotoSwiper__item" data-source="/spornovni-aukce/build/ajax-gallery.json" data-gallery-id="1">
+													<img srcset="
+                https://swiperjs.com/demos/images/nature-3.jpg 1384w,
+                https://swiperjs.com/demos/images/nature-3.jpg  692w
+              " alt="Фото 1" width="692" height="438" />
+												</a>
+											</div>
+											<div class="swiper-slide">
+												<a href="#" class="mainPhotoSwiper__item" data-source="/spornovni-aukce/build/ajax-gallery.json" data-gallery-id="1">
+													<img srcset="
+                https://swiperjs.com/demos/images/nature-4.jpg 1384w,
+                https://swiperjs.com/demos/images/nature-4.jpg  692w
+              " alt="Фото 1" width="692" height="438" />
+												</a>
+											</div>
+											<div class="swiper-slide">
+												<a href="#" class="mainPhotoSwiper__item" data-source="/spornovni-aukce/build/ajax-gallery.json" data-gallery-id="1">
+													<img srcset="
+                https://swiperjs.com/demos/images/nature-5.jpg 1384w,
+                https://swiperjs.com/demos/images/nature-5.jpg  692w
+              " alt="Фото 1" width="692" height="438" />
+												</a>
+											</div>
+										</div>
+										<div class="swiper-pagination"></div>
+										<div class="mainPhotoSwiper-icon"></div>
+									</div>
 
-    <div class="tableBids p-6 bg-gray-100 rounded-lg mb-14">
-  <div class="table-responsive mb-6">
-    <table>
-      <thead>
-        <tr>
-          <th class="text-start"><a href="#">Název aukce</a></th>
-          <th class="text-start"><a href="#">Název předmětu / dresu</a></th>
-          <th class="text-start"><a href="#">Cena</a></th>
-          <th class="text-start"><a href="#">Čas</a></th>
-          <th class="text-start"><a href="#">Přihazující</a></th>
-          <th>Akce</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <a href="#" class="underline fw-semibold">
-              Aukce dresů ze sedmého ročníku projektu PIRÁTI CHOMUTOV PRO
-              NEMOCNICI
-            </a>
-          </td>
-          <td>
-            <a href="#" class="underline"> Svoboda Tadeáš </a>
-          </td>
-          <td class="fw-semibold">1 500 Kč</td>
-          <td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
-          <td class="fw-semibold">Petr F.</td>
-          <td>
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#bidsModal"
-              class="button-gray-800 button-sm"
-            >
-              Přihodit
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#" class="underline fw-semibold">
-              Benefiční aukce dresů z utkání Zlín Stars vs. Real Top Praha
-            </a>
-          </td>
-          <td>
-            <a href="#" class="underline"> Tůma Martin </a>
-          </td>
-          <td class="fw-semibold">1 500 Kč</td>
-          <td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
-          <td class="fw-semibold">Jarmil P.</td>
-          <td>
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#bidsModal"
-              class="button-gray-800 button-sm"
-            >
-              Přihodit
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#" class="underline fw-semibold">
-              Charitativní aukce dresů fotbalového klubu FK Teplice
-            </a>
-          </td>
-          <td>
-            <a href="#" class="underline"> Novák Jiří </a>
-          </td>
-          <td class="fw-semibold">2 000 Kč</td>
-          <td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
-          <td class="fw-semibold">Antonín S.</td>
-          <td>
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#bidsModal"
-              class="button-gray-800 button-sm"
-            >
-              Přihodit
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#" class="underline fw-semibold">
-              Aukce dresů z utkání HC Vítkovice Ridera
-            </a>
-          </td>
-          <td>
-            <a href="#" class="underline"> Klein Pavel </a>
-          </td>
-          <td class="fw-semibold">1 800 Kč</td>
-          <td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
-          <td class="fw-semibold">Martin P.</td>
-          <td>
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#bidsModal"
-              class="button-gray-800 button-sm"
-            >
-              Přihodit
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#" class="underline fw-semibold">
-              Aukce dresů ze sedmého ročníku projektu PIRÁTI CHOMUTOV PRO
-              NEMOCNICI
-            </a>
-          </td>
-          <td>
-            <a href="#" class="underline"> Svoboda Tadeáš </a>
-          </td>
-          <td class="fw-semibold">1 500 Kč</td>
-          <td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
-          <td class="fw-semibold">Petr F.</td>
-          <td>
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#bidsModal"
-              class="button-gray-800 button-sm"
-            >
-              Přihodit
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#" class="underline fw-semibold">
-              Benefiční aukce dresů z utkání Zlín Stars vs. Real Top Praha
-            </a>
-          </td>
-          <td>
-            <a href="#" class="underline"> Tůma Martin </a>
-          </td>
-          <td class="fw-semibold">1 500 Kč</td>
-          <td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
-          <td class="fw-semibold">Jarmil P.</td>
-          <td>
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#bidsModal"
-              class="button-gray-800 button-sm"
-            >
-              Přihodit
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#" class="underline fw-semibold">
-              Charitativní aukce dresů fotbalového klubu FK Teplice
-            </a>
-          </td>
-          <td>
-            <a href="#" class="underline"> Novák Jiří </a>
-          </td>
-          <td class="fw-semibold">2 000 Kč</td>
-          <td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
-          <td class="fw-semibold">Antonín S.</td>
-          <td>
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#bidsModal"
-              class="button-gray-800 button-sm"
-            >
-              Přihodit
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#" class="underline fw-semibold">
-              Aukce dresů z utkání HC Vítkovice Ridera
-            </a>
-          </td>
-          <td>
-            <a href="#" class="underline"> Klein Pavel </a>
-          </td>
-          <td class="fw-semibold">1 800 Kč</td>
-          <td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
-          <td class="fw-semibold">Martin P.</td>
-          <td>
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#bidsModal"
-              class="button-gray-800 button-sm"
-            >
-              Přihodit
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#" class="underline fw-semibold">
-              Aukce dresů ze sedmého ročníku projektu PIRÁTI CHOMUTOV PRO
-              NEMOCNICI
-            </a>
-          </td>
-          <td>
-            <a href="#" class="underline"> Svoboda Tadeáš </a>
-          </td>
-          <td class="fw-semibold">1 500 Kč</td>
-          <td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
-          <td class="fw-semibold">Petr F.</td>
-          <td>
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#bidsModal"
-              class="button-gray-800 button-sm"
-            >
-              Přihodit
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#" class="underline fw-semibold">
-              Benefiční aukce dresů z utkání Zlín Stars vs. Real Top Praha
-            </a>
-          </td>
-          <td>
-            <a href="#" class="underline"> Tůma Martin </a>
-          </td>
-          <td class="fw-semibold">1 500 Kč</td>
-          <td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
-          <td class="fw-semibold">Jarmil P.</td>
-          <td>
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#bidsModal"
-              class="button-gray-800 button-sm"
-            >
-              Přihodit
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#" class="underline fw-semibold">
-              Charitativní aukce dresů fotbalového klubu FK Teplice
-            </a>
-          </td>
-          <td>
-            <a href="#" class="underline"> Novák Jiří </a>
-          </td>
-          <td class="fw-semibold">2 000 Kč</td>
-          <td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
-          <td class="fw-semibold">Antonín S.</td>
-          <td>
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#bidsModal"
-              class="button-gray-800 button-sm"
-            >
-              Přihodit
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#" class="underline fw-semibold">
-              Aukce dresů z utkání HC Vítkovice Ridera
-            </a>
-          </td>
-          <td>
-            <a href="#" class="underline"> Klein Pavel </a>
-          </td>
-          <td class="fw-semibold">1 800 Kč</td>
-          <td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
-          <td class="fw-semibold">Martin P.</td>
-          <td>
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#bidsModal"
-              class="button-gray-800 button-sm"
-            >
-              Přihodit
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#" class="underline fw-semibold">
-              Aukce dresů ze sedmého ročníku projektu PIRÁTI CHOMUTOV PRO
-              NEMOCNICI
-            </a>
-          </td>
-          <td>
-            <a href="#" class="underline"> Svoboda Tadeáš </a>
-          </td>
-          <td class="fw-semibold">1 500 Kč</td>
-          <td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
-          <td class="fw-semibold">Petr F.</td>
-          <td>
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#bidsModal"
-              class="button-gray-800 button-sm"
-            >
-              Přihodit
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#" class="underline fw-semibold">
-              Benefiční aukce dresů z utkání Zlín Stars vs. Real Top Praha
-            </a>
-          </td>
-          <td>
-            <a href="#" class="underline"> Tůma Martin </a>
-          </td>
-          <td class="fw-semibold">1 500 Kč</td>
-          <td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
-          <td class="fw-semibold">Jarmil P.</td>
-          <td>
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#bidsModal"
-              class="button-gray-800 button-sm"
-            >
-              Přihodit
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#" class="underline fw-semibold">
-              Charitativní aukce dresů fotbalového klubu FK Teplice
-            </a>
-          </td>
-          <td>
-            <a href="#" class="underline"> Novák Jiří </a>
-          </td>
-          <td class="fw-semibold">2 000 Kč</td>
-          <td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
-          <td class="fw-semibold">Antonín S.</td>
-          <td>
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#bidsModal"
-              class="button-gray-800 button-sm"
-            >
-              Přihodit
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#" class="underline fw-semibold">
-              Aukce dresů z utkání HC Vítkovice Ridera
-            </a>
-          </td>
-          <td>
-            <a href="#" class="underline"> Klein Pavel </a>
-          </td>
-          <td class="fw-semibold">1 800 Kč</td>
-          <td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
-          <td class="fw-semibold">Martin P.</td>
-          <td>
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#bidsModal"
-              class="button-gray-800 button-sm"
-            >
-              Přihodit
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <nav aria-label="Další stránky">
-    <ul class="pagination d-flex flex-wrap pagination-flat pagination-success">
-      <li class="page-item page-item__prev disabled">
-        <a data-abc="true" href="#" class="button-stroke">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.707 5.293a1 1 0 010 1.414L10.414 12l5.293 5.293a1 1 0 01-1.414 1.414l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 0z" fill="#6F767E"/></svg> Zpět
-        </a>
-      </li>
-      <li class="page-item active">
-        <a class="page-link button-primary-500" href="#" data-abc="true">1</a>
-      </li>
-      <li class="page-item">
-        <a class="page-link button-stroke" href="#" data-abc="true">2</a>
-      </li>
-      <li class="page-item">
-        <a class="page-link button-stroke" href="#" data-abc="true">3</a>
-      </li>
-      <li class="page-item">
-        <a class="page-link" href="#" data-abc="true">...</a>
-      </li>
-      <li class="page-item">
-        <a class="page-link button-stroke" href="#" data-abc="true">8</a>
-      </li>
+									<div class="swiper photoSwiperThumbs mt-lg-6 mt-4">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<img srcset="https://swiperjs.com/demos/images/nature-1.jpg" alt="Фото 1" width="176" height="112" loading="lazy" />
+											</div>
+											<div class="swiper-slide">
+												<img srcset="https://swiperjs.com/demos/images/nature-2.jpg" alt="Фото 1" width="176" height="112" loading="lazy" />
+											</div>
+											<div class="swiper-slide">
+												<img srcset="https://swiperjs.com/demos/images/nature-3.jpg" alt="Фото 1" width="176" height="112" loading="lazy" />
+											</div>
+											<div class="swiper-slide">
+												<img srcset="https://swiperjs.com/demos/images/nature-4.jpg" alt="Фото 1" width="176" height="112" loading="lazy" />
+											</div>
+											<div class="swiper-slide">
+												<img srcset="https://swiperjs.com/demos/images/nature-5.jpg" alt="Фото 1" width="176" height="112" loading="lazy" />
+											</div>
+										</div>
+									</div>
 
-      <li class="page-item page-item__next">
-        <a class="button-stroke" href="#" data-abc="true">
-          Další strana <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.293 5.293a1 1 0 000 1.414L13.586 12l-5.293 5.293a1 1 0 101.414 1.414l6-6a1 1 0 000-1.414l-6-6a1 1 0 00-1.414 0z" fill="#1A1D1F"/></svg>        </a>
-      </li>
-    </ul>
-  </nav>
-  <div
-  class="modal fade"
-  id="bidsModal"
-  aria-labelledby="bidsModalLabel"
-  tabindex="-1"
-  role="dialog"
->
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <button
-        type="button"
-        class="close"
-        data-bs-dismiss="modal"
-        aria-label="Close"
-      >
-        <img src="images/ico/close.svg" alt="" />
-      </button>
-      <h4 class="h4 text-gray-700 fw-semibold mb-6" id="bidsModalLabel">
-        Přihození
-      </h4>
-      <div class="text-sm-bold mb-1">Přihazujete k položce</div>
-      <div class="text-sm-medium mb-5">#21 Baláž Ondřej</div>
-      <div class="text-sm-bold mb-1">Konec aukce</div>
-      <div class="text-sm-medium mb-5">
-        20:00:00 28.2.2025
-        <span class="text-sm-semibold text-primary-500">(2 hod 45 min)</span>
-      </div>
-      <div class="text-sm-bold mb-1">Aktuální cena</div>
-      <div class="text-sm-medium mb-5">3 490 Kč</div>
+									<div class="mt-6 text-base-medium text-center mx-auto">
+										Celkový výtěžek aukce je
+										<span class="fw-bold text-primary-500">1 398,00 Kč</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<div class="detail-bids__content">
+								<h1 class="h2 pb-5">Hrané dresy českých reprezentantů</h1>
+								<ul class="d-flex gap-2 align-items-center flex-wrap mb-5">
+									<li class="badge-gray-400">Artefakt</li>
+									<li class="badge-secondary-200">Certifikát</li>
+								</ul>
+								<p class="text-xl-regular fw-medium mb-5">
+									Originální dresy bývalých českých reprezentantů z olympijských her a
+									světových šampionátů. Všechny hole jsou hrané, některé včetně
+									originálního podpisu.
+								</p>
+								<div class="mb-5">
+									<ul class="text-sm-medium list-disc">
+										<li>Jaromír Jágr (hokej Kladno, po návratu z NHL) - hraný</li>
+										<li>Tomáš Kaberle (OH 2010, Vancouver, s podpisem) - hraný</li>
+										<li>Tomáš Rolinek (MS 2009, Švýcarsko, s podpisem) - hraný</li>
+									</ul>
+								</div>
+								<a href="#" class="text-sm-medium underline d-block mb-8">Kompletní popis</a>
+								<div class="row">
+									<div class="col">
+										<div class="text-base-medium fw-bold mb-2 d-flex align-items-center gap-2">
+											<img src="images/ico/timelapse.svg" width="24" height="24" class="object-fit-contain" alt="" />
+											Zbývající čas
+										</div>
+										<ul class="text-primary-500 text-xl-semibold">
+											<li>2 hod</li>
+											<li>45 min</li>
+											<li>12 sek</li>
+										</ul>
+									</div>
+									<div class="col">
+										<div class="text-base-medium fw-bold mb-2 d-flex align-items-center gap-2">
+											<img src="images/ico/calendar.svg" width="24" height="24" class="object-fit-contain" alt="" />
+											Konec aukce
+										</div>
+										<ul class="text-primary-500 text-xl-semibold">
+											<li>Středa</li>
+											<li>26.2.2025</li>
+											<li>20:00:00</li>
+										</ul>
+									</div>
+									<div class="col">
+										<div class="text-base-medium fw-bold mb-2 d-flex align-items-center gap-2">
+											<img src="images/ico/light.svg" width="24" height="24" class="object-fit-contain" alt="" />
+											Čas serveru
+										</div>
+										<ul class="text-xl-semibold">
+											<li>Středa</li>
+											<li>26.2.2025</li>
+											<li>17:24:15</li>
+										</ul>
+									</div>
+								</div>
+								<div class="d-flex gap-5 flex-wrap mt-8">
+									<div class="select-primary-500">
+										<select class="js-select">
+											<option value="">Předměty v aukci</option>
+											<option value="">Lorem, ipsum dolor.</option>
+											<option value="">Lorem ipsum dolor sit.</option>
+											<option value="">Lorem ipsum.</option>
+										</select>
+									</div>
 
-      <form class="">
-        <div class="row g-5 mb-1">
-          <div class="col-sm-6">
-            <div class="d-grid gap-1">
-              <label class="text-sm-semibold" for="name">Přihodit </label>
-              <input value="200 Kč" type="text" id="prihodit" />
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="d-grid gap-1">
-              <label class="text-sm-semibold" for="name">Nová cena </label>
-              <input value="3 690 Kč" type="text" id="cena" required />
-            </div>
-          </div>
-        </div>
-        <div class="text-gray-475 text-xs-medium mb-5">100 Kč - 3 0000 Kč</div>
-        <div class="text-sm-semibold d-flex align-items-center gap-1 mb-2">
-          Vaše maximální cena
-          <img
-            src="images/ico/crown-primary.svg"
-            width="16"
-            height="16"
-            class="object-fit-contain"
-            alt=""
-          />
-        </div>
-        <div class="d-grid mb-1">
-          <input value="5 690 Kč" type="text" id="maxcena" />
-        </div>
-        <div class="text-gray-475 text-xs-medium mb-5">
-          Budete automaticky přihazovat, do této hodnoty.
-        </div>
-        <button class="button-primary-500 w-100">Závazně přihodit</button>
-      </form>
+									<select class="js-select">
+										<option value="">Příhozy</option>
+										<option value="">Lorem, ipsum dolor.</option>
+										<option value="">Lorem ipsum dolor sit.</option>
+										<option value="">Lorem ipsum.</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="auctionItems">
+					<div class="tableBids p-6 bg-gray-100 rounded-lg mb-14">
+						<h2 class="h5 mb-4 fw-semibold">Předměty v aukci</h2>
+						<div class="table-responsive mb-6">
+							<table>
+								<thead>
+									<tr>
+										<th class="itemBtn"></th>
+										<th class="itemNum text-start"><a href="#">Číslo</a></th>
+										<th class="text-start text-primary-500 itemName">
+											<a class="d-flex align-items-center gap-1" href="#">Název předmětu / dresu
+												<img src="images/ico/chevron-primary.svg" width="16" height="16" class="object-fit-contain" alt="" /></a>
+										</th>
+										<th class="text-start"><a href="#">Cena</a></th>
+										<th class="text-start"><a href="#">Příhozů</a></th>
+										<th class="text-start"><a href="#">Poslední příhoz</a></th>
+										<th class="text-start"><a href="#">Vyhrávající</a></th>
+										<th>Akce</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="itemBtn">
+											<button class="auctionItems__btn">
+												<img src="images/ico/chevron-dark.svg" width="24" height="24" class="object-fit-contain" alt="" />
+											</button>
+										</td>
+										<td class="itemNum fw-medium">#68</td>
+										<td class="itemName">
+											<a href="#" class="underline fw-semibold d-flex align-items-center gap-4">
+												Jaromír Jágr (hokej Kladno, po návratu z NHL)
+											</a>
+										</td>
 
-      <div class="d-flex gap-2 border-top border-2 border-gray-300 pt-5 mt-5">
-        <img
-          src="images/ico/cr-fr.svg"
-          class="object-fit-contain"
-          width="16"
-          height="16"
-          alt=""
-        />
-        <div class="text-sm-medium">
-          Přihozením na položku projevujete souhlas s
-          <a href="#" class="text-primary-500 underline">pravidly aukce</a>.
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-    <div class="pt-lg-20 pt-6">
-      <h3 class="h4 mb-7 px-5 text-center fw-semibold">
-        Další aukce, které brzy končí
-      </h3>
-      <ul class="masonry-products-grid pb-lg-13">
-        <li class="masonry-products-grid__item">
-          <div class="product">
-            <div class="product__logo">
-              <img src="images/content/dukla.png" alt="logo" loading="lazy" />
-            </div>
-            <a href="#" class="product__img">
-              <img
-                src="images/content/archiv/2.png"
-                alt="product"
-                loading="lazy"
-              />
-            </a>
-            <div class="d-flex gap-2 align-items-center flex-wrap mb-3">
-              <a href="#" class="badge-gray-400 has-hover">Artefakt</a>
-              <a href="#" class="badge-secondary-200 has-hover">Certifikát</a>
-            </div>
+										<td class="fw-medium">499 Kč</td>
+										<td class="fw-medium">0x</td>
+										<td class="fw-medium">
+											50 Kč
+											<div class="text-gray-400 mt-1">10:58:44 20.2.2025</div>
+										</td>
+										<td class="text-gray-400 fw-medium">Zatím nikdo</td>
+										<td>
+											<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800 button-sm">
+												Přihodit
+											</button>
+										</td>
+									</tr>
+									<tr class="auction-details d-none">
+										<td></td>
+										<td></td>
+										<td></td>
+										<td colspan="2">
+											<div>
+												<div class="fw-semibold">Aktuální cena / vyvolávací cena</div>
+												<div class="fw-medium mt-1">499 Kč / 499 Kč</div>
+											</div>
+										</td>
 
-            <a href="#" class="text-xl-semibold mb-6 underline-hover d-block">
-              Originální hraný zápasový dres Kamso Mary z Liberce
-            </a>
-            <div class="d-flex flex-wrap gap-4 mb-6">
-              <div class="d-flex gap-2 align-items-center">
-                <img
-                  class="object-fit-contain"
-                  width="24"
-                  height="24"
-                  src="images/ico/timelapse.svg"
-                  alt=""
-                />
-                <div class="text-base-semibold">2 hod 45 min</div>
-              </div>
-              <div class="d-flex gap-2 align-items-center">
-                <img
-                  class="object-fit-contain"
-                  width="24"
-                  height="24"
-                  src="images/ico/coins.svg"
-                  alt=""
-                />
-                <div class="text-base-semibold">2 500 Kč</div>
-              </div>
-            </div>
-            <div class="d-flex align-items-center gap-8">
-              <button
-                data-bs-toggle="modal"
-                data-bs-target="#bidsModal"
-                class="button-gray-800 w-100"
-              >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4a1 1 0 00-1 1v6H5a1 1 0 100 2h6v6a1 1 0 102 0v-6h6a1 1 0 100-2h-6V5a1 1 0 00-1-1z" fill="#1A1D1F"/></svg> Přihodit
-              </button>
-              <a class="product__like" href="#">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 7.212l-1.334-1.194A4 4 0 004 9c0 3 1.34 5.212 3.032 6.85 1.722 1.667 3.748 2.668 4.854 3.13a.284.284 0 00.228 0c1.106-.462 3.132-1.463 4.854-3.13C18.66 14.212 20 12 20 9a4 4 0 00-6.666-2.982L12 7.212zm0-2.684A6 6 0 002 9c0 7.351 6.671 10.806 9.116 11.825.57.238 1.199.238 1.768 0C15.328 19.806 22 16.351 22 9a6 6 0 00-10-4.472z" fill="#6F767E"/></svg>              </a>
-            </div>
-          </div>
-        </li>
-        <li class="masonry-products-grid__item">
-          <div class="product">
-            <a href="#" class="product__img">
-              <img
-                src="images/content/archiv/3.png"
-                alt="product"
-                loading="lazy"
-              />
-            </a>
-            <div class="d-flex gap-2 align-items-center flex-wrap mb-3">
-              <a href="#" class="badge-gray-400 has-hover">Replika</a>
-            </div>
-            <a href="#" class="text-xl-semibold mb-6 underline-hover d-block">
-              Originální hraný zápasový dres Kamso Mary z Liberce
-            </a>
-            <div class="d-flex flex-wrap gap-4 mb-6">
-              <div class="d-flex gap-2 align-items-center">
-                <img
-                  class="object-fit-contain"
-                  width="24"
-                  height="24"
-                  src="images/ico/timelapse.svg"
-                  alt=""
-                />
-                <div class="text-base-semibold">2 hod 45 min</div>
-              </div>
-              <div class="d-flex gap-2 align-items-center">
-                <img
-                  class="object-fit-contain"
-                  width="24"
-                  height="24"
-                  src="images/ico/coins.svg"
-                  alt=""
-                />
-                <div class="text-base-semibold">2 500 Kč</div>
-              </div>
-            </div>
-            <div class="d-flex align-items-center gap-8">
-              <button
-                data-bs-toggle="modal"
-                data-bs-target="#bidsModal"
-                class="button-gray-800 w-100"
-              >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4a1 1 0 00-1 1v6H5a1 1 0 100 2h6v6a1 1 0 102 0v-6h6a1 1 0 100-2h-6V5a1 1 0 00-1-1z" fill="#1A1D1F"/></svg> Přihodit
-              </button>
-              <a class="product__like" href="#">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 7.212l-1.334-1.194A4 4 0 004 9c0 3 1.34 5.212 3.032 6.85 1.722 1.667 3.748 2.668 4.854 3.13a.284.284 0 00.228 0c1.106-.462 3.132-1.463 4.854-3.13C18.66 14.212 20 12 20 9a4 4 0 00-6.666-2.982L12 7.212zm0-2.684A6 6 0 002 9c0 7.351 6.671 10.806 9.116 11.825.57.238 1.199.238 1.768 0C15.328 19.806 22 16.351 22 9a6 6 0 00-10-4.472z" fill="#6F767E"/></svg>              </a>
-            </div>
-          </div>
-        </li>
-        <li class="masonry-products-grid__item">
-          <div class="product active">
-            <div class="product__logo">
-              <img src="images/content/zlin.png" alt="logo" loading="lazy" />
-            </div>
-            <a href="#" class="product__img">
-              <img
-                src="images/content/archiv/4.png"
-                alt="product"
-                loading="lazy"
-              />
-            </a>
-            <div class="d-flex gap-2 align-items-center flex-wrap mb-3">
-              <a href="#" class="badge-gray-400 has-hover">Hokejové dresy</a>
-            </div>
+										<td>
+											<div class="fw-semibold">Min. příhoz</div>
+											<div class="fw-medium mt-1">50 Kč</div>
+										</td>
+										<td colspan="2" class="text-start">
+											<div class="fw-semibold">Konec</div>
+											<div class="fw-medium mt-1">20:00:00 26.2.2025</div>
+										</td>
+									</tr>
 
-            <a href="#" class="text-xl-semibold mb-6 underline-hover d-block">
-              Berani Zlín - mistrovský dres naší hokejové legendy
-            </a>
-            <div class="d-flex flex-wrap gap-4 mb-6">
-              <div class="d-flex gap-2 align-items-center">
-                <img
-                  class="object-fit-contain"
-                  width="24"
-                  height="24"
-                  src="images/ico/timelapse.svg"
-                  alt=""
-                />
-                <div class="text-base-semibold">2 hod 45 min</div>
-              </div>
-              <div class="d-flex gap-2 align-items-center">
-                <img
-                  class="object-fit-contain"
-                  width="24"
-                  height="24"
-                  src="images/ico/coins.svg"
-                  alt=""
-                />
-                <div class="text-base-semibold">2 500 Kč</div>
-              </div>
-            </div>
-            <div class="d-flex align-items-center gap-8">
-              <button
-                data-bs-toggle="modal"
-                data-bs-target="#bidsModal"
-                class="button-gray-800 w-100"
-              >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4a1 1 0 00-1 1v6H5a1 1 0 100 2h6v6a1 1 0 102 0v-6h6a1 1 0 100-2h-6V5a1 1 0 00-1-1z" fill="#1A1D1F"/></svg> Přihodit
-              </button>
-              <a class="product__like" href="#">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.878 7.79c.08.391.122.796.122 1.21 0 7.351-6.671 10.806-9.116 11.825a2.284 2.284 0 01-1.768 0 18.486 18.486 0 01-1.093-.499C7.108 18.881 2 15.432 2 9a6 6 0 0110-4.472A5.978 5.978 0 0116 3a6.003 6.003 0 015.878 4.79z" fill="#FF2B0E"/></svg>              </a>
-            </div>
-          </div>
-        </li>
-        <li class="masonry-products-grid__item">
-          <div class="product">
-            <a href="#" class="product__img">
-              <img
-                src="images/content/archiv/5.png"
-                alt="product"
-                loading="lazy"
-              />
-            </a>
+									<tr>
+										<td class="itemBtn">
+											<button class="auctionItems__btn">
+												<img src="images/ico/chevron-dark.svg" width="24" height="24" class="object-fit-contain" alt="" />
+											</button>
+										</td>
+										<td class="itemNum fw-medium">#14</td>
+										<td class="itemName">
+											<a href="#" class="underline fw-semibold d-flex align-items-center gap-4">
+												<img srcset="https://picsum.photos/56/56" width="56" height="56" class="rounded-sm object-fit-cover" alt="" />
+												Tomáš Kaberle (OH 2010, Vancouver, s podpisem)
+											</a>
+										</td>
 
-            <a href="#" class="text-xl-semibold mb-6 underline-hover d-block">
-              Reprezentační kšiltovka s originálním podpisem Jaromíra Jágra
-            </a>
-            <div class="text-sm-medium text-gray-400 mb-6">
-              Reprezentační kšiltovka Reebok ve velikosti L/XL s originálním
-              podpisem Jaromíra Jágra. Nová, včetně visačky.
-            </div>
-            <div class="d-flex flex-wrap gap-4 mb-6">
-              <div class="d-flex gap-2 align-items-center">
-                <img
-                  class="object-fit-contain"
-                  width="24"
-                  height="24"
-                  src="images/ico/timelapse.svg"
-                  alt=""
-                />
-                <div class="text-base-semibold">2 hod 45 min</div>
-              </div>
-              <div class="d-flex gap-2 align-items-center">
-                <img
-                  class="object-fit-contain"
-                  width="24"
-                  height="24"
-                  src="images/ico/coins.svg"
-                  alt=""
-                />
-                <div class="text-base-semibold">2 500 Kč</div>
-              </div>
-            </div>
-            <div class="d-flex align-items-center gap-8">
-              <button
-                data-bs-toggle="modal"
-                data-bs-target="#bidsModal"
-                class="button-primary-500 w-100"
-              >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4a1 1 0 00-1 1v6H5a1 1 0 100 2h6v6a1 1 0 102 0v-6h6a1 1 0 100-2h-6V5a1 1 0 00-1-1z" fill="#1A1D1F"/></svg> Přihodit
-              </button>
-              <a class="product__like" href="#">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 7.212l-1.334-1.194A4 4 0 004 9c0 3 1.34 5.212 3.032 6.85 1.722 1.667 3.748 2.668 4.854 3.13a.284.284 0 00.228 0c1.106-.462 3.132-1.463 4.854-3.13C18.66 14.212 20 12 20 9a4 4 0 00-6.666-2.982L12 7.212zm0-2.684A6 6 0 002 9c0 7.351 6.671 10.806 9.116 11.825.57.238 1.199.238 1.768 0C15.328 19.806 22 16.351 22 9a6 6 0 00-10-4.472z" fill="#6F767E"/></svg>              </a>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
+										<td class="fw-medium">499 Kč</td>
+										<td class="fw-medium">0x</td>
+										<td class="fw-medium">
+											50 Kč
+											<div class="text-gray-400 mt-1">10:58:44 20.2.2025</div>
+										</td>
+										<td class="text-gray-400 fw-medium">Zatím nikdo</td>
+										<td>
+											<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800 button-sm">
+												Přihodit
+											</button>
+										</td>
+									</tr>
+									<tr class="auction-details d-none">
+										<td></td>
+										<td></td>
+										<td></td>
+										<td colspan="2">
+											<div>
+												<div class="fw-semibold">Aktuální cena / vyvolávací cena</div>
+												<div class="fw-medium mt-1">499 Kč / 499 Kč</div>
+											</div>
+										</td>
 
-  <section class="py-20 bg-light position-relative">
-  <h3 class="h4 mb-14 px-5 text-center fw-semibold">
-    Sportovní artefakty podle klubů
-  </h3>
+										<td>
+											<div class="fw-semibold">Min. příhoz</div>
+											<div class="fw-medium mt-1">50 Kč</div>
+										</td>
+										<td colspan="2" class="text-start">
+											<div class="fw-semibold">Konec</div>
+											<div class="fw-medium mt-1">20:00:00 26.2.2025</div>
+										</td>
+									</tr>
 
-  <div class="swiper reference-swiper mb-16">
-    <ul role="list" class="swiper-wrapper infinite-scroll-swiper">
-            <li class="swiper-slide">
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="outline-none focus-visible:opacity-70"
-          tabindex="-1"
-        >
-          <img
-            src="https://www.slavia.cz/build/image/logo-with-outline.svg"
-            width="60"
-            height="60"
-            class="no-placeholder aspect-square"
-            loading="lazy"
-            alt=""
-          />
-        </a>
-      </li>
-      <li class="swiper-slide">
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="outline-none focus-visible:opacity-70"
-          tabindex="-1"
-        >
-          <img
-            src="https://www.fkvz.cz/assets/images/vz-logo.svg"
-            width="60"
-            height="60"
-            class="no-placeholder aspect-square"
-            loading="lazy"
-            alt=""
-          />
-        </a>
-      </li>
-      <li class="swiper-slide">
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="outline-none focus-visible:opacity-70"
-          tabindex="-1"
-        >
-          <img
-            src="https://www.hcsparta.cz/znaky/spa.png"
-            width="60"
-            height="60"
-            class="no-placeholder aspect-square"
-            loading="lazy"
-            alt=""
-          />
-        </a>
-      </li>
-            <li class="swiper-slide">
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="outline-none focus-visible:opacity-70"
-          tabindex="-1"
-        >
-          <img
-            src="https://www.slavia.cz/build/image/logo-with-outline.svg"
-            width="60"
-            height="60"
-            class="no-placeholder aspect-square"
-            loading="lazy"
-            alt=""
-          />
-        </a>
-      </li>
-      <li class="swiper-slide">
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="outline-none focus-visible:opacity-70"
-          tabindex="-1"
-        >
-          <img
-            src="https://www.fkvz.cz/assets/images/vz-logo.svg"
-            width="60"
-            height="60"
-            class="no-placeholder aspect-square"
-            loading="lazy"
-            alt=""
-          />
-        </a>
-      </li>
-      <li class="swiper-slide">
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="outline-none focus-visible:opacity-70"
-          tabindex="-1"
-        >
-          <img
-            src="https://www.hcsparta.cz/znaky/spa.png"
-            width="60"
-            height="60"
-            class="no-placeholder aspect-square"
-            loading="lazy"
-            alt=""
-          />
-        </a>
-      </li>
-            <li class="swiper-slide">
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="outline-none focus-visible:opacity-70"
-          tabindex="-1"
-        >
-          <img
-            src="https://www.slavia.cz/build/image/logo-with-outline.svg"
-            width="60"
-            height="60"
-            class="no-placeholder aspect-square"
-            loading="lazy"
-            alt=""
-          />
-        </a>
-      </li>
-      <li class="swiper-slide">
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="outline-none focus-visible:opacity-70"
-          tabindex="-1"
-        >
-          <img
-            src="https://www.fkvz.cz/assets/images/vz-logo.svg"
-            width="60"
-            height="60"
-            class="no-placeholder aspect-square"
-            loading="lazy"
-            alt=""
-          />
-        </a>
-      </li>
-      <li class="swiper-slide">
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="outline-none focus-visible:opacity-70"
-          tabindex="-1"
-        >
-          <img
-            src="https://www.hcsparta.cz/znaky/spa.png"
-            width="60"
-            height="60"
-            class="no-placeholder aspect-square"
-            loading="lazy"
-            alt=""
-          />
-        </a>
-      </li>
-            <li class="swiper-slide">
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="outline-none focus-visible:opacity-70"
-          tabindex="-1"
-        >
-          <img
-            src="https://www.slavia.cz/build/image/logo-with-outline.svg"
-            width="60"
-            height="60"
-            class="no-placeholder aspect-square"
-            loading="lazy"
-            alt=""
-          />
-        </a>
-      </li>
-      <li class="swiper-slide">
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="outline-none focus-visible:opacity-70"
-          tabindex="-1"
-        >
-          <img
-            src="https://www.fkvz.cz/assets/images/vz-logo.svg"
-            width="60"
-            height="60"
-            class="no-placeholder aspect-square"
-            loading="lazy"
-            alt=""
-          />
-        </a>
-      </li>
-      <li class="swiper-slide">
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="outline-none focus-visible:opacity-70"
-          tabindex="-1"
-        >
-          <img
-            src="https://www.hcsparta.cz/znaky/spa.png"
-            width="60"
-            height="60"
-            class="no-placeholder aspect-square"
-            loading="lazy"
-            alt=""
-          />
-        </a>
-      </li>
-            <li class="swiper-slide">
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="outline-none focus-visible:opacity-70"
-          tabindex="-1"
-        >
-          <img
-            src="https://www.slavia.cz/build/image/logo-with-outline.svg"
-            width="60"
-            height="60"
-            class="no-placeholder aspect-square"
-            loading="lazy"
-            alt=""
-          />
-        </a>
-      </li>
-      <li class="swiper-slide">
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="outline-none focus-visible:opacity-70"
-          tabindex="-1"
-        >
-          <img
-            src="https://www.fkvz.cz/assets/images/vz-logo.svg"
-            width="60"
-            height="60"
-            class="no-placeholder aspect-square"
-            loading="lazy"
-            alt=""
-          />
-        </a>
-      </li>
-      <li class="swiper-slide">
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="outline-none focus-visible:opacity-70"
-          tabindex="-1"
-        >
-          <img
-            src="https://www.hcsparta.cz/znaky/spa.png"
-            width="60"
-            height="60"
-            class="no-placeholder aspect-square"
-            loading="lazy"
-            alt=""
-          />
-        </a>
-      </li>
-          </ul>
-  </div>
+									<tr>
+										<td class="itemBtn">
+											<button class="auctionItems__btn">
+												<img src="images/ico/chevron-dark.svg" width="24" height="24" class="object-fit-contain" alt="" />
+											</button>
+										</td>
+										<td class="itemNum fw-medium">#987</td>
+										<td class="itemName">
+											<a href="#" class="underline fw-semibold d-flex align-items-center gap-4">
+												Cristiano Ronaldo (fotbalový génius, s podpisem)
+											</a>
+										</td>
 
-  <div class="container">
-    <ul
-      role="list"
-      class="pt-16 mb-20 d-flex flex-wrap justify-content-center gap-7 reference-cards border-top border-gray-300"
-    >
-      <li class="flex-3">
-        <article class="min-w-80 rounded-xl bg-gray-100b p-6">
-          <header
-            class="position-relative mb-4 d-flex gap-2 gap-sm-4 flex-md-row flex-column"
-          >
-            <img
-              src="images/content/ava-1.png"
-              width="48"
-              height="48"
-              class="aspect-square size-10 flex-shrink-0 object-fit-contain p-1 size-md-12"
-              loading="lazy"
-              alt=""
-            />
-            <div
-              class="d-flex flex-1 justify-content-between gap-2 max-lg:flex-col"
-            >
-              <div>
-                <h3 class="text-base-semibold text-gray-700">Jakub Novák</h3>
-                <p class="text-sm-medium text-gray-400 underline">
-                  Dres Jaromíra Jágra z MS v hokeji 2010
-                </p>
-              </div>
-            </div>
-          </header>
-          <div class="text-base-medium ps-md-16 text-gray-500">
-            Neuvěřitelný kousek historie. Dres je v perfektním stavu, a když ho
-            mám na sobě, cítím se, jako bych byl součástí týmu. Skvělý nákup pro
-            každého fanouška, který chce mít doma skutečný kus sportovní
-            historie!“
-          </div>
-        </article>
-      </li>
-      <li class="flex-3">
-        <article class="min-w-80 rounded-xl bg-gray-100b p-6">
-          <header
-            class="position-relative mb-4 d-flex gap-2 gap-sm-4 flex-md-row flex-column"
-          >
-            <img
-              src="images/content/ava-2.png"
-              width="48"
-              height="48"
-              class="aspect-square size-10 flex-shrink-0 object-fit-contain p-1 size-md-12"
-              loading="lazy"
-              alt=""
-            />
-            <div
-              class="d-flex flex-1 justify-content-between gap-2 max-lg:flex-col"
-            >
-              <div>
-                <h3 class="text-base-semibold text-gray-700">Lukáš Horák</h3>
-                <p class="text-sm-medium text-gray-400 underline">
-                  Hrané hokejky českých reprezentantů
-                </p>
-              </div>
-            </div>
-          </header>
-          <div class="text-base-medium ps-md-16 text-gray-500">
-            Fakt super kousek historie! Ten dres je v parádním stavu a když si
-            ho obleču, mám pocit, že patřím do týmu. Skvělý úlovek pro každého
-            fanouška, co chce mít doma kousek sportovní historie!
-          </div>
-        </article>
-      </li>
-      <li class="flex-3">
-        <article class="min-w-80 rounded-xl bg-gray-100b p-6">
-          <header
-            class="position-relative mb-4 d-flex gap-2 gap-sm-4 flex-md-row flex-column"
-          >
-            <img
-              src="images/content/ava-3.png"
-              width="48"
-              height="48"
-              class="aspect-square size-10 flex-shrink-0 object-fit-contain p-1 size-md-12"
-              loading="lazy"
-              alt=""
-            />
-            <div
-              class="d-flex flex-1 justify-content-between gap-2 max-lg:flex-col"
-            >
-              <div>
-                <h3 class="text-base-semibold text-gray-700">Petr Svoboda</h3>
-                <p class="text-sm-medium text-gray-400 underline">
-                  Berani Zlín - mistrovský dres naší hokejové legendy
-                </p>
-              </div>
-            </div>
-          </header>
-          <div class="text-base-medium ps-md-16 text-gray-500">
-            Úžasný kousek historie! Tenhle dres je v naprosto skvělém stavu a
-            když si ho obléknu, mám pocit, že patřím přímo do týmu. Je to
-            perfektní nákup pro každého fanouška, který chce mít doma opravdový
-            kousek sportovní historie!
-          </div>
-        </article>
-      </li>
-    </ul>
-    <div
-      class="position-relative z-index-3 rounded-xl bg-primary py-sm-16 py-12 px-sm-20 px-8 d-flex gap-lg-20 gap-10 align-items-center w-fit-content mx-auto flex-wrap justify-content-center"
-    >
-      <div
-        class="d-flex gap-8 justify-content-center align-items-center flex-wrap flex-md-nowrap flex-md-row flex-column"
-      >
-        <div class="rounded-xxl bg-light p-6">
-          <img
-            src="images/ico/bookmark.svg"
-            class="object-fit-content"
-            width="35"
-            height="35"
-            alt=""
-          />
-        </div>
-        <div class="text-light">
-          <h4 class="h4 mb-1">Chcete vytvořit vlastní aukci?</h4>
-          <p class="text-base-medium">
-            ... a vydělat balík na sběratelském artefaktu?
-          </p>
-        </div>
-      </div>
-      <button
-        data-bs-toggle="modal"
-        data-bs-target="#contactModal"
-        class="button-gray-800"
-      >
-        <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.63 4.007a1 1 0 011.363-.377l7.514 4.26a1 1 0 00.986 0l7.514-4.26a1 1 0 11.986 1.74L11.48 9.63a3 3 0 01-2.96 0L1.007 5.37A1 1 0 01.63 4.007z" fill="#fff"/><path fill-rule="evenodd" clip-rule="evenodd" d="M5.759 0h8.482c.805 0 1.47 0 2.01.044.563.046 1.08.145 1.565.392a4 4 0 011.748 1.748c.247.485.346 1.002.392 1.564C20 4.29 20 4.954 20 5.758v4.483c0 .805 0 1.47-.044 2.01-.046.563-.145 1.08-.392 1.565a4 4 0 01-1.748 1.748c-.485.247-1.002.346-1.564.392-.541.044-1.206.044-2.01.044H5.758c-.805 0-1.47 0-2.01-.044-.563-.046-1.08-.145-1.565-.392a4 4 0 01-1.748-1.748c-.247-.485-.346-1.002-.392-1.564C0 11.71 0 11.046 0 10.242V5.758c0-.805 0-1.47.044-2.01.046-.563.145-1.08.392-1.565A4 4 0 012.184.436C2.669.189 3.186.09 3.748.044 4.29 0 4.954 0 5.758 0zM3.91 2.038c-.438.035-.663.1-.819.18a2 2 0 00-.874.874c-.08.156-.145.38-.18.819C2 4.361 2 4.943 2 5.8v4.4c0 .857 0 1.439.038 1.889.035.438.1.663.18.819a2 2 0 00.874.874c.156.08.38.145.819.18C4.361 14 4.943 14 5.8 14h8.4c.857 0 1.439 0 1.889-.038.438-.035.663-.1.819-.18a2 2 0 00.874-.874c.08-.156.145-.38.18-.819.037-.45.038-1.032.038-1.889V5.8c0-.857 0-1.439-.038-1.889-.035-.438-.1-.663-.18-.819a2 2 0 00-.874-.874c-.156-.08-.38-.145-.819-.18C15.639 2 15.057 2 14.2 2H5.8c-.857 0-1.439 0-1.889.038z" fill="#fff"/></svg> Kontaktujte nás
-      </button>
-    </div>
-  </div>
-  <div
-  class="modal fade"
-  id="contactModal"
-  aria-labelledby="contactModalLabel"
-  tabindex="-1"
-  role="dialog"
->
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <button
-        type="button"
-        class="close"
-        data-bs-dismiss="modal"
-        aria-label="Close"
-      >
-        <img src="images/ico/close.svg" alt="" />
-      </button>
-      <h4 class="h4 text-gray-700 fw-semibold mb-6" id="contactModalLabel">
-        Kontaktní formulář
-      </h4>
-      <form class="row g-6">
-        <div class="col-sm-6">
-          <div class="d-grid gap-1">
-            <label class="text-sm-semibold" for="name"
-              >Vaše jméno a příjmení
-              <sup class="text-primary-500">*</sup></label
-            >
-            <input placeholder="Vyplňte" type="text" id="name" required />
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="d-grid gap-1">
-            <label class="text-sm-semibold" for="mail"
-              >Váš email <sup class="text-primary-500">*</sup></label
-            >
-            <input placeholder="@" type="email" id="mail" required />
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="grid gap-1">
-            <label class="text-sm-semibold" for="message"
-              >Vaše zpráva <sup class="text-primary-500">*</sup></label
-            >
-            <textarea id="message" rows="3" required></textarea>
-          </div>
-        </div>
-        <div class="col-12">
-          <div
-            class="d-flex gap-4 align-items-center flex-wrap flex-sm-row flex-column"
-          >
-            <button class="button-primary-500 w-sm-auto w-100">
-              Odeslat zprávu
-            </button>
-            <div class="text-gray-400 text-xs-medium" style="max-width: 268px">
-              *Odesláním zprávy souhlasíte se zpracováním osobních údajů a
-              <a class="underline" href="#">pravidly GDPR</a>.
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-</section>
-</main> -->
+										<td class="fw-medium">7990 Kč</td>
+										<td class="fw-medium">0x</td>
+										<td class="fw-medium">
+											50 Kč
+											<div class="text-gray-400 mt-1">10:58:44 20.2.2025</div>
+										</td>
+										<td class="text-gray-400 fw-medium">Zatím nikdo</td>
+										<td>
+											<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800 button-sm">
+												Přihodit
+											</button>
+										</td>
+									</tr>
+									<tr class="auction-details d-none">
+										<td></td>
+										<td></td>
+										<td></td>
+										<td colspan="2">
+											<div>
+												<div class="fw-semibold">Aktuální cena / vyvolávací cena</div>
+												<div class="fw-medium mt-1">499 Kč / 499 Kč</div>
+											</div>
+										</td>
+
+										<td>
+											<div class="fw-semibold">Min. příhoz</div>
+											<div class="fw-medium mt-1">9999 Kč</div>
+										</td>
+										<td colspan="2" class="text-start">
+											<div class="fw-semibold">Konec</div>
+											<div class="fw-medium mt-1">20:00:00 26.2.2025</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="itemBtn">
+											<button class="auctionItems__btn">
+												<img src="images/ico/chevron-dark.svg" width="24" height="24" class="object-fit-contain" alt="" />
+											</button>
+										</td>
+										<td class="itemNum fw-medium">#68</td>
+										<td class="itemName">
+											<a href="#" class="underline fw-semibold d-flex align-items-center gap-4">
+												Jaromír Jágr (hokej Kladno, po návratu z NHL)
+											</a>
+										</td>
+
+										<td class="fw-medium">499 Kč</td>
+										<td class="fw-medium">0x</td>
+										<td class="fw-medium">
+											50 Kč
+											<div class="text-gray-400 mt-1">10:58:44 20.2.2025</div>
+										</td>
+										<td class="text-gray-400 fw-medium">Zatím nikdo</td>
+										<td>
+											<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800 button-sm">
+												Přihodit
+											</button>
+										</td>
+									</tr>
+									<tr class="auction-details d-none">
+										<td></td>
+										<td></td>
+										<td></td>
+										<td colspan="2">
+											<div>
+												<div class="fw-semibold">Aktuální cena / vyvolávací cena</div>
+												<div class="fw-medium mt-1">499 Kč / 499 Kč</div>
+											</div>
+										</td>
+
+										<td>
+											<div class="fw-semibold">Min. příhoz</div>
+											<div class="fw-medium mt-1">50 Kč</div>
+										</td>
+										<td colspan="2" class="text-start">
+											<div class="fw-semibold">Konec</div>
+											<div class="fw-medium mt-1">20:00:00 26.2.2025</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="itemBtn">
+											<button class="auctionItems__btn">
+												<img src="images/ico/chevron-dark.svg" width="24" height="24" class="object-fit-contain" alt="" />
+											</button>
+										</td>
+										<td class="itemNum fw-medium">#14</td>
+										<td class="itemName">
+											<a href="#" class="underline fw-semibold d-flex align-items-center gap-4">
+												Lionel Messi (žijící legenda, s podpisem)
+											</a>
+										</td>
+
+										<td class="fw-medium">20 000 Kč</td>
+										<td class="fw-medium">0x</td>
+										<td class="fw-medium">
+											50 Kč
+											<div class="text-gray-400 mt-1">10:58:44 20.2.2025</div>
+										</td>
+										<td class="text-gray-400 fw-medium">Zatím nikdo</td>
+										<td>
+											<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800 button-sm">
+												Přihodit
+											</button>
+										</td>
+									</tr>
+									<tr class="auction-details d-none">
+										<td></td>
+										<td></td>
+										<td></td>
+										<td colspan="2">
+											<div>
+												<div class="fw-semibold">Aktuální cena / vyvolávací cena</div>
+												<div class="fw-medium mt-1">499 Kč / 499 Kč</div>
+											</div>
+										</td>
+
+										<td>
+											<div class="fw-semibold">Min. příhoz</div>
+											<div class="fw-medium mt-1">50 Kč</div>
+										</td>
+										<td colspan="2" class="text-start">
+											<div class="fw-semibold">Konec</div>
+											<div class="fw-medium mt-1">20:00:00 26.2.2025</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="itemBtn">
+											<button class="auctionItems__btn">
+												<img src="images/ico/chevron-dark.svg" width="24" height="24" class="object-fit-contain" alt="" />
+											</button>
+										</td>
+										<td class="itemNum fw-medium">#987</td>
+										<td class="itemName">
+											<a href="#" class="underline fw-semibold d-flex align-items-center gap-4">
+												Cristiano Ronaldo (fotbalový génius, s podpisem)
+											</a>
+										</td>
+
+										<td class="fw-medium">7990 Kč</td>
+										<td class="fw-medium">0x</td>
+										<td class="fw-medium">
+											50 Kč
+											<div class="text-gray-400 mt-1">10:58:44 20.2.2025</div>
+										</td>
+										<td class="text-gray-400 fw-medium">Zatím nikdo</td>
+										<td>
+											<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800 button-sm">
+												Přihodit
+											</button>
+										</td>
+									</tr>
+									<tr class="auction-details d-none">
+										<td></td>
+										<td></td>
+										<td></td>
+										<td colspan="2">
+											<div>
+												<div class="fw-semibold">Aktuální cena / vyvolávací cena</div>
+												<div class="fw-medium mt-1">499 Kč / 499 Kč</div>
+											</div>
+										</td>
+
+										<td>
+											<div class="fw-semibold">Min. příhoz</div>
+											<div class="fw-medium mt-1">9999 Kč</div>
+										</td>
+										<td colspan="2" class="text-start">
+											<div class="fw-semibold">Konec</div>
+											<div class="fw-medium mt-1">20:00:00 26.2.2025</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="itemBtn">
+											<button class="auctionItems__btn">
+												<img src="images/ico/chevron-dark.svg" width="24" height="24" class="object-fit-contain" alt="" />
+											</button>
+										</td>
+										<td class="itemNum fw-medium">#68</td>
+										<td class="itemName">
+											<a href="#" class="underline fw-semibold d-flex align-items-center gap-4">
+												Jaromír Jágr (hokej Kladno, po návratu z NHL)
+											</a>
+										</td>
+
+										<td class="fw-medium">499 Kč</td>
+										<td class="fw-medium">0x</td>
+										<td class="fw-medium">
+											50 Kč
+											<div class="text-gray-400 mt-1">10:58:44 20.2.2025</div>
+										</td>
+										<td class="text-gray-400 fw-medium">Zatím nikdo</td>
+										<td>
+											<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800 button-sm">
+												Přihodit
+											</button>
+										</td>
+									</tr>
+									<tr class="auction-details d-none">
+										<td></td>
+										<td></td>
+										<td></td>
+										<td colspan="2">
+											<div>
+												<div class="fw-semibold">Aktuální cena / vyvolávací cena</div>
+												<div class="fw-medium mt-1">499 Kč / 499 Kč</div>
+											</div>
+										</td>
+
+										<td>
+											<div class="fw-semibold">Min. příhoz</div>
+											<div class="fw-medium mt-1">50 Kč</div>
+										</td>
+										<td colspan="2" class="text-start">
+											<div class="fw-semibold">Konec</div>
+											<div class="fw-medium mt-1">20:00:00 26.2.2025</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="itemBtn">
+											<button class="auctionItems__btn">
+												<img src="images/ico/chevron-dark.svg" width="24" height="24" class="object-fit-contain" alt="" />
+											</button>
+										</td>
+										<td class="itemNum fw-medium">#14</td>
+										<td class="itemName">
+											<a href="#" class="underline fw-semibold d-flex align-items-center gap-4">
+												David Beckham (fotbalová ikona, s podpisem)
+											</a>
+										</td>
+
+										<td class="fw-medium">3 000 Kč</td>
+										<td class="fw-medium">0x</td>
+										<td class="fw-medium">
+											50 Kč
+											<div class="text-gray-400 mt-1">10:58:44 20.2.2025</div>
+										</td>
+										<td class="text-gray-400 fw-medium">Zatím nikdo</td>
+										<td>
+											<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800 button-sm">
+												Přihodit
+											</button>
+										</td>
+									</tr>
+									<tr class="auction-details d-none">
+										<td></td>
+										<td></td>
+										<td></td>
+										<td colspan="2">
+											<div>
+												<div class="fw-semibold">Aktuální cena / vyvolávací cena</div>
+												<div class="fw-medium mt-1">499 Kč / 499 Kč</div>
+											</div>
+										</td>
+
+										<td>
+											<div class="fw-semibold">Min. příhoz</div>
+											<div class="fw-medium mt-1">50 Kč</div>
+										</td>
+										<td colspan="2" class="text-start">
+											<div class="fw-semibold">Konec</div>
+											<div class="fw-medium mt-1">20:00:00 26.2.2025</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="itemBtn">
+											<button class="auctionItems__btn">
+												<img src="images/ico/chevron-dark.svg" width="24" height="24" class="object-fit-contain" alt="" />
+											</button>
+										</td>
+										<td class="itemNum fw-medium">#987</td>
+										<td class="itemName">
+											<a href="#" class="underline fw-semibold d-flex align-items-center gap-4">
+												Cristiano Ronaldo (fotbalový génius, s podpisem)
+											</a>
+										</td>
+
+										<td class="fw-medium">7990 Kč</td>
+										<td class="fw-medium">0x</td>
+										<td class="fw-medium">
+											50 Kč
+											<div class="text-gray-400 mt-1">10:58:44 20.2.2025</div>
+										</td>
+										<td class="text-gray-400 fw-medium">Zatím nikdo</td>
+										<td>
+											<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800 button-sm">
+												Přihodit
+											</button>
+										</td>
+									</tr>
+									<tr class="auction-details d-none">
+										<td></td>
+										<td></td>
+										<td></td>
+										<td colspan="2">
+											<div>
+												<div class="fw-semibold">Aktuální cena / vyvolávací cena</div>
+												<div class="fw-medium mt-1">499 Kč / 499 Kč</div>
+											</div>
+										</td>
+
+										<td>
+											<div class="fw-semibold">Min. příhoz</div>
+											<div class="fw-medium mt-1">9999 Kč</div>
+										</td>
+										<td colspan="2" class="text-start">
+											<div class="fw-semibold">Konec</div>
+											<div class="fw-medium mt-1">20:00:00 26.2.2025</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<nav aria-label="Další stránky">
+							<ul class="pagination d-flex flex-wrap pagination-flat pagination-success">
+								<li class="page-item page-item__prev disabled">
+									<a data-abc="true" href="#" class="button-stroke">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.707 5.293a1 1 0 010 1.414L10.414 12l5.293 5.293a1 1 0 01-1.414 1.414l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 0z" fill="#6F767E" />
+										</svg> Zpět
+									</a>
+								</li>
+								<li class="page-item active">
+									<a class="page-link button-primary-500" href="#" data-abc="true">1</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link button-stroke" href="#" data-abc="true">2</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link button-stroke" href="#" data-abc="true">3</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#" data-abc="true">...</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link button-stroke" href="#" data-abc="true">8</a>
+								</li>
+
+								<li class="page-item page-item__next">
+									<a class="button-stroke" href="#" data-abc="true">
+										Další strana <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M8.293 5.293a1 1 0 000 1.414L13.586 12l-5.293 5.293a1 1 0 101.414 1.414l6-6a1 1 0 000-1.414l-6-6a1 1 0 00-1.414 0z" fill="#1A1D1F" />
+										</svg> </a>
+								</li>
+							</ul>
+						</nav>
+						<div class="modal fade" id="bidsModal" aria-labelledby="bidsModalLabel" tabindex="-1" role="dialog">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+										<img src="images/ico/close.svg" alt="" />
+									</button>
+									<h4 class="h4 text-gray-700 fw-semibold mb-6" id="bidsModalLabel">
+										Přihození
+									</h4>
+									<div class="text-sm-bold mb-1">Přihazujete k položce</div>
+									<div class="text-sm-medium mb-5">#21 Baláž Ondřej</div>
+									<div class="text-sm-bold mb-1">Konec aukce</div>
+									<div class="text-sm-medium mb-5">
+										20:00:00 28.2.2025
+										<span class="text-sm-semibold text-primary-500">(2 hod 45 min)</span>
+									</div>
+									<div class="text-sm-bold mb-1">Aktuální cena</div>
+									<div class="text-sm-medium mb-5">3 490 Kč</div>
+
+									<form class="">
+										<div class="row g-5 mb-1">
+											<div class="col-sm-6">
+												<div class="d-grid gap-1">
+													<label class="text-sm-semibold" for="name">Přihodit </label>
+													<input value="200 Kč" type="text" id="prihodit" />
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="d-grid gap-1">
+													<label class="text-sm-semibold" for="name">Nová cena </label>
+													<input value="3 690 Kč" type="text" id="cena" required />
+												</div>
+											</div>
+										</div>
+										<div class="text-gray-475 text-xs-medium mb-5">100 Kč - 3 0000 Kč</div>
+										<div class="text-sm-semibold d-flex align-items-center gap-1 mb-2">
+											Vaše maximální cena
+											<img src="images/ico/crown-primary.svg" width="16" height="16" class="object-fit-contain" alt="" />
+										</div>
+										<div class="d-grid mb-1">
+											<input value="5 690 Kč" type="text" id="maxcena" />
+										</div>
+										<div class="text-gray-475 text-xs-medium mb-5">
+											Budete automaticky přihazovat, do této hodnoty.
+										</div>
+										<button class="button-primary-500 w-100">Závazně přihodit</button>
+									</form>
+
+									<div class="d-flex gap-2 border-top border-2 border-gray-300 pt-5 mt-5">
+										<img src="images/ico/cr-fr.svg" class="object-fit-contain" width="16" height="16" alt="" />
+										<div class="text-sm-medium">
+											Přihozením na položku projevujete souhlas s
+											<a href="#" class="text-primary-500 underline">pravidly aukce</a>.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tableBids p-6 bg-gray-100 rounded-lg mb-14">
+					<h3 class="h5 mb-4 fw-semibold">Příhozy</h3>
+					<div class="table-responsive">
+						<table>
+							<thead>
+								<tr>
+									<th class="text-start"><a href="#">Název předmětu / dresu</a></th>
+									<th class="text-start"><a href="#">Cena</a></th>
+									<th class="text-start"><a href="#">Čas</a></th>
+									<th class="text-start"><a href="#">Přihazující</a></th>
+									<th>Akce</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<a href="#" class="underline fw-semibold">
+											Aukce dresů ze sedmého ročníku projektu PIRÁTI CHOMUTOV PRO
+											NEMOCNICI
+										</a>
+									</td>
+
+									<td class="fw-semibold">1 500 Kč</td>
+									<td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
+									<td class="fw-semibold">Petr F.</td>
+									<td>
+										<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800 button-sm">
+											Přihodit
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#" class="underline fw-semibold">
+											Benefiční aukce dresů z utkání Zlín Stars vs. Real Top Praha
+										</a>
+									</td>
+
+									<td class="fw-semibold">1 500 Kč</td>
+									<td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
+									<td class="fw-semibold">Jarmil P.</td>
+									<td>
+										<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800 button-sm">
+											Přihodit
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#" class="underline fw-semibold">
+											Charitativní aukce dresů fotbalového klubu FK Teplice
+										</a>
+									</td>
+
+									<td class="fw-semibold">2 000 Kč</td>
+									<td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
+									<td class="fw-semibold">Antonín S.</td>
+									<td>
+										<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800 button-sm">
+											Přihodit
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#" class="underline fw-semibold">
+											Aukce dresů z utkání HC Vítkovice Ridera
+										</a>
+									</td>
+
+									<td class="fw-semibold">1 800 Kč</td>
+									<td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
+									<td class="fw-semibold">Martin P.</td>
+									<td>
+										<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800 button-sm">
+											Přihodit
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#" class="underline fw-semibold">
+											Aukce dresů ze sedmého ročníku projektu PIRÁTI CHOMUTOV PRO
+											NEMOCNICI
+										</a>
+									</td>
+
+									<td class="fw-semibold">1 500 Kč</td>
+									<td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
+									<td class="fw-semibold">Petr F.</td>
+									<td>
+										<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800 button-sm">
+											Přihodit
+										</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="modal fade" id="bidsModal" aria-labelledby="bidsModalLabel" tabindex="-1" role="dialog">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+									<img src="images/ico/close.svg" alt="" />
+								</button>
+								<h4 class="h4 text-gray-700 fw-semibold mb-6" id="bidsModalLabel">
+									Přihození
+								</h4>
+								<div class="text-sm-bold mb-1">Přihazujete k položce</div>
+								<div class="text-sm-medium mb-5">#21 Baláž Ondřej</div>
+								<div class="text-sm-bold mb-1">Konec aukce</div>
+								<div class="text-sm-medium mb-5">
+									20:00:00 28.2.2025
+									<span class="text-sm-semibold text-primary-500">(2 hod 45 min)</span>
+								</div>
+								<div class="text-sm-bold mb-1">Aktuální cena</div>
+								<div class="text-sm-medium mb-5">3 490 Kč</div>
+
+								<form class="">
+									<div class="row g-5 mb-1">
+										<div class="col-sm-6">
+											<div class="d-grid gap-1">
+												<label class="text-sm-semibold" for="name">Přihodit </label>
+												<input value="200 Kč" type="text" id="prihodit" />
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="d-grid gap-1">
+												<label class="text-sm-semibold" for="name">Nová cena </label>
+												<input value="3 690 Kč" type="text" id="cena" required />
+											</div>
+										</div>
+									</div>
+									<div class="text-gray-475 text-xs-medium mb-5">100 Kč - 3 0000 Kč</div>
+									<div class="text-sm-semibold d-flex align-items-center gap-1 mb-2">
+										Vaše maximální cena
+										<img src="images/ico/crown-primary.svg" width="16" height="16" class="object-fit-contain" alt="" />
+									</div>
+									<div class="d-grid mb-1">
+										<input value="5 690 Kč" type="text" id="maxcena" />
+									</div>
+									<div class="text-gray-475 text-xs-medium mb-5">
+										Budete automaticky přihazovat, do této hodnoty.
+									</div>
+									<button class="button-primary-500 w-100">Závazně přihodit</button>
+								</form>
+
+								<div class="d-flex gap-2 border-top border-2 border-gray-300 pt-5 mt-5">
+									<img src="images/ico/cr-fr.svg" class="object-fit-contain" width="16" height="16" alt="" />
+									<div class="text-sm-medium">
+										Přihozením na položku projevujete souhlas s
+										<a href="#" class="text-primary-500 underline">pravidly aukce</a>.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="py-20 bg-light position-relative">
+				<h3 class="h4 mb-14 px-5 text-center fw-semibold">
+					Sportovní artefakty podle klubů
+				</h3>
+
+				<div class="swiper reference-swiper mb-16">
+					<ul role="list" class="swiper-wrapper infinite-scroll-swiper">
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
+								<img src="https://www.slavia.cz/build/image/logo-with-outline.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
+								<img src="https://www.fkvz.cz/assets/images/vz-logo.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
+								<img src="https://www.hcsparta.cz/znaky/spa.png" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
+								<img src="https://www.slavia.cz/build/image/logo-with-outline.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
+								<img src="https://www.fkvz.cz/assets/images/vz-logo.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
+								<img src="https://www.hcsparta.cz/znaky/spa.png" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
+								<img src="https://www.slavia.cz/build/image/logo-with-outline.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
+								<img src="https://www.fkvz.cz/assets/images/vz-logo.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
+								<img src="https://www.hcsparta.cz/znaky/spa.png" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
+								<img src="https://www.slavia.cz/build/image/logo-with-outline.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
+								<img src="https://www.fkvz.cz/assets/images/vz-logo.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
+								<img src="https://www.hcsparta.cz/znaky/spa.png" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
+								<img src="https://www.slavia.cz/build/image/logo-with-outline.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
+								<img src="https://www.fkvz.cz/assets/images/vz-logo.svg" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none focus-visible:opacity-70" tabindex="-1">
+								<img src="https://www.hcsparta.cz/znaky/spa.png" width="60" height="60" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="container">
+					<ul role="list" class="pt-16 mb-20 d-flex flex-wrap justify-content-center gap-7 reference-cards border-top border-gray-300">
+						<li class="flex-3">
+							<article class="min-w-80 rounded-xl bg-gray-100b p-6">
+								<header class="position-relative mb-4 d-flex gap-2 gap-sm-4 flex-md-row flex-column">
+									<img src="images/content/ava-1.png" width="48" height="48" class="aspect-square size-10 flex-shrink-0 object-fit-contain p-1 size-md-12" loading="lazy" alt="" />
+									<div class="d-flex flex-1 justify-content-between gap-2 max-lg:flex-col">
+										<div>
+											<h3 class="text-base-semibold text-gray-700">Jakub Novák</h3>
+											<p class="text-sm-medium text-gray-400 underline">
+												Dres Jaromíra Jágra z MS v hokeji 2010
+											</p>
+										</div>
+									</div>
+								</header>
+								<div class="text-base-medium ps-md-16 text-gray-500">
+									Neuvěřitelný kousek historie. Dres je v perfektním stavu, a když ho
+									mám na sobě, cítím se, jako bych byl součástí týmu. Skvělý nákup pro
+									každého fanouška, který chce mít doma skutečný kus sportovní
+									historie!“
+								</div>
+							</article>
+						</li>
+						<li class="flex-3">
+							<article class="min-w-80 rounded-xl bg-gray-100b p-6">
+								<header class="position-relative mb-4 d-flex gap-2 gap-sm-4 flex-md-row flex-column">
+									<img src="images/content/ava-2.png" width="48" height="48" class="aspect-square size-10 flex-shrink-0 object-fit-contain p-1 size-md-12" loading="lazy" alt="" />
+									<div class="d-flex flex-1 justify-content-between gap-2 max-lg:flex-col">
+										<div>
+											<h3 class="text-base-semibold text-gray-700">Lukáš Horák</h3>
+											<p class="text-sm-medium text-gray-400 underline">
+												Hrané hokejky českých reprezentantů
+											</p>
+										</div>
+									</div>
+								</header>
+								<div class="text-base-medium ps-md-16 text-gray-500">
+									Fakt super kousek historie! Ten dres je v parádním stavu a když si
+									ho obleču, mám pocit, že patřím do týmu. Skvělý úlovek pro každého
+									fanouška, co chce mít doma kousek sportovní historie!
+								</div>
+							</article>
+						</li>
+						<li class="flex-3">
+							<article class="min-w-80 rounded-xl bg-gray-100b p-6">
+								<header class="position-relative mb-4 d-flex gap-2 gap-sm-4 flex-md-row flex-column">
+									<img src="images/content/ava-3.png" width="48" height="48" class="aspect-square size-10 flex-shrink-0 object-fit-contain p-1 size-md-12" loading="lazy" alt="" />
+									<div class="d-flex flex-1 justify-content-between gap-2 max-lg:flex-col">
+										<div>
+											<h3 class="text-base-semibold text-gray-700">Petr Svoboda</h3>
+											<p class="text-sm-medium text-gray-400 underline">
+												Berani Zlín - mistrovský dres naší hokejové legendy
+											</p>
+										</div>
+									</div>
+								</header>
+								<div class="text-base-medium ps-md-16 text-gray-500">
+									Úžasný kousek historie! Tenhle dres je v naprosto skvělém stavu a
+									když si ho obléknu, mám pocit, že patřím přímo do týmu. Je to
+									perfektní nákup pro každého fanouška, který chce mít doma opravdový
+									kousek sportovní historie!
+								</div>
+							</article>
+						</li>
+					</ul>
+					<div class="position-relative z-index-3 rounded-xl bg-primary py-sm-16 py-12 px-sm-20 px-8 d-flex gap-lg-20 gap-10 align-items-center w-fit-content mx-auto flex-wrap justify-content-center">
+						<div class="d-flex gap-8 justify-content-center align-items-center flex-wrap flex-md-nowrap flex-md-row flex-column">
+							<div class="rounded-xxl bg-light p-6">
+								<img src="images/ico/bookmark.svg" class="object-fit-content" width="35" height="35" alt="" />
+							</div>
+							<div class="text-light">
+								<h4 class="h4 mb-1">Chcete vytvořit vlastní aukci?</h4>
+								<p class="text-base-medium">
+									... a vydělat balík na sběratelském artefaktu?
+								</p>
+							</div>
+						</div>
+						<button data-bs-toggle="modal" data-bs-target="#contactModal" class="button-gray-800">
+							<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M.63 4.007a1 1 0 011.363-.377l7.514 4.26a1 1 0 00.986 0l7.514-4.26a1 1 0 11.986 1.74L11.48 9.63a3 3 0 01-2.96 0L1.007 5.37A1 1 0 01.63 4.007z" fill="#fff" />
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M5.759 0h8.482c.805 0 1.47 0 2.01.044.563.046 1.08.145 1.565.392a4 4 0 011.748 1.748c.247.485.346 1.002.392 1.564C20 4.29 20 4.954 20 5.758v4.483c0 .805 0 1.47-.044 2.01-.046.563-.145 1.08-.392 1.565a4 4 0 01-1.748 1.748c-.485.247-1.002.346-1.564.392-.541.044-1.206.044-2.01.044H5.758c-.805 0-1.47 0-2.01-.044-.563-.046-1.08-.145-1.565-.392a4 4 0 01-1.748-1.748c-.247-.485-.346-1.002-.392-1.564C0 11.71 0 11.046 0 10.242V5.758c0-.805 0-1.47.044-2.01.046-.563.145-1.08.392-1.565A4 4 0 012.184.436C2.669.189 3.186.09 3.748.044 4.29 0 4.954 0 5.758 0zM3.91 2.038c-.438.035-.663.1-.819.18a2 2 0 00-.874.874c-.08.156-.145.38-.18.819C2 4.361 2 4.943 2 5.8v4.4c0 .857 0 1.439.038 1.889.035.438.1.663.18.819a2 2 0 00.874.874c.156.08.38.145.819.18C4.361 14 4.943 14 5.8 14h8.4c.857 0 1.439 0 1.889-.038.438-.035.663-.1.819-.18a2 2 0 00.874-.874c.08-.156.145-.38.18-.819.037-.45.038-1.032.038-1.889V5.8c0-.857 0-1.439-.038-1.889-.035-.438-.1-.663-.18-.819a2 2 0 00-.874-.874c-.156-.08-.38-.145-.819-.18C15.639 2 15.057 2 14.2 2H5.8c-.857 0-1.439 0-1.889.038z" fill="#fff" />
+							</svg> Kontaktujte nás
+						</button>
+					</div>
+				</div>
+				<div class="modal fade" id="contactModal" aria-labelledby="contactModalLabel" tabindex="-1" role="dialog">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+								<img src="images/ico/close.svg" alt="" />
+							</button>
+							<h4 class="h4 text-gray-700 fw-semibold mb-6" id="contactModalLabel">
+								Kontaktní formulář
+							</h4>
+							<form class="row g-6">
+								<div class="col-sm-6">
+									<div class="d-grid gap-1">
+										<label class="text-sm-semibold" for="name">Vaše jméno a příjmení
+											<sup class="text-primary-500">*</sup></label>
+										<input placeholder="Vyplňte" type="text" id="name" required />
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="d-grid gap-1">
+										<label class="text-sm-semibold" for="mail">Váš email <sup class="text-primary-500">*</sup></label>
+										<input placeholder="@" type="email" id="mail" required />
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="grid gap-1">
+										<label class="text-sm-semibold" for="message">Vaše zpráva <sup class="text-primary-500">*</sup></label>
+										<textarea id="message" rows="3" required></textarea>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="d-flex gap-4 align-items-center flex-wrap flex-sm-row flex-column">
+										<button class="button-primary-500 w-sm-auto w-100">
+											Odeslat zprávu
+										</button>
+										<div class="text-gray-400 text-xs-medium" style="max-width: 268px">
+											*Odesláním zprávy souhlasíte se zpracováním osobních údajů a
+											<a class="underline" href="#">pravidly GDPR</a>.
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
 		<footer class="main-footer bg-light position-relative">
 			<div class="container">

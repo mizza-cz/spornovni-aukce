@@ -1,6 +1,5 @@
 {% extends "@components/base/base.twig" %} {% set title = "05.0_club-detail" %}
-{% block main %}
- {% include "@components/header/header.twig" %}
+{% block main %} {% include "@components/header/header.twig" %}
 <main id="main-content" class="main" aria-label="Hlavní obsah">
   <section class="container pt-14">
     {% include "@components/club-detail/club-detail.twig" %}
@@ -102,9 +101,13 @@
                   <h3 class="text-base-semibold">5 000 Kč</h3>
                 </div>
               </div>
-              <a href="#" class="button-gray-800">
+              <button
+                data-bs-toggle="modal"
+                data-bs-target="#bidsModal"
+                class="button-gray-800"
+              >
                 {% include "@images/plus.svg" %} Přihodit
-              </a>
+              </button>
             </div>
           </li>
           <li class="swiper-slide">
@@ -138,9 +141,13 @@
                   <h3 class="text-base-semibold">5 000 Kč</h3>
                 </div>
               </div>
-              <a href="#" class="button-gray-800">
+              <button
+                data-bs-toggle="modal"
+                data-bs-target="#bidsModal"
+                class="button-gray-800"
+              >
                 {% include "@images/plus.svg" %} Přihodit
-              </a>
+              </button>
             </div>
           </li>
           {% endfor %}

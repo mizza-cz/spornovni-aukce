@@ -34,7 +34,13 @@
                 <a class="text-sm-semibold" href="#">PRO účet</a>
               </li>
               <li>
-                <a class="text-sm-semibold" href="#">Změnit heslo</a>
+                <button
+                  class="text-sm-semibold"
+                  data-bs-toggle="modal"
+                  data-bs-target="#passwordModal"
+                >
+                  Změnit heslo
+                </button>
               </li>
               <li>
                 <a class="text-sm-semibold" href="#">Vydražené předměty</a>
@@ -170,7 +176,13 @@
                 <a class="text-sm-semibold" href="#">PRO účet</a>
               </li>
               <li>
-                <a class="text-sm-semibold" href="#">Změnit heslo</a>
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#passwordModal"
+                  class="text-sm-semibold"
+                >
+                  Změnit heslo
+                </button>
               </li>
               <li>
                 <a class="text-sm-semibold" href="#">Vydražené předměty</a>
@@ -348,4 +360,4 @@
     </div>
   </div>
 </header>
-{% include "@components/modal/modal-login.twig" %}
+{% include "@components/modal/modal-password.twig" %}

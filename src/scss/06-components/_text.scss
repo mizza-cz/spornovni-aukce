@@ -12,6 +12,7 @@
   font-size: 3rem;
   line-height: 3rem;
   letter-spacing: -0.02em;
+  font-weight: 600;
   @include media-breakpoint-down(md) {
     font-size: 2.5rem;
     line-height: 3rem;
@@ -55,7 +56,7 @@
   letter-spacing: -0.4px;
 }
 
-.text-base-bold {
+.text-bases-bold {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5rem;
@@ -68,6 +69,7 @@
   line-height: 1.5rem;
   letter-spacing: -0.16px;
 }
+
 
 .text-base-regular {
   font-size: 1rem;

@@ -3,7 +3,52 @@
 "@components/header/header-login.twig" %}
 <main id="main-content" class="main pb-lg-20" aria-label="Hlavní obsah">
   <section class="profile my-14 mx-3 mx-auto p-6 bg-gray-100 rounded-lg">
-    {% include "@components/aside/aside.twig" %}
+    <aside class="aside">
+      <ul class="aside__menu d-flex gap-2 flex-column">
+        <li>
+          <a class="text-sm-semibold text-gray-400 py-2 px-3 d-block" href="#"
+            >Můj profil</a
+          >
+        </li>
+        <li>
+          <a class="text-sm-semibold text-gray-400 py-2 px-3 d-block" href="#"
+            >PRO účet</a
+          >
+        </li>
+        <li>
+          <button
+            data-bs-toggle="modal"
+            data-bs-target="#passwordModal"
+            class="text-sm-semibold text-gray-400 py-2 px-3 d-block"
+          >
+            Změnit heslo
+          </button>
+        </li>
+        <li>
+          <a class="text-sm-semibold text-gray-400 py-2 px-3 d-block" href="#"
+            >Vydražené předměty</a
+          >
+        </li>
+        <li>
+          <a
+            class="active text-sm-semibold text-gray-400 py-2 px-3 d-block"
+            href="#"
+            >Přihazuji předměty</a
+          >
+        </li>
+        <li>
+          <a class="text-sm-semibold text-gray-400 py-2 px-3 d-block" href="#"
+            >Přihazuji aukce</a
+          >
+        </li>
+        <li>
+          <a class="text-sm-semibold text-gray-400 py-2 px-3 d-block" href="#"
+            >Nevyhráno</a
+          >
+        </li>
+      </ul>
+      {% include "@components/modal/modal-password.twig" %}
+    </aside>
     <div class="profile__content">
       <h1 class="profile__title text-xl-semibold text-gray-700 mb-6">
         Přihazuji aukce
