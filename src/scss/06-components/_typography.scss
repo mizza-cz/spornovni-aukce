@@ -138,7 +138,10 @@
     font-weight: 400;
     line-height: 2rem;
     letter-spacing: -0.4px;
-
+    @include media-breakpoint-down(lg) {
+      padding: 1rem;
+      padding-left: calc(2rem + 0.25rem);
+    }
     &::before {
       content: "";
       position: absolute;
@@ -148,6 +151,9 @@
       width: 0.25rem;
       margin-right: 2rem;
       background-color: var(--color-primary-500);
+      @include media-breakpoint-down(lg) {
+        left: 1rem;
+      }
     }
   }
 }
