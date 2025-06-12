@@ -1,5 +1,4 @@
 (function () {
-  // Подождем пока страница полностью загрузится
   if (document.readyState === "loading") {
     document.addEventListener("readystatechange", init);
   } else {
@@ -9,26 +8,32 @@
   function init() {
     const buttons = document.querySelectorAll(".auctionItems__btn");
 
-    if (!buttons.length) return; // Нет кнопок — выходим
+    if (!buttons.length) return;
 
     buttons.forEach((btn) => {
       btn.addEventListener("click", () => {
         const currentRow = btn.closest("tr");
         const detailsRow = currentRow.nextElementSibling;
 
-        // Закрыть все другие строки
+        // Закрыть все другие строки и снять классы
         document.querySelectorAll(".auction-details").forEach((row) => {
-          if (row !== detailsRow) row.classList.add("d-none");
-        });
+          if (row !== detailsRow) {
+            row.classList.add("d-none");
 
-        // Убрать "active" с других кнопок
-        buttons.forEach((b) => {
-          if (b !== btn) b.classList.remove("active");
+            const parentTr = row.previousElementSibling;
+            if (parentTr) {
+              parentTr.classList.remove("active-row");
+              const btnInRow = parentTr.querySelector(".auctionItems__btn");
+              if (btnInRow) btnInRow.classList.remove("active");
+            }
+          }
         });
 
         // Переключить текущие
-        detailsRow.classList.toggle("d-none");
-        btn.classList.toggle("active");
+        const isHidden = detailsRow.classList.contains("d-none");
+        detailsRow.classList.toggle("d-none", !isHidden);
+        btn.classList.toggle("active", isHidden);
+        currentRow.classList.toggle("active-row", isHidden);
       });
     });
   }
