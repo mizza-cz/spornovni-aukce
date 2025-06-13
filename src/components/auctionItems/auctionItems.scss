@@ -31,6 +31,22 @@
   width: 368px;
   min-width: 368px !important;
   white-space: wrap !important;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  &-img {
+    display: block;
+    min-width: 56px;
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
 }
 .itemBtn {
   width: 54px;
