@@ -5,6 +5,9 @@
     top: 0;
     z-index: 100;
     transition: all 0.2s;
+    [class^="button-"] {
+      height: 44px;
+    }
     .container {
       @include media-breakpoint-down(sm) {
         padding-left: 1.5rem;
