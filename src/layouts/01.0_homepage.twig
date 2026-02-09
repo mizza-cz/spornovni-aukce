@@ -1,6 +1,5 @@
 {% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
-block main %}
- {% include "@components/header/header.twig" %}
+block main %} {% include "@components/header/header.twig" %}
 <main
   id="main-content"
   class="main ignore-top-offset"
@@ -121,7 +120,11 @@ block main %}
           </p>
         </div>
       </div>
-      <a href="#" class="button-gray-800">
+      <a
+        href="https://www.hokej.cz/ziskejte-nevydrazene-dresy-z-charitativnich-aukci/5049315"
+        target="_blank"
+        class="button-gray-800"
+      >
         Získej nyní {% include "@images/arrow-right.svg" %}
       </a>
     </div>
