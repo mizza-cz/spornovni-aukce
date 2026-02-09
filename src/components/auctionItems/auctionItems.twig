@@ -27,6 +27,7 @@
           </tr>
         </thead>
         <tbody>
+             {% for i in 1..5 %}
           <tr>
             <td class="itemBtn">
               <button class="auctionItems__btn">
@@ -40,13 +41,10 @@
               </button>
             </td>
             <td class="itemNum fw-medium">#68</td>
-            <td class="itemName">
-              <div
-               
-                class="fw-semibold d-flex align-items-center gap-4"
-              >
+            <td  >
+              <div class="itemName">
                 Jaromír Jágr (hokej Kladno, po návratu z NHL)
-              </a>
+              </div>
             </td>
 
             <td class="fw-medium">499 Kč</td>
@@ -101,8 +99,9 @@
               </button>
             </td>
             <td class="itemNum fw-medium">#14</td>
-            <td class="itemName">
-              <a
+            <td>
+              <div class="itemName">
+                 <a
                 class="itemName-img"
                 data-fslightbox="gallery-1"
                 href="https://i.imgur.com/fsyrScY.jpg"
@@ -115,9 +114,9 @@
                   alt=""
                 />
               </a>
-              <div class=" fw-semibold">
                 Tomáš Kaberle (OH 2010, Vancouver, s podpisem)
               </div>
+              
             </td>
 
             <td class="fw-medium">499 Kč</td>
@@ -179,10 +178,10 @@
               </button>
             </td>
             <td class="itemNum fw-medium">#987</td>
-            <td class="itemName">
+            <td>
               <div
                
-                class="fw-semibold d-flex align-items-center gap-4"
+                class="itemName"
               >
                 Cristiano Ronaldo (fotbalový génius, s podpisem)
               </a>
@@ -287,282 +286,6 @@
 
             <td>
               <div class="fw-semibold">Min. příhoz</div>
-              <div class="fw-medium mt-1">50 Kč</div>
-            </td>
-            <td colspan="3" class="text-start">
-              <div class="fw-semibold">Konec</div>
-              <div class="fw-medium mt-1">20:00:00 26.2.2025</div>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="itemBtn">
-              <button class="auctionItems__btn">
-                <img
-                  src="images/ico/chevron-dark.svg"
-                  width="24"
-                  height="24"
-                  class="object-fit-contain"
-                  alt=""
-                />
-              </button>
-            </td>
-            <td class="itemNum fw-medium">#14</td>
-            <td class="itemName">
-              <div
-               
-                class="fw-semibold d-flex align-items-center gap-4"
-              >
-                Lionel Messi (žijící legenda, s podpisem)
-              </a>
-            </td>
-
-            <td class="fw-medium">20 000 Kč</td>
-            <td class="fw-medium">0x</td>
-            <td class="fw-medium">
-              50 Kč
-              <div class="text-gray-400 mt-1">10:58:44 20.2.2025</div>
-            </td>
-            <td class="text-gray-400 fw-medium">Zatím nikdo</td>
-            <td>
-              <button
-                data-bs-toggle="modal"
-                data-bs-target="#bidsModal"
-                class="button-gray-800 button-sm"
-              >
-                Přihodit
-              </button>
-            </td>
-            <td>
-              <button
-                data-bs-toggle="modal"
-                data-bs-target="#buyNowModal"
-                class="button-gray-800 button-sm"
-              >
-                5 000 Kč
-              </button>
-            </td>
-          </tr>
-          <tr class="auction-details d-none">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td colspan="2">
-              <div>
-                <div class="fw-semibold">Aktuální cena / vyvolávací cena</div>
-                <div class="fw-medium mt-1">499 Kč / 499 Kč</div>
-              </div>
-            </td>
-
-            <td>
-              <div class="fw-semibold">Min. příhoz</div>
-              <div class="fw-medium mt-1">50 Kč</div>
-            </td>
-            <td colspan="3" class="text-start">
-              <div class="fw-semibold">Konec</div>
-              <div class="fw-medium mt-1">20:00:00 26.2.2025</div>
-            </td>
-          </tr>
-          <tr>
-            <td class="itemBtn">
-              <button class="auctionItems__btn">
-                <img
-                  src="images/ico/chevron-dark.svg"
-                  width="24"
-                  height="24"
-                  class="object-fit-contain"
-                  alt=""
-                />
-              </button>
-            </td>
-            <td class="itemNum fw-medium">#68</td>
-            <td class="itemName">
-              <div
-               
-                class="fw-semibold d-flex align-items-center gap-4"
-              >
-                Jaromír Jágr (hokej Kladno, po návratu z NHL)
-              </a>
-            </td>
-
-            <td class="fw-medium">499 Kč</td>
-            <td class="fw-medium">0x</td>
-            <td class="fw-medium">
-              50 Kč
-              <div class="text-gray-400 mt-1">10:58:44 20.2.2025</div>
-            </td>
-            <td class="text-gray-400 fw-medium">Zatím nikdo</td>
-            <td>
-              <button
-                data-bs-toggle="modal"
-                data-bs-target="#bidsModal"
-                class="button-gray-800 button-sm"
-              >
-                Přihodit
-              </button>
-            </td>
-            <td class="fw-medium"></td>
-          </tr>
-          <tr class="auction-details d-none">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td colspan="2">
-              <div>
-                <div class="fw-semibold">Aktuální cena / vyvolávací cena</div>
-                <div class="fw-medium mt-1">499 Kč / 499 Kč</div>
-              </div>
-            </td>
-
-            <td>
-              <div class="fw-semibold">Min. příhoz</div>
-              <div class="fw-medium mt-1">50 Kč</div>
-            </td>
-            <td colspan="3" class="text-start">
-              <div class="fw-semibold">Konec</div>
-              <div class="fw-medium mt-1">20:00:00 26.2.2025</div>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="itemBtn">
-              <button class="auctionItems__btn">
-                <img
-                  src="images/ico/chevron-dark.svg"
-                  width="24"
-                  height="24"
-                  class="object-fit-contain"
-                  alt=""
-                />
-              </button>
-            </td>
-            <td class="itemNum fw-medium">#14</td>
-            <td class="itemName">
-              <a
-                class="itemName-img"
-                data-fslightbox="gallery-2"
-                href="https://i.imgur.com/fsyrScY.jpg"
-              >
-                <img
-                  srcset="https://picsum.photos/56/56"
-                  width="56"
-                  height="56"
-                  class="rounded-sm object-fit-cover"
-                  alt=""
-                />
-              </a>
-              <div class="  fw-semibold">
-                Tomáš Kaberle (OH 2010, Vancouver, s podpisem)
-              </div>
-            </td>
-
-            <td class="fw-medium">499 Kč</td>
-            <td class="fw-medium">0x</td>
-            <td class="fw-medium">
-              <div class="text-gray-400 mt-1"></div>
-            </td>
-            <td class="text-gray-400 fw-medium">Zatím nikdo</td>
-            <td>
-              <button
-                data-bs-toggle="modal"
-                data-bs-target="#bidsModal"
-                class="button-gray-800 button-sm"
-              >
-                Přihodit
-              </button>
-            </td>
-            <td>
-              <button
-                data-bs-toggle="modal"
-                data-bs-target="#buyNowModal"
-                class="button-gray-800 button-sm"
-              >
-                5 000 Kč
-              </button>
-            </td>
-          </tr>
-          <tr class="auction-details d-none">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td colspan="2">
-              <div>
-                <div class="fw-semibold">Aktuální cena / vyvolávací cena</div>
-                <div class="fw-medium mt-1">499 Kč / 499 Kč</div>
-              </div>
-            </td>
-
-            <td>
-              <div class="fw-semibold">Min. příhoz</div>
-              <div class="fw-medium mt-1">50 Kč</div>
-            </td>
-            <td colspan="3" class="text-start">
-              <div class="fw-semibold">Konec</div>
-              <div class="fw-medium mt-1">20:00:00 26.2.2025</div>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="itemBtn">
-              <button class="auctionItems__btn">
-                <img
-                  src="images/ico/chevron-dark.svg"
-                  width="24"
-                  height="24"
-                  class="object-fit-contain"
-                  alt=""
-                />
-              </button>
-            </td>
-            <td class="itemNum fw-medium">#987</td>
-            <td class="itemName">
-              <div
-               
-                class="fw-semibold d-flex align-items-center gap-4"
-              >
-                Cristiano Ronaldo (fotbalový génius, s podpisem)
-              </a>
-            </td>
-
-            <td class="fw-medium">7990 Kč</td>
-            <td class="fw-medium">0x</td>
-            <td class="fw-medium">
-              50 Kč
-              <div class="text-gray-400 mt-1">10:58:44 20.2.2025</div>
-            </td>
-            <td class="text-gray-400 fw-medium">Zatím nikdo</td>
-            <td>
-              <button
-                data-bs-toggle="modal"
-                data-bs-target="#bidsModal"
-                class="button-gray-800 button-sm"
-              >
-                Přihodit
-              </button>
-            </td>
-            <td>
-              <button
-                data-bs-toggle="modal"
-                data-bs-target="#buyNowModal"
-                class="button-gray-800 button-sm"
-              >
-                5 000 Kč
-              </button>
-            </td>
-          </tr>
-          <tr class="auction-details d-none">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td colspan="2">
-              <div>
-                <div class="fw-semibold">Aktuální cena / vyvolávací cena</div>
-                <div class="fw-medium mt-1">499 Kč / 499 Kč</div>
-              </div>
-            </td>
-
-            <td>
-              <div class="fw-semibold">Min. příhoz</div>
               <div class="fw-medium mt-1">9999 Kč</div>
             </td>
             <td colspan="3" class="text-start">
@@ -570,135 +293,9 @@
               <div class="fw-medium mt-1">20:00:00 26.2.2025</div>
             </td>
           </tr>
-          <tr>
-            <td class="itemBtn">
-              <button class="auctionItems__btn">
-                <img
-                  src="images/ico/chevron-dark.svg"
-                  width="24"
-                  height="24"
-                  class="object-fit-contain"
-                  alt=""
-                />
-              </button>
-            </td>
-            <td class="itemNum fw-medium">#68</td>
-            <td class="itemName">
-              <div
-               
-                class="fw-semibold d-flex align-items-center gap-4"
-              >
-                Jaromír Jágr (hokej Kladno, po návratu z NHL)
-              </a>
-            </td>
-
-            <td class="fw-medium">499 Kč</td>
-            <td class="fw-medium">0x</td>
-            <td class="fw-medium">
-              50 Kč
-              <div class="text-gray-400 mt-1">10:58:44 20.2.2025</div>
-            </td>
-            <td class="text-gray-400 fw-medium">Zatím nikdo</td>
-            <td>
-              <button
-                data-bs-toggle="modal"
-                data-bs-target="#bidsModal"
-                class="button-gray-800 button-sm"
-              >
-                Přihodit
-              </button>
-            </td>
-            <td class="fw-medium"></td>
-          </tr>
-          <tr class="auction-details d-none">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td colspan="2">
-              <div>
-                <div class="fw-semibold">Aktuální cena / vyvolávací cena</div>
-                <div class="fw-medium mt-1">499 Kč / 499 Kč</div>
-              </div>
-            </td>
-
-            <td>
-              <div class="fw-semibold">Min. příhoz</div>
-              <div class="fw-medium mt-1">50 Kč</div>
-            </td>
-            <td colspan="3" class="text-start">
-              <div class="fw-semibold">Konec</div>
-              <div class="fw-medium mt-1">20:00:00 26.2.2025</div>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="itemBtn">
-              <button class="auctionItems__btn">
-                <img
-                  src="images/ico/chevron-dark.svg"
-                  width="24"
-                  height="24"
-                  class="object-fit-contain"
-                  alt=""
-                />
-              </button>
-            </td>
-            <td class="itemNum fw-medium">#14</td>
-            <td class="itemName">
-              <div
-               
-                class="fw-semibold d-flex align-items-center gap-4"
-              >
-                Lionel Messi (žijící legenda, s podpisem)
-              </a>
-            </td>
-
-            <td class="fw-medium">20 000 Kč</td>
-            <td class="fw-medium">0x</td>
-            <td class="fw-medium">
-              50 Kč
-              <div class="text-gray-400 mt-1">10:58:44 20.2.2025</div>
-            </td>
-            <td class="text-gray-400 fw-medium">Zatím nikdo</td>
-            <td>
-              <button
-                data-bs-toggle="modal"
-                data-bs-target="#bidsModal"
-                class="button-gray-800 button-sm"
-              >
-                Přihodit
-              </button>
-            </td>
-            <td>
-              <button
-                data-bs-toggle="modal"
-                data-bs-target="#buyNowModal"
-                class="button-gray-800 button-sm"
-              >
-                5 000 Kč
-              </button>
-            </td>
-          </tr>
-          <tr class="auction-details d-none">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td colspan="2">
-              <div>
-                <div class="fw-semibold">Aktuální cena / vyvolávací cena</div>
-                <div class="fw-medium mt-1">499 Kč / 499 Kč</div>
-              </div>
-            </td>
-
-            <td>
-              <div class="fw-semibold">Min. příhoz</div>
-              <div class="fw-medium mt-1">50 Kč</div>
-            </td>
-            <td colspan="3" class="text-start">
-              <div class="fw-semibold">Konec</div>
-              <div class="fw-medium mt-1">20:00:00 26.2.2025</div>
-            </td>
-          </tr>
+            {% endfor %}
+           
+         
         </tbody>
       </table>
     </div>
