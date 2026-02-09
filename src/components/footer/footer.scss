@@ -28,6 +28,7 @@
   }
   .footer-app {
     grid-template-columns: 1fr auto;
+    text-decoration: none;
     @include media-breakpoint-down(md) {
       grid-column: span 2 / span 2;
     }

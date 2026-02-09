@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>04.0_registration-confirm - Sportovní aukce</title>
+	<title>13.0_registration-default - Sportovní aukce</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta name="format-detection" content="telephone=no" />
 
@@ -217,30 +217,217 @@
 		</div>
 		<main id="main-content" class="main" aria-label="Hlavní obsah">
 			<section class="container pb-20 pt-14">
-				<div class="registration-confirm">
-					<div class="registration-confirm__check p-md-6 p-4 mb-md-8 mb-6 bg-light">
-						<img src="images/ico/check-stroke.svg" width="56" height="56" class="object-fit-contain" alt="" />
+				<h1 class="h2 mb-14 text-center fw-semibold">Vytvořit účet</h1>
+				<div class="registration-section registration-section--default rounded-xl overflow-hidden">
+					<form aria-labelledby="form-title" class="bg-light px-4 py-6 p-sm-8 p-xl-16 registration-form">
+						<h2 id="form-title" class="h5 fw-semibold mb-4">Základní údaje</h2>
+
+						<div class="d-grid gap-4 mb-8">
+							<div class="d-grid gap-1">
+								<label class="text-sm-semibold" for="mail">Váš email <sup class="text-primary-500">*</sup></label>
+								<input placeholder="Vyplňte" type="email" id="mail" required />
+							</div>
+							<div class="d-grid gap-1">
+								<label class="text-sm-semibold" for="pass">Heslo <sup class="text-primary-500">*</sup></label>
+								<input placeholder="Vyplňte" type="password" id="pass" required />
+							</div>
+							<div class="d-grid gap-1">
+								<label class="text-sm-semibold" for="pass2">Heslo znovu pro kontrolu
+									<sup class="text-primary-500">*</sup></label>
+								<input placeholder="Vyplňte" type="password" id="pass2" />
+							</div>
+						</div>
+
+						<h3 id="form-subtitle" class="h5 fw-semibold mb-4">Kontaktní údaje</h3>
+
+						<div class="d-grid gap-4 mb-8">
+							<div class="row g-4">
+								<div class="col-sm-6">
+									<div class="d-grid gap-1">
+										<label class="text-sm-semibold" for="name">Vaše jméno<sup class="text-primary-500">*</sup></label>
+										<input placeholder="Vyplňte" type="text" id="name" required />
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="d-grid gap-1">
+										<label class="text-sm-semibold" for="surname">Vaše příjmení <sup class="text-primary-500">*</sup></label>
+										<input type="text" placeholder="Vyplňte" id="surname" required />
+									</div>
+								</div>
+							</div>
+							<div class="d-grid gap-1">
+								<label class="text-sm-semibold" for="mobile">Mobil <sup class="text-primary-500">*</sup></label>
+								<input placeholder="Vyplňte" type="tel" id="mobile" required />
+							</div>
+							<div class="d-grid gap-1">
+								<label class="text-sm-semibold" for="street">Ulice <sup class="text-primary-500">*</sup></label>
+								<input placeholder="Vyplňte" type="text" id="street" required />
+							</div>
+							<div class="row g-4">
+								<div class="col-sm-8">
+									<div class="d-grid gap-1">
+										<label class="text-sm-semibold" for="city">Město <sup class="text-primary-500">*</sup></label>
+										<input placeholder="Vyplňte" type="text" id="city" required />
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="d-grid gap-1">
+										<label class="text-sm-semibold" for="psc">PSČ <sup class="text-primary-500">*</sup></label>
+										<input type="text" placeholder="Vyplňte" id="psc" required />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="d-flex gap-3 mb-8">
+							<label class="custom-checkbox">
+								<input type="checkbox" />
+								<span class="checkmark"></span>
+							</label>
+							<div class="text-sm-medium text-gray-700">
+								Prohlašuji, že jsem se seznámil/a a souhlasím s
+								<a href="#" class="text-primary-500 underline">
+									Obchodními podmínkami </a>. a
+								<a href="#" class="text-primary-500 underline">
+									Pravidly ochrany osobních údajů
+								</a>
+							</div>
+						</div>
+
+						<button class="button-primary-500 w-100">Odeslat zprávu</button>
+					</form>
+				</div>
+			</section>
+
+			<section class="py-20 bg-light position-relative">
+				<div class="container">
+					<ul role="list" class="mb-20 d-flex flex-wrap justify-content-center gap-7 reference-cards">
+						<li class="flex-3">
+							<article class="min-w-80 rounded-xl bg-gray-100b p-6">
+								<header class="position-relative mb-4 d-flex gap-2 gap-sm-4 flex-md-row flex-column">
+									<img src="images/content/ava-1.png" width="48" height="48" class="aspect-square size-10 flex-shrink-0 object-fit-contain p-1 size-md-12" loading="lazy" alt="" />
+									<div class="d-flex flex-1 justify-content-between gap-2 max-lg:flex-col">
+										<div>
+											<h3 class="text-base-semibold text-gray-700">Jakub Novák</h3>
+											<p class="text-sm-medium text-gray-400 underline">
+												Dres Jaromíra Jágra z MS v hokeji 2010
+											</p>
+										</div>
+									</div>
+								</header>
+								<div class="text-base-medium ps-md-16 text-gray-500">
+									Neuvěřitelný kousek historie. Dres je v perfektním stavu, a když ho
+									mám na sobě, cítím se, jako bych byl součástí týmu. Skvělý nákup pro
+									každého fanouška, který chce mít doma skutečný kus sportovní
+									historie!“
+								</div>
+							</article>
+						</li>
+						<li class="flex-3">
+							<article class="min-w-80 rounded-xl bg-gray-100b p-6">
+								<header class="position-relative mb-4 d-flex gap-2 gap-sm-4 flex-md-row flex-column">
+									<img src="images/content/ava-2.png" width="48" height="48" class="aspect-square size-10 flex-shrink-0 object-fit-contain p-1 size-md-12" loading="lazy" alt="" />
+									<div class="d-flex flex-1 justify-content-between gap-2 max-lg:flex-col">
+										<div>
+											<h3 class="text-base-semibold text-gray-700">Lukáš Horák</h3>
+											<p class="text-sm-medium text-gray-400 underline">
+												Hrané hokejky českých reprezentantů
+											</p>
+										</div>
+									</div>
+								</header>
+								<div class="text-base-medium ps-md-16 text-gray-500">
+									Fakt super kousek historie! Ten dres je v parádním stavu a když si
+									ho obleču, mám pocit, že patřím do týmu. Skvělý úlovek pro každého
+									fanouška, co chce mít doma kousek sportovní historie!
+								</div>
+							</article>
+						</li>
+						<li class="flex-3">
+							<article class="min-w-80 rounded-xl bg-gray-100b p-6">
+								<header class="position-relative mb-4 d-flex gap-2 gap-sm-4 flex-md-row flex-column">
+									<img src="images/content/ava-3.png" width="48" height="48" class="aspect-square size-10 flex-shrink-0 object-fit-contain p-1 size-md-12" loading="lazy" alt="" />
+									<div class="d-flex flex-1 justify-content-between gap-2 max-lg:flex-col">
+										<div>
+											<h3 class="text-base-semibold text-gray-700">Petr Svoboda</h3>
+											<p class="text-sm-medium text-gray-400 underline">
+												Berani Zlín - mistrovský dres naší hokejové legendy
+											</p>
+										</div>
+									</div>
+								</header>
+								<div class="text-base-medium ps-md-16 text-gray-500">
+									Úžasný kousek historie! Tenhle dres je v naprosto skvělém stavu a
+									když si ho obléknu, mám pocit, že patřím přímo do týmu. Je to
+									perfektní nákup pro každého fanouška, který chce mít doma opravdový
+									kousek sportovní historie!
+								</div>
+							</article>
+						</li>
+					</ul>
+					<div class="rounded-xl bg-primary py-sm-16 py-12 px-sm-20 px-8 d-flex gap-lg-20 gap-10 align-items-center w-fit-content mx-auto flex-wrap justify-content-center">
+						<div class="d-flex gap-8 justify-content-center align-items-center flex-wrap flex-md-nowrap flex-md-row flex-column">
+							<div class="rounded-xxl bg-light p-6">
+								<img src="images/ico/bookmark.svg" class="object-fit-content" width="35" height="35" alt="" />
+							</div>
+							<div class="text-light">
+								<h4 class="h4 mb-1">Chcete vytvořit vlastní aukci?</h4>
+								<p class="text-base-medium">
+									... a vydělat balík na sběratelském artefaktu?
+								</p>
+							</div>
+						</div>
+						<button data-bs-toggle="modal" data-bs-target="#contactModal" class="button-gray-800">
+							<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M.63 4.007a1 1 0 011.363-.377l7.514 4.26a1 1 0 00.986 0l7.514-4.26a1 1 0 11.986 1.74L11.48 9.63a3 3 0 01-2.96 0L1.007 5.37A1 1 0 01.63 4.007z" fill="#fff" />
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M5.759 0h8.482c.805 0 1.47 0 2.01.044.563.046 1.08.145 1.565.392a4 4 0 011.748 1.748c.247.485.346 1.002.392 1.564C20 4.29 20 4.954 20 5.758v4.483c0 .805 0 1.47-.044 2.01-.046.563-.145 1.08-.392 1.565a4 4 0 01-1.748 1.748c-.485.247-1.002.346-1.564.392-.541.044-1.206.044-2.01.044H5.758c-.805 0-1.47 0-2.01-.044-.563-.046-1.08-.145-1.565-.392a4 4 0 01-1.748-1.748c-.247-.485-.346-1.002-.392-1.564C0 11.71 0 11.046 0 10.242V5.758c0-.805 0-1.47.044-2.01.046-.563.145-1.08.392-1.565A4 4 0 012.184.436C2.669.189 3.186.09 3.748.044 4.29 0 4.954 0 5.758 0zM3.91 2.038c-.438.035-.663.1-.819.18a2 2 0 00-.874.874c-.08.156-.145.38-.18.819C2 4.361 2 4.943 2 5.8v4.4c0 .857 0 1.439.038 1.889.035.438.1.663.18.819a2 2 0 00.874.874c.156.08.38.145.819.18C4.361 14 4.943 14 5.8 14h8.4c.857 0 1.439 0 1.889-.038.438-.035.663-.1.819-.18a2 2 0 00.874-.874c.08-.156.145-.38.18-.819.037-.45.038-1.032.038-1.889V5.8c0-.857 0-1.439-.038-1.889-.035-.438-.1-.663-.18-.819a2 2 0 00-.874-.874c-.156-.08-.38-.145-.819-.18C15.639 2 15.057 2 14.2 2H5.8c-.857 0-1.439 0-1.889.038z" fill="#fff" />
+							</svg> Kontaktujte nás
+						</button>
 					</div>
-					<h1 class="h3 mb-8 fw-semibold">Účet úspěšně vytvořen</h1>
-					<p class="text-xl-regular fw-medium mb-8">
-						Na váš e-mail někdo@něco.cz
-						<span class="fw-semibold">jsme vám poslali aktivační odkaz.</span>
-					</p>
-					<p class="text-xl-regular fw-medium mb-5">
-						Pro dokončení registrace je nutné na něj kliknout.
-					</p>
-					<div class="d-flex gap-2 mb-8 text-sm-medium">
-						<img src="images/ico/cr-fr.svg" class="object-fit-contain" width="16" height="16" alt="" />
-						Pokud aktivační e-mail nedorazil, zkuste chvíli počkat a nebo
-						zkontrolovat složku se spamem. ☝🏻
+				</div>
+				<div class="modal fade" id="contactModal" aria-labelledby="contactModalLabel" tabindex="-1" role="dialog">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+								<img src="images/ico/close.svg" alt="" />
+							</button>
+							<h4 class="h4 text-gray-700 fw-semibold mb-6" id="contactModalLabel">
+								Kontaktní formulář
+							</h4>
+							<form class="row g-6">
+								<div class="col-sm-6">
+									<div class="d-grid gap-1">
+										<label class="text-sm-semibold" for="name">Vaše jméno a příjmení
+											<sup class="text-primary-500">*</sup></label>
+										<input placeholder="Vyplňte" type="text" id="name" required />
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="d-grid gap-1">
+										<label class="text-sm-semibold" for="mail">Váš email <sup class="text-primary-500">*</sup></label>
+										<input placeholder="@" type="email" id="mail" required />
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="grid gap-1">
+										<label class="text-sm-semibold" for="message">Vaše zpráva <sup class="text-primary-500">*</sup></label>
+										<textarea id="message" rows="3" required></textarea>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="d-flex gap-4 align-items-center flex-wrap flex-sm-row flex-column">
+										<button class="button-primary-500 w-sm-auto w-100">
+											Odeslat zprávu
+										</button>
+										<div class="text-gray-400 text-xs-medium" style="max-width: 268px">
+											*Odesláním zprávy souhlasíte se zpracováním osobních údajů a
+											<a class="underline" href="#">pravidly GDPR</a>.
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
 					</div>
-					<a href="#" class="button-primary-500 w-100 mb-3">
-						Zpět na přehled aukcí
-					</a>
-					<button class="button-stroke w-100">
-						Poslat aktivační e-mail znovu
-						<div class="fw-medium">(39)</div>
-					</button>
 				</div>
 			</section>
 		</main>
