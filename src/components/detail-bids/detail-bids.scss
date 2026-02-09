@@ -2,5 +2,8 @@
   &__content {
     max-width: 40.8rem;
     margin: 0 auto;
+    .typography > :not(:last-child) {
+      margin-bottom: 1rem;
+    }
   }
 }
