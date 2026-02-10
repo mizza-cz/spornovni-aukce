@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>02.0_teams - Sportovní aukce</title>
+	<title>03.0_registration - Sportovní aukce</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta name="format-detection" content="telephone=no" />
 
@@ -222,369 +222,49 @@
 		</div>
 		<main id="main-content" class="main" aria-label="Hlavní obsah">
 			<section class="container pb-20 pt-14">
-				<h1 class="h2 mb-14 text-center fw-semibold">Kluby</h1>
+				<div class="row justify-content-center">
+					<div class="col-lg-6">
+						<h1 class="h3 mb-lg-8 mb-6 fw-semibold text-center">Přihlásit se</h1>
+						<div class="alert alert-success mb-4">
+							Pro přístup k profilu se musíte přihlásit.
+						</div>
+						<div class="bg-light rounded-xl p-6 p-sm-8">
+							<form action="/registration/login" method="post" id="frm-loginForm">
+								<div class="input-icon mb-3">
+									<img src="/images/ico/mail-g.svg" width="24" height="24" class="object-fit-contain" alt="" />
+									<input name="email" maxlength="255" id="frm-loginForm-email" data-nette-rules='[{"op":":filled","msg":"Zadejte e-mail"},{"op":":email","msg":"Please enter a valid email address."}]' type="email" placeholder="E-mail nebo uživatelské jméno" required />
+								</div>
+								<div class="input-icon mb-4">
+									<img src="/images/ico/lock.svg" width="24" height="24" class="object-fit-contain" alt="" />
+									<input name="password" id="frm-loginForm-password" data-nette-rules='[{"op":":filled","msg":"Zadejte heslo"}]' type="password" placeholder="Heslo" required />
+								</div>
+								<div class="d-flex my-5 justify-content-between gap-3 flex-wrap align-items-center">
+									<div class="text-sm-semibold text-gray-500">
+										Zapamatovat přihlášení?
+									</div>
+									<input name="remember" id="frm-loginForm-remember" class="inputCheck" type="checkbox" />
+								</div>
+								<input type="submit" name="_submit" value="Přihlásit se" class="button-primary-500 w-100" />
+								<input type="hidden" name="_token_" value="am77dr4o2weR75uRHncsCf/g3d9zVnZlWL33I=" /><input type="hidden" name="_do" value="loginForm-submit" />
+							</form>
 
-				<div class="row g-7">
-					<div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
-						<a href="#" class="teamItem ring-1 py-8 px-md-8 px-6 bg-light d-flex flex-column justify-content-center align-items-centers rounded-xl text-center">
-							<img src="images/ico/zlin.svg" width="120" height="120" class="object-fit-content mb-4 mx-auto" alt="klub" />
-							<div class="text-gray-700 text-base-semibold mb-4">
-								HC Berani Zlín
+							<div class="text-center mt-4">
+								<a href="/registration/forgot-password" class="text-sm-semibold text-gray-400 underline-hover">
+									Zapomněli jste heslo?
+								</a>
 							</div>
-							<div class="badge-gray-300 mx-auto">1 aukcí</div>
-						</a>
-					</div>
-					<div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
-						<a href="#" class="teamItem ring-1 py-8 px-md-8 px-6 bg-light d-flex flex-column justify-content-center align-items-centers rounded-xl text-center">
-							<img src="images/ico/sparta-f.svg" width="120" height="120" class="object-fit-content mb-4 mx-auto" alt="klub" />
-							<div class="text-gray-700 text-base-semibold mb-4">FK Sparta</div>
-							<div class="badge-gray-300 mx-auto">3 aukcí</div>
-						</a>
-					</div>
-					<div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
-						<a href="#" class="teamItem ring-1 py-8 px-md-8 px-6 bg-light d-flex flex-column justify-content-center align-items-centers rounded-xl text-center">
-							<img src="images/ico/banik.svg" width="120" height="120" class="object-fit-content mb-4 mx-auto" alt="klub" />
-							<div class="text-gray-700 text-base-semibold mb-4">FC Baník</div>
-							<div class="badge-gray-300 mx-auto">3 aukcí</div>
-						</a>
-					</div>
-					<div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
-						<a href="#" class="teamItem ring-1 py-8 px-md-8 px-6 bg-light d-flex flex-column justify-content-center align-items-centers rounded-xl text-center">
-							<img src="images/ico/sparta-f.svg" width="120" height="120" class="object-fit-content mb-4 mx-auto" alt="klub" />
-							<div class="text-gray-700 text-base-semibold mb-4">
-								FK Sparta Praha
+
+							<div class="text-center text-sm-semibold text-gray-400 mt-4">
+								Ještě nemáte účet?
+								<a href="/registration" class="d-block text-primary-500 underline">
+									Vytvořte si ho
+								</a>
 							</div>
-							<div class="badge-gray-300 mx-auto">5 aukcí</div>
-						</a>
-					</div>
-					<div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
-						<a href="#" class="teamItem ring-1 py-8 px-md-8 px-6 bg-light d-flex flex-column justify-content-center align-items-centers rounded-xl text-center">
-							<img src="images/ico/sparta.svg" width="120" height="120" class="object-fit-content mb-4 mx-auto" alt="klub" />
-							<div class="text-gray-700 text-base-semibold mb-4">
-								HC Sparta Praha
-							</div>
-							<div class="badge-gray-300 mx-auto">5 aukcí</div>
-						</a>
-					</div>
-					<div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
-						<a href="#" class="teamItem ring-1 py-8 px-md-8 px-6 bg-light d-flex flex-column justify-content-center align-items-centers rounded-xl text-center">
-							<img src="images/ico/zlin.svg" width="120" height="120" class="object-fit-content mb-4 mx-auto" alt="klub" />
-							<div class="text-gray-700 text-base-semibold mb-4">
-								HC Berani Zlín
-							</div>
-							<div class="badge-gray-300 mx-auto">1 aukcí</div>
-						</a>
-					</div>
-					<div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
-						<a href="#" class="teamItem ring-1 py-8 px-md-8 px-6 bg-light d-flex flex-column justify-content-center align-items-centers rounded-xl text-center">
-							<img src="images/ico/sparta-f.svg" width="120" height="120" class="object-fit-content mb-4 mx-auto" alt="klub" />
-							<div class="text-gray-700 text-base-semibold mb-4">FK Sparta</div>
-							<div class="badge-gray-300 mx-auto">3 aukcí</div>
-						</a>
-					</div>
-					<div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
-						<a href="#" class="teamItem ring-1 py-8 px-md-8 px-6 bg-light d-flex flex-column justify-content-center align-items-centers rounded-xl text-center">
-							<img src="images/ico/banik.svg" width="120" height="120" class="object-fit-content mb-4 mx-auto" alt="klub" />
-							<div class="text-gray-700 text-base-semibold mb-4">FC Baník</div>
-							<div class="badge-gray-300 mx-auto">3 aukcí</div>
-						</a>
-					</div>
-					<div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
-						<a href="#" class="teamItem ring-1 py-8 px-md-8 px-6 bg-light d-flex flex-column justify-content-center align-items-centers rounded-xl text-center">
-							<img src="images/ico/sparta-f.svg" width="120" height="120" class="object-fit-content mb-4 mx-auto" alt="klub" />
-							<div class="text-gray-700 text-base-semibold mb-4">
-								FK Sparta Praha
-							</div>
-							<div class="badge-gray-300 mx-auto">5 aukcí</div>
-						</a>
-					</div>
-					<div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
-						<a href="#" class="teamItem ring-1 py-8 px-md-8 px-6 bg-light d-flex flex-column justify-content-center align-items-centers rounded-xl text-center">
-							<img src="images/ico/zlin-f.svg" width="120" height="120" class="object-fit-content mb-4 mx-auto" alt="klub" />
-							<div class="text-gray-700 text-base-semibold mb-4">FC Zlín</div>
-							<div class="badge-gray-300 mx-auto">5 aukcí</div>
-						</a>
-					</div>
-					<div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
-						<a href="#" class="teamItem ring-1 py-8 px-md-8 px-6 bg-light d-flex flex-column justify-content-center align-items-centers rounded-xl text-center">
-							<img src="images/ico/viktoria.svg" width="120" height="120" class="object-fit-content mb-4 mx-auto" alt="klub" />
-							<div class="text-gray-700 text-base-semibold mb-4">
-								FC VIKTORIA Plzeň
-							</div>
-							<div class="badge-gray-300 mx-auto">5 aukcí</div>
-						</a>
+						</div>
 					</div>
 				</div>
 			</section>
-			<section class="bids-section pb-20 pt-20 bg-light">
-				<h3 class="h4 mb-9 px-5 text-center fw-semibold">Poslední příhozy</h3>
-				<div class="container">
-					<div class="swiper bids-swiper">
-						<ul role="list" class="swiper-wrapper infinite-scroll-swiper">
-							<li class="swiper-slide">
-								<div class="rounded-xl bg-gray-200 p-8 bidsItem">
-									<div class="badge-primary-300 mb-3">Nyní</div>
-									<a class="text-xl-semibold mb-3 d-block underline-hover" href="#">
-										Hrané hokejky českých reprezentantů
-									</a>
-									<div class="text-gray-400 text-sm-medium mb-6">
-										# Hokejka Marka Židlického
-									</div>
-									<div class="d-flex gap-4 align-items-center flex-wrap mb-6">
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/user-b.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">Martin P.</h3>
-										</div>
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/coins.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">5 000 Kč</h3>
-										</div>
-									</div>
-									<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M12 4a1 1 0 00-1 1v6H5a1 1 0 100 2h6v6a1 1 0 102 0v-6h6a1 1 0 100-2h-6V5a1 1 0 00-1-1z" fill="#1A1D1F" />
-										</svg> Přihodit
-									</button>
-								</div>
-							</li>
-							<li class="swiper-slide">
-								<div class="rounded-xl bg-gray-200 p-8 bidsItem">
-									<div class="badge-gray-400 mb-3">před 5 min</div>
-									<a class="text-xl-semibold mb-3 d-block underline-hover" href="#">
-										Hrané hokejky českých reprezentantů
-									</a>
-									<div class="text-gray-400 text-sm-medium mb-6">
-										# Hokejka Marka Židlického
-									</div>
-									<div class="d-flex gap-4 align-items-center flex-wrap mb-6">
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/user-b.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">Martin P.</h3>
-										</div>
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/coins.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">5 000 Kč</h3>
-										</div>
-									</div>
-									<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M12 4a1 1 0 00-1 1v6H5a1 1 0 100 2h6v6a1 1 0 102 0v-6h6a1 1 0 100-2h-6V5a1 1 0 00-1-1z" fill="#1A1D1F" />
-										</svg> Přihodit
-									</button>
-								</div>
-							</li>
-							<li class="swiper-slide">
-								<div class="rounded-xl bg-gray-200 p-8 bidsItem">
-									<div class="badge-primary-300 mb-3">Nyní</div>
-									<a class="text-xl-semibold mb-3 d-block underline-hover" href="#">
-										Hrané hokejky českých reprezentantů
-									</a>
-									<div class="text-gray-400 text-sm-medium mb-6">
-										# Hokejka Marka Židlického
-									</div>
-									<div class="d-flex gap-4 align-items-center flex-wrap mb-6">
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/user-b.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">Martin P.</h3>
-										</div>
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/coins.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">5 000 Kč</h3>
-										</div>
-									</div>
-									<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M12 4a1 1 0 00-1 1v6H5a1 1 0 100 2h6v6a1 1 0 102 0v-6h6a1 1 0 100-2h-6V5a1 1 0 00-1-1z" fill="#1A1D1F" />
-										</svg> Přihodit
-									</button>
-								</div>
-							</li>
-							<li class="swiper-slide">
-								<div class="rounded-xl bg-gray-200 p-8 bidsItem">
-									<div class="badge-gray-400 mb-3">před 5 min</div>
-									<a class="text-xl-semibold mb-3 d-block underline-hover" href="#">
-										Hrané hokejky českých reprezentantů
-									</a>
-									<div class="text-gray-400 text-sm-medium mb-6">
-										# Hokejka Marka Židlického
-									</div>
-									<div class="d-flex gap-4 align-items-center flex-wrap mb-6">
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/user-b.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">Martin P.</h3>
-										</div>
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/coins.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">5 000 Kč</h3>
-										</div>
-									</div>
-									<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M12 4a1 1 0 00-1 1v6H5a1 1 0 100 2h6v6a1 1 0 102 0v-6h6a1 1 0 100-2h-6V5a1 1 0 00-1-1z" fill="#1A1D1F" />
-										</svg> Přihodit
-									</button>
-								</div>
-							</li>
-							<li class="swiper-slide">
-								<div class="rounded-xl bg-gray-200 p-8 bidsItem">
-									<div class="badge-primary-300 mb-3">Nyní</div>
-									<a class="text-xl-semibold mb-3 d-block underline-hover" href="#">
-										Hrané hokejky českých reprezentantů
-									</a>
-									<div class="text-gray-400 text-sm-medium mb-6">
-										# Hokejka Marka Židlického
-									</div>
-									<div class="d-flex gap-4 align-items-center flex-wrap mb-6">
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/user-b.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">Martin P.</h3>
-										</div>
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/coins.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">5 000 Kč</h3>
-										</div>
-									</div>
-									<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M12 4a1 1 0 00-1 1v6H5a1 1 0 100 2h6v6a1 1 0 102 0v-6h6a1 1 0 100-2h-6V5a1 1 0 00-1-1z" fill="#1A1D1F" />
-										</svg> Přihodit
-									</button>
-								</div>
-							</li>
-							<li class="swiper-slide">
-								<div class="rounded-xl bg-gray-200 p-8 bidsItem">
-									<div class="badge-gray-400 mb-3">před 5 min</div>
-									<a class="text-xl-semibold mb-3 d-block underline-hover" href="#">
-										Hrané hokejky českých reprezentantů
-									</a>
-									<div class="text-gray-400 text-sm-medium mb-6">
-										# Hokejka Marka Židlického
-									</div>
-									<div class="d-flex gap-4 align-items-center flex-wrap mb-6">
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/user-b.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">Martin P.</h3>
-										</div>
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/coins.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">5 000 Kč</h3>
-										</div>
-									</div>
-									<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M12 4a1 1 0 00-1 1v6H5a1 1 0 100 2h6v6a1 1 0 102 0v-6h6a1 1 0 100-2h-6V5a1 1 0 00-1-1z" fill="#1A1D1F" />
-										</svg> Přihodit
-									</button>
-								</div>
-							</li>
-							<li class="swiper-slide">
-								<div class="rounded-xl bg-gray-200 p-8 bidsItem">
-									<div class="badge-primary-300 mb-3">Nyní</div>
-									<a class="text-xl-semibold mb-3 d-block underline-hover" href="#">
-										Hrané hokejky českých reprezentantů
-									</a>
-									<div class="text-gray-400 text-sm-medium mb-6">
-										# Hokejka Marka Židlického
-									</div>
-									<div class="d-flex gap-4 align-items-center flex-wrap mb-6">
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/user-b.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">Martin P.</h3>
-										</div>
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/coins.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">5 000 Kč</h3>
-										</div>
-									</div>
-									<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M12 4a1 1 0 00-1 1v6H5a1 1 0 100 2h6v6a1 1 0 102 0v-6h6a1 1 0 100-2h-6V5a1 1 0 00-1-1z" fill="#1A1D1F" />
-										</svg> Přihodit
-									</button>
-								</div>
-							</li>
-							<li class="swiper-slide">
-								<div class="rounded-xl bg-gray-200 p-8 bidsItem">
-									<div class="badge-gray-400 mb-3">před 5 min</div>
-									<a class="text-xl-semibold mb-3 d-block underline-hover" href="#">
-										Hrané hokejky českých reprezentantů
-									</a>
-									<div class="text-gray-400 text-sm-medium mb-6">
-										# Hokejka Marka Židlického
-									</div>
-									<div class="d-flex gap-4 align-items-center flex-wrap mb-6">
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/user-b.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">Martin P.</h3>
-										</div>
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/coins.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">5 000 Kč</h3>
-										</div>
-									</div>
-									<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M12 4a1 1 0 00-1 1v6H5a1 1 0 100 2h6v6a1 1 0 102 0v-6h6a1 1 0 100-2h-6V5a1 1 0 00-1-1z" fill="#1A1D1F" />
-										</svg> Přihodit
-									</button>
-								</div>
-							</li>
-							<li class="swiper-slide">
-								<div class="rounded-xl bg-gray-200 p-8 bidsItem">
-									<div class="badge-primary-300 mb-3">Nyní</div>
-									<a class="text-xl-semibold mb-3 d-block underline-hover" href="#">
-										Hrané hokejky českých reprezentantů
-									</a>
-									<div class="text-gray-400 text-sm-medium mb-6">
-										# Hokejka Marka Židlického
-									</div>
-									<div class="d-flex gap-4 align-items-center flex-wrap mb-6">
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/user-b.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">Martin P.</h3>
-										</div>
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/coins.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">5 000 Kč</h3>
-										</div>
-									</div>
-									<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M12 4a1 1 0 00-1 1v6H5a1 1 0 100 2h6v6a1 1 0 102 0v-6h6a1 1 0 100-2h-6V5a1 1 0 00-1-1z" fill="#1A1D1F" />
-										</svg> Přihodit
-									</button>
-								</div>
-							</li>
-							<li class="swiper-slide">
-								<div class="rounded-xl bg-gray-200 p-8 bidsItem">
-									<div class="badge-gray-400 mb-3">před 5 min</div>
-									<a class="text-xl-semibold mb-3 d-block underline-hover" href="#">
-										Hrané hokejky českých reprezentantů
-									</a>
-									<div class="text-gray-400 text-sm-medium mb-6">
-										# Hokejka Marka Židlického
-									</div>
-									<div class="d-flex gap-4 align-items-center flex-wrap mb-6">
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/user-b.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">Martin P.</h3>
-										</div>
-										<div class="d-flex align-items-center gap-2">
-											<img src="images/ico/coins.svg" width="24" height="24" class="object-fit-content" alt="" />
-											<h3 class="text-base-semibold">5 000 Kč</h3>
-										</div>
-									</div>
-									<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M12 4a1 1 0 00-1 1v6H5a1 1 0 100 2h6v6a1 1 0 102 0v-6h6a1 1 0 100-2h-6V5a1 1 0 00-1-1z" fill="#1A1D1F" />
-										</svg> Přihodit
-									</button>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
+
 			<section class="py-20 bg-light position-relative">
 				<div class="container">
 					<ul role="list" class="mb-20 d-flex flex-wrap justify-content-center gap-7 reference-cards">
@@ -716,64 +396,6 @@
 					</div>
 				</div>
 			</section>
-			<div class="modal fade" id="bidsModal" aria-labelledby="bidsModalLabel" tabindex="-1" role="dialog">
-				<div class="modal-dialog modal-dialog-centered">
-					<div class="modal-content">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-							<img src="images/ico/close.svg" alt="" />
-						</button>
-						<h4 class="h4 text-gray-700 fw-semibold mb-6" id="bidsModalLabel">
-							Přihození
-						</h4>
-						<div class="text-sm-bold mb-1">Přihazujete k položce</div>
-						<div class="text-sm-medium mb-5">#21 Baláž Ondřej</div>
-						<div class="text-sm-bold mb-1">Konec aukce</div>
-						<div class="text-sm-medium mb-5">
-							20:00:00 28.2.2025
-							<span class="text-sm-semibold text-primary-500">(2 hod 45 min)</span>
-						</div>
-						<div class="text-sm-bold mb-1">Aktuální cena</div>
-						<div class="text-sm-medium mb-5">3 490 Kč</div>
-
-						<form class="">
-							<div class="row g-5 mb-1">
-								<div class="col-sm-6">
-									<div class="d-grid gap-1">
-										<label class="text-sm-semibold" for="name">Přihodit </label>
-										<input value="200 Kč" type="text" id="prihodit" />
-									</div>
-								</div>
-								<div class="col-sm-6">
-									<div class="d-grid gap-1">
-										<label class="text-sm-semibold" for="name">Nová cena </label>
-										<input value="3 690 Kč" type="text" id="cena" required />
-									</div>
-								</div>
-							</div>
-							<div class="text-gray-475 text-xs-medium mb-5">100 Kč - 3 0000 Kč</div>
-							<div class="text-sm-semibold d-flex align-items-center gap-1 mb-2">
-								Vaše maximální cena
-								<img src="images/ico/crown-primary.svg" width="16" height="16" class="object-fit-contain" alt="" />
-							</div>
-							<div class="d-grid mb-1">
-								<input value="5 690 Kč" type="text" id="maxcena" />
-							</div>
-							<div class="text-gray-475 text-xs-medium mb-5">
-								Budete automaticky přihazovat, do této hodnoty.
-							</div>
-							<button class="button-primary-500 w-100">Závazně přihodit</button>
-						</form>
-
-						<div class="d-flex gap-2 border-top border-2 border-gray-300 pt-5 mt-5">
-							<img src="images/ico/cr-fr.svg" class="object-fit-contain" width="16" height="16" alt="" />
-							<div class="text-sm-medium">
-								Přihozením na položku projevujete souhlas s
-								<a href="#" class="text-primary-500 underline">pravidly aukce</a>.
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 		</main>
 
 		<footer class="main-footer bg-light position-relative">

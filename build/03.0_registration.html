@@ -189,6 +189,10 @@
 					<h4 class="h4 text-gray-700 fw-semibold mb-6" id="loginModalLabel">
 						Přihlásit se
 					</h4>
+					<div class="text-sm-semibold text-gray-400 mb-3">
+						Máte účet ze staré verze? Aktivujte jej
+						<a href="https://www.sportovniaukce.cz/" target="_blank" class="text-primary-500 underline">zde.</a>
+					</div>
 					<form class="mb-8">
 						<div class="input-icon mb-3">
 							<img src="images/ico/mail-g.svg" width="24" height="24" class="object-fit-contain" alt="" />
@@ -206,11 +210,6 @@
 						</div>
 						<button class="button-primary-500 w-100">Přihlásit se</button>
 					</form>
-
-					<div class="text-center text-sm-semibold text-gray-400 mb-2">
-						Máte účet ze staré verze? Aktivujte jej
-						<a href="#" class="text-primary-500 underline">zde.</a>
-					</div>
 
 					<div class="text-center text-sm-semibold text-gray-400">
 						Ještě nemáte účet?
@@ -233,16 +232,16 @@
 								<div class="d-grid gap-4 mb-8">
 									<div class="d-grid gap-1">
 										<label class="text-sm-semibold" for="mail">Váš email <sup class="text-primary-500">*</sup></label>
-										<input placeholder="Vyplňte" type="email" id="mail" required />
+										<input name="email" placeholder="Vyplňte" type="email" id="mail" required />
 									</div>
 									<div class="d-grid gap-1">
 										<label class="text-sm-semibold" for="pass">Heslo <sup class="text-primary-500">*</sup></label>
-										<input placeholder="Vyplňte" type="password" id="pass" required />
+										<input name="password" placeholder="Vyplňte" type="password" id="pass" required />
 									</div>
 									<div class="d-grid gap-1">
 										<label class="text-sm-semibold" for="pass2">Heslo znovu pro kontrolu
 											<sup class="text-primary-500">*</sup></label>
-										<input placeholder="Vyplňte" type="password" id="pass2" />
+										<input name="password_confirm" placeholder="Vyplňte" type="password" id="pass2" />
 									</div>
 								</div>
 
@@ -253,35 +252,40 @@
 										<div class="col-sm-6">
 											<div class="d-grid gap-1">
 												<label class="text-sm-semibold" for="name">Vaše jméno<sup class="text-primary-500">*</sup></label>
-												<input placeholder="Vyplňte" type="text" id="name" required />
+												<input name="first_name" placeholder="Vyplňte" type="text" id="name" required />
 											</div>
 										</div>
 										<div class="col-sm-6">
 											<div class="d-grid gap-1">
 												<label class="text-sm-semibold" for="surname">Vaše příjmení <sup class="text-primary-500">*</sup></label>
-												<input type="text" placeholder="Vyplňte" id="surname" required />
+												<input name="last_name" type="text" placeholder="Vyplňte" id="surname" required />
 											</div>
 										</div>
 									</div>
 									<div class="d-grid gap-1">
+										<label class="text-sm-semibold" for="nickname">Přezdívka/nick (váš veřejný identifikátor)
+											<sup class="text-primary-500">*</sup></label>
+										<input name="nickname" id="nickname" placeholder="napr. sportovec123" type="text" required />
+									</div>
+									<div class="d-grid gap-1">
 										<label class="text-sm-semibold" for="mobile">Mobil <sup class="text-primary-500">*</sup></label>
-										<input placeholder="Vyplňte" type="tel" id="mobile" required />
+										<input name="phone" placeholder="Vyplňte" type="tel" id="mobile" required />
 									</div>
 									<div class="d-grid gap-1">
 										<label class="text-sm-semibold" for="street">Ulice <sup class="text-primary-500">*</sup></label>
-										<input placeholder="Vyplňte" type="text" id="street" required />
+										<input name="street" placeholder="Vyplňte" type="text" id="street" required />
 									</div>
 									<div class="row g-4">
 										<div class="col-sm-8">
 											<div class="d-grid gap-1">
 												<label class="text-sm-semibold" for="city">Město <sup class="text-primary-500">*</sup></label>
-												<input placeholder="Vyplňte" type="text" id="city" required />
+												<input name="city" placeholder="Vyplňte" type="text" id="city" required />
 											</div>
 										</div>
 										<div class="col-sm-4">
 											<div class="d-grid gap-1">
 												<label class="text-sm-semibold" for="psc">PSČ <sup class="text-primary-500">*</sup></label>
-												<input type="text" placeholder="Vyplňte" id="psc" required />
+												<input name="zip" type="text" placeholder="Vyplňte" id="psc" required />
 											</div>
 										</div>
 									</div>
@@ -289,7 +293,7 @@
 
 								<div class="d-flex gap-3 mb-4">
 									<label class="custom-checkbox">
-										<input type="checkbox" />
+										<input type="checkbox" name="terms" />
 										<span class="checkmark"></span>
 									</label>
 									<div class="text-sm-medium text-gray-700 align-content-center">
@@ -306,7 +310,7 @@
 								</div>
 								<div class="d-flex gap-3 mb-8">
 									<label class="custom-checkbox">
-										<input type="checkbox" />
+										<input type="checkbox" name="pro_account" />
 										<span class="checkmark"></span>
 									</label>
 									<div class="text-sm-medium text-gray-700 align-content-center">

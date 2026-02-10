@@ -5,6 +5,7 @@
 //=include ../../node_modules/swiper/swiper-bundle.min.js
 //=include ../../node_modules/masonry-layout/dist/masonry.pkgd.min.js
 //=include ../../node_modules/masonry-layout/masonry.js
+//=include ../../node_modules/imask/dist/imask.min.js
 document.addEventListener("DOMContentLoaded", function () {
   //=include ../components/**/*.js
   //=include custom/*.js

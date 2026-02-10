@@ -1,0 +1,97 @@
+{% extends "@components/base/base.twig" %} {% set title = "03.0_registration" %}
+{% block main %} {% include "@components/header/header.twig" %}
+<main id="main-content" class="main" aria-label="Hlavní obsah">
+  <section class="container pb-20 pt-14">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <h1 class="h3 mb-lg-8 mb-6 fw-semibold text-center">Přihlásit se</h1>
+        <div class="alert alert-success mb-4">
+          Pro přístup k profilu se musíte přihlásit.
+        </div>
+        <div class="bg-light rounded-xl p-6 p-sm-8">
+          <form action="/registration/login" method="post" id="frm-loginForm">
+            <div class="input-icon mb-3">
+              <img
+                src="/images/ico/mail-g.svg"
+                width="24"
+                height="24"
+                class="object-fit-contain"
+                alt=""
+              />
+              <input
+                name="email"
+                maxlength="255"
+                id="frm-loginForm-email"
+                data-nette-rules='[{"op":":filled","msg":"Zadejte e-mail"},{"op":":email","msg":"Please enter a valid email address."}]'
+                type="email"
+                placeholder="E-mail nebo uživatelské jméno"
+                required
+              />
+            </div>
+            <div class="input-icon mb-4">
+              <img
+                src="/images/ico/lock.svg"
+                width="24"
+                height="24"
+                class="object-fit-contain"
+                alt=""
+              />
+              <input
+                name="password"
+                id="frm-loginForm-password"
+                data-nette-rules='[{"op":":filled","msg":"Zadejte heslo"}]'
+                type="password"
+                placeholder="Heslo"
+                required
+              />
+            </div>
+            <div
+              class="d-flex my-5 justify-content-between gap-3 flex-wrap align-items-center"
+            >
+              <div class="text-sm-semibold text-gray-500">
+                Zapamatovat přihlášení?
+              </div>
+              <input
+                name="remember"
+                id="frm-loginForm-remember"
+                class="inputCheck"
+                type="checkbox"
+              />
+            </div>
+            <input
+              type="submit"
+              name="_submit"
+              value="Přihlásit se"
+              class="button-primary-500 w-100"
+            />
+            <input
+              type="hidden"
+              name="_token_"
+              value="am77dr4o2weR75uRHncsCf/g3d9zVnZlWL33I="
+            /><input type="hidden" name="_do" value="loginForm-submit" />
+          </form>
+
+          <div class="text-center mt-4">
+            <a
+              href="/registration/forgot-password"
+              class="text-sm-semibold text-gray-400 underline-hover"
+            >
+              Zapomněli jste heslo?
+            </a>
+          </div>
+
+          <div class="text-center text-sm-semibold text-gray-400 mt-4">
+            Ještě nemáte účet?
+            <a href="/registration" class="d-block text-primary-500 underline">
+              Vytvořte si ho
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include "@components/reference-section/reference-section-2.twig" %}
+</main>
+
+{% endblock %}

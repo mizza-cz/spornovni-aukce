@@ -133,6 +133,7 @@ input {
   height: 20px;
   background: var(--color-gray-100);
   transition: left 0.1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  left: 0;
 }
 .inputCheck:checked {
   transition: all 0.5s;
@@ -141,7 +142,7 @@ input {
 .inputCheck:checked:after {
   transition: all 0.5s;
   right: 0px;
-
+  left: auto;
   transform: none;
 }
 
