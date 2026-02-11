@@ -2,6 +2,7 @@
   <div class="row g-0">
     <div class="col-lg-6">
       <form
+        novalidate
         aria-labelledby="form-title"
         class="bg-light px-4 py-6 p-sm-8 p-xl-16 registration-form"
       >
@@ -19,6 +20,7 @@
               id="mail"
               required
             />
+            <p class="field-error" aria-live="polite"></p>
           </div>
           <div class="d-grid gap-1">
             <label class="text-sm-semibold" for="pass"
@@ -31,6 +33,7 @@
               id="pass"
               required
             />
+            <p class="field-error" aria-live="polite"></p>
           </div>
           <div class="d-grid gap-1">
             <label class="text-sm-semibold" for="pass2"
@@ -41,8 +44,10 @@
               name="password_confirm"
               placeholder="Vyplňte"
               type="password"
+              required
               id="pass2"
             />
+            <p class="field-error" aria-live="polite"></p>
           </div>
         </div>
 
@@ -150,7 +155,7 @@
 
         <div class="d-flex gap-3 mb-4">
           <label class="custom-checkbox">
-            <input type="checkbox" name="terms" />
+            <input type="checkbox" name="terms" required />
             <span class="checkmark"></span>
           </label>
           <div class="text-sm-medium text-gray-700 align-content-center">
@@ -261,3 +266,4 @@
     </div>
   </div>
 </div>
+ 

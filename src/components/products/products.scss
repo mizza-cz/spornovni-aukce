@@ -113,3 +113,11 @@
   display: none !important;
   content: none !important;
 }
+.product--finished {
+  .product__img {
+    img {
+      filter: grayscale(100%);
+      opacity: 0.6;
+    }
+  }
+}

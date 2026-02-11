@@ -226,22 +226,25 @@
 				<div class="registration-section rounded-xl overflow-hidden">
 					<div class="row g-0">
 						<div class="col-lg-6">
-							<form aria-labelledby="form-title" class="bg-light px-4 py-6 p-sm-8 p-xl-16 registration-form">
+							<form novalidate aria-labelledby="form-title" class="bg-light px-4 py-6 p-sm-8 p-xl-16 registration-form">
 								<h2 id="form-title" class="h5 fw-semibold mb-4">Základní údaje</h2>
 
 								<div class="d-grid gap-4 mb-8">
 									<div class="d-grid gap-1">
 										<label class="text-sm-semibold" for="mail">Váš email <sup class="text-primary-500">*</sup></label>
 										<input name="email" placeholder="Vyplňte" type="email" id="mail" required />
+										<p class="field-error" aria-live="polite"></p>
 									</div>
 									<div class="d-grid gap-1">
 										<label class="text-sm-semibold" for="pass">Heslo <sup class="text-primary-500">*</sup></label>
 										<input name="password" placeholder="Vyplňte" type="password" id="pass" required />
+										<p class="field-error" aria-live="polite"></p>
 									</div>
 									<div class="d-grid gap-1">
 										<label class="text-sm-semibold" for="pass2">Heslo znovu pro kontrolu
 											<sup class="text-primary-500">*</sup></label>
-										<input name="password_confirm" placeholder="Vyplňte" type="password" id="pass2" />
+										<input name="password_confirm" placeholder="Vyplňte" type="password" required id="pass2" />
+										<p class="field-error" aria-live="polite"></p>
 									</div>
 								</div>
 
@@ -293,7 +296,7 @@
 
 								<div class="d-flex gap-3 mb-4">
 									<label class="custom-checkbox">
-										<input type="checkbox" name="terms" />
+										<input type="checkbox" name="terms" required />
 										<span class="checkmark"></span>
 									</label>
 									<div class="text-sm-medium text-gray-700 align-content-center">
@@ -363,6 +366,7 @@
 						</div>
 					</div>
 				</div>
+
 			</section>
 
 			<section class="py-20 bg-light position-relative">

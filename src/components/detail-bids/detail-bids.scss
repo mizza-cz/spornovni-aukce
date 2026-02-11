@@ -7,3 +7,23 @@
     }
   }
 }
+.auction-desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+}
+
+.auction-desc.is-expanded {
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  overflow: visible;
+}
+.js-descToggle {
+  cursor: pointer;
+}
+.js-descToggle[hidden] {
+  display: none !important;
+}
