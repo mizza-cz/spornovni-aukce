@@ -6,8 +6,8 @@
         <thead>
           <tr>
             <th class="itemBtn"></th>
-            <th class="itemNum text-start"><a href="#">Číslo</a></th>
-            <th class="text-start text-primary-500 itemName sort-auction">
+            <th class="itemNum text-start" data-sort="num" data-type="num"><a href="#">Číslo</a></th>
+            <th class="text-start text-primary-500 itemName " data-sort="name" data-type="text">
               <a class="d-flex align-items-center gap-1" href="#"
                 >Název předmětu / dresu
                 <img
@@ -18,7 +18,7 @@
                   alt=""
               /></a>
             </th>
-            <th class="text-start"><a href="#">Cena</a></th>
+            <th class="text-start" data-sort="price" data-type="price"><a href="#">Cena</a></th>
             <th class="text-start"><a href="#">Příhozů</a></th>
             <th class="text-start"><a href="#">Poslední příhoz</a></th>
             <th class="text-start"><a href="#">Vyhrávající</a></th>
@@ -334,3 +334,4 @@
     {% include "@components/modal/modal-bids.twig" %}
   </div>
 </div>
+ 

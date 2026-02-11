@@ -8,10 +8,5 @@ if (bidsceSwiper) {
     allowTouchMove: true,
     simulateTouch: true,
     grabCursor: true,
-    //  autoplay: {
-    //    delay: 0,
-    //    disableOnInteraction: false,
-    //    pauseOnMouseEnter: false,
-    //  },
   });
 }

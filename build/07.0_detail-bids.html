@@ -405,12 +405,12 @@
 								<thead>
 									<tr>
 										<th class="itemBtn"></th>
-										<th class="itemNum text-start"><a href="#">Číslo</a></th>
-										<th class="text-start text-primary-500 itemName sort-auction">
+										<th class="itemNum text-start" data-sort="num" data-type="num"><a href="#">Číslo</a></th>
+										<th class="text-start text-primary-500 itemName " data-sort="name" data-type="text">
 											<a class="d-flex align-items-center gap-1" href="#">Název předmětu / dresu
 												<img src="images/ico/chevron-primary.svg" width="16" height="16" class="object-fit-contain" alt="" /></a>
 										</th>
-										<th class="text-start"><a href="#">Cena</a></th>
+										<th class="text-start" data-sort="price" data-type="price"><a href="#">Cena</a></th>
 										<th class="text-start"><a href="#">Příhozů</a></th>
 										<th class="text-start"><a href="#">Poslední příhoz</a></th>
 										<th class="text-start"><a href="#">Vyhrávající</a></th>
@@ -1527,11 +1527,15 @@
 						<table class="auctionTable">
 							<thead>
 								<tr>
-									<th class="text-start sort-auction">
+									<th class="text-start" data-sort="name" data-type="text">
 										<a href="#">Název předmětu / dresu</a>
 									</th>
-									<th class="text-start"><a href="#">Cena</a></th>
-									<th class="text-start"><a href="#">Čas</a></th>
+									<th class="text-start" data-sort="price" data-type="price">
+										<a href="#">Cena</a>
+									</th>
+									<th class="text-start" data-sort="time" data-type="datetime">
+										<a href="#">Čas</a>
+									</th>
 									<th class="text-start"><a href="#">Přihazující</a></th>
 									<th>Akce</th>
 								</tr>
@@ -1546,7 +1550,7 @@
 									</td>
 
 									<td class="fw-semibold">1 500 Kč</td>
-									<td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
+									<td class="text-gray-400 fw-medium">13:00:00 23.2.2021</td>
 									<td class="fw-semibold">Petr F.</td>
 									<td>
 										<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800 button-sm">
@@ -1562,7 +1566,7 @@
 									</td>
 
 									<td class="fw-semibold">1 500 Kč</td>
-									<td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
+									<td class="text-gray-400 fw-medium">11:00:00 23.2.2025</td>
 									<td class="fw-semibold">Jarmil P.</td>
 									<td>
 										<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800 button-sm">
@@ -1578,7 +1582,7 @@
 									</td>
 
 									<td class="fw-semibold">2 000 Kč</td>
-									<td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
+									<td class="text-gray-400 fw-medium">13:00:00 23.1.2024</td>
 									<td class="fw-semibold">Antonín S.</td>
 									<td>
 										<button data-bs-toggle="modal" data-bs-target="#bidsModal" class="button-gray-800 button-sm">
@@ -1920,7 +1924,7 @@
 										</button>
 										<div class="text-gray-400 text-xs-medium" style="max-width: 268px">
 											*Odesláním zprávy souhlasíte se zpracováním osobních údajů a
-											<a class="underline" href="#">pravidly GDPR</a>.
+											<a class="underline" href="http://dev-sportovniaukce-cz.sh10w3.esports.cz/ochrana-osobnich-udaju" target="_blank">pravidly GDPR</a>.
 										</div>
 									</div>
 								</div>
