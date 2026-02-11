@@ -224,22 +224,25 @@
 			<section class="container pb-20 pt-14">
 				<h1 class="h2 mb-14 text-center fw-semibold">Vytvořit účet</h1>
 				<div class="registration-section registration-section--default rounded-xl overflow-hidden">
-					<form aria-labelledby="form-title" class="bg-light px-4 py-6 p-sm-8 p-xl-16 registration-form">
+					<form novalidate aria-labelledby="form-title" class="bg-light px-4 py-6 p-sm-8 p-xl-16 registration-form">
 						<h2 id="form-title" class="h5 fw-semibold mb-4">Základní údaje</h2>
 
 						<div class="d-grid gap-4 mb-8">
 							<div class="d-grid gap-1">
 								<label class="text-sm-semibold" for="mail">Váš email <sup class="text-primary-500">*</sup></label>
 								<input placeholder="Vyplňte" type="email" id="mail" required />
+								<p class="field-error" aria-live="polite"></p>
 							</div>
 							<div class="d-grid gap-1">
 								<label class="text-sm-semibold" for="pass">Heslo <sup class="text-primary-500">*</sup></label>
 								<input placeholder="Vyplňte" type="password" id="pass" required />
+								<p class="field-error" aria-live="polite"></p>
 							</div>
 							<div class="d-grid gap-1">
 								<label class="text-sm-semibold" for="pass2">Heslo znovu pro kontrolu
 									<sup class="text-primary-500">*</sup></label>
-								<input placeholder="Vyplňte" type="password" id="pass2" />
+								<input placeholder="Vyplňte" type="password" id="pass2" req />
+								<p class="field-error" aria-live="polite"></p>
 							</div>
 						</div>
 
@@ -251,34 +254,40 @@
 									<div class="d-grid gap-1">
 										<label class="text-sm-semibold" for="name">Vaše jméno<sup class="text-primary-500">*</sup></label>
 										<input placeholder="Vyplňte" type="text" id="name" required />
+										<p class="field-error" aria-live="polite"></p>
 									</div>
 								</div>
 								<div class="col-sm-6">
 									<div class="d-grid gap-1">
 										<label class="text-sm-semibold" for="surname">Vaše příjmení <sup class="text-primary-500">*</sup></label>
 										<input type="text" placeholder="Vyplňte" id="surname" required />
+										<p class="field-error" aria-live="polite"></p>
 									</div>
 								</div>
 							</div>
 							<div class="d-grid gap-1">
 								<label class="text-sm-semibold" for="mobile">Mobil <sup class="text-primary-500">*</sup></label>
 								<input placeholder="Vyplňte" type="tel" id="mobile" required />
+								<p class="field-error" aria-live="polite"></p>
 							</div>
 							<div class="d-grid gap-1">
 								<label class="text-sm-semibold" for="street">Ulice <sup class="text-primary-500">*</sup></label>
 								<input placeholder="Vyplňte" type="text" id="street" required />
+								<p class="field-error" aria-live="polite"></p>
 							</div>
 							<div class="row g-4">
 								<div class="col-sm-8">
 									<div class="d-grid gap-1">
 										<label class="text-sm-semibold" for="city">Město <sup class="text-primary-500">*</sup></label>
 										<input placeholder="Vyplňte" type="text" id="city" required />
+										<p class="field-error" aria-live="polite"></p>
 									</div>
 								</div>
 								<div class="col-sm-4">
 									<div class="d-grid gap-1">
 										<label class="text-sm-semibold" for="psc">PSČ <sup class="text-primary-500">*</sup></label>
 										<input type="text" placeholder="Vyplňte" id="psc" required />
+										<p class="field-error" aria-live="polite"></p>
 									</div>
 								</div>
 							</div>
