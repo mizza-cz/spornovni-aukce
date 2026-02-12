@@ -4,7 +4,7 @@
     0px 22px 13px rgba(0, 0, 0, 0.02), 0px 39px 16px rgba(0, 0, 0, 0.01);
   display: flex;
   gap: 32px;
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     flex-direction: column;
   }
   &__title {
@@ -22,18 +22,29 @@
   }
   &__content {
     width: 100%;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       order: -1;
     }
     table {
-      min-width: max-content;
+      min-width: 600px;
     }
     td {
       color: var(--color-gray-700);
+      white-space: normal;
+      min-width: auto !important;
+      @include media-breakpoint-down(lg) {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
     }
     th {
       padding-top: 12px;
       padding-bottom: 12px;
+      min-width: auto !important;
+      @include media-breakpoint-down(lg) {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
     }
   }
 }
