@@ -1,7 +1,6 @@
 (function () {
   const masonryGrid = document.querySelector(".masonry-products-grid");
 
-  // Проверка: нужен и контейнер, и функция imagesLoaded
   if (!masonryGrid || typeof imagesLoaded !== "function") return;
 
   imagesLoaded(masonryGrid, function () {

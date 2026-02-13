@@ -62,7 +62,11 @@
   function sortTable(table, th) {
     const tbody = table.tBodies[0];
     if (!tbody) return;
-
+    const ACTIVE_CLASS = "text-primary-500";
+    table.querySelectorAll("th[data-sort]").forEach((h) => {
+      h.classList.remove(ACTIVE_CLASS);
+    });
+    th.classList.add(ACTIVE_CLASS);
     const colIndex = getColumnIndexFromTh(th);
     const type = th.dataset.type || "text";
 

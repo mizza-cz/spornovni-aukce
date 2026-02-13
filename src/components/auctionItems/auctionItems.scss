@@ -25,7 +25,12 @@
 .auction-details {
   transition: all 0.3s ease;
 }
-
+th.itemName img {
+  filter: grayscale(100%);
+}
+th.itemName.text-primary-500 img {
+  filter: grayscale(0%);
+}
 .itemName {
   min-width: 100px !important;
   white-space: wrap !important;
