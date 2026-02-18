@@ -448,7 +448,8 @@
         </div>
       </div>
     </li>
-    <li class="masonry-products-grid__item">
+
+    <!-- <li class="masonry-products-grid__item">
       <div class="product">
         <div class="product__logo">
           <img src="images/content/dukla.png" alt="logo" loading="lazy" />
@@ -597,11 +598,9 @@
           </a>
         </div>
       </div>
-    </li>
+    </li> -->
   </ul>
-  <button class="button-primary-500 products-load-more">
-    Načíst další aukce
-  </button>
+
   <script>
     /**
      * DEFINE AJAX SOURCE FOR MASONRY REFERENCE
@@ -609,4 +608,9 @@
     const masonryReferenceSource = "/spornovni-aukce/build/ajax-products.json";
   </script>
   {% include "@components/modal/modal-bids.twig" %}
+</div>
+<div class="text-center">
+  <button class="button-primary-500 products-load-more">
+    Načíst další aukce
+  </button>
 </div>
