@@ -80,6 +80,7 @@ th.itemName.text-primary-500 img {
     @include media-breakpoint-down(md) {
       padding: 0.4rem 0.5rem !important;
       font-size: 0.7rem !important;
+      min-width: 32px;
     }
   }
 }

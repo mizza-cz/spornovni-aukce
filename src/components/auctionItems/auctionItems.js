@@ -15,7 +15,7 @@
         const currentRow = btn.closest("tr");
         const detailsRow = currentRow.nextElementSibling;
 
-        // Закрыть все другие строки и снять классы
+       
         document.querySelectorAll(".auction-details").forEach((row) => {
           if (row !== detailsRow) {
             row.classList.add("d-none");
@@ -29,7 +29,7 @@
           }
         });
 
-        // Переключить текущие
+  
         const isHidden = detailsRow.classList.contains("d-none");
         detailsRow.classList.toggle("d-none", !isHidden);
         btn.classList.toggle("active", isHidden);

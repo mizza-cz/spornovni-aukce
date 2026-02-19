@@ -66,8 +66,7 @@
   const masonryGrid = document.querySelector(".masonry-products-grid");
   const loadMoreBtn = document.querySelector(".products-load-more");
 
-  if (!masonryGrid || !loadMoreBtn || typeof imagesLoaded !== "function")
-    return;
+  if (!masonryGrid || typeof imagesLoaded !== "function") return;
 
   const debounce = (fn, wait = 150) => {
     let t;
@@ -98,6 +97,8 @@
   };
 
   const updateLoadMoreVisibility = () => {
+    if (!loadMoreBtn) return;
+
     const count = masonryGrid.querySelectorAll(
       ".masonry-products-grid__item"
     ).length;
@@ -130,6 +131,7 @@
       }, 150)
     );
 
+    if (!loadMoreBtn) return;
     if (typeof masonryReferenceSource === "undefined") return;
 
     loadMoreBtn.addEventListener("click", async () => {
@@ -197,6 +199,3 @@
     });
   });
 })();
-
-
- 
