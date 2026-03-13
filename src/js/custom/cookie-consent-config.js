@@ -1,7 +1,7 @@
 window.cookieConsentSettings = {
   current_lang: "cs",
   autoclear_cookies: true, // default: false
-  theme_css: "css/cookie-consent.css", // 🚨 replace with a valid path
+  theme_css: "/css/cookie-consent.css", // 🚨 replace with a valid path
   page_scripts: true, // default: false
   languages: {
     cs: {
