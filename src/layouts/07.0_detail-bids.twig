@@ -10,31 +10,50 @@
         <table class="auctionTable">
           <thead>
             <tr>
+              <th class="auctionTable-btn d-lg-none"></th>
               <th class="text-start" data-sort="name" data-type="text">
                 <a href="#">Název předmětu / dresu</a>
               </th>
               <th class="text-start" data-sort="price" data-type="price">
                 <a href="#">Cena</a>
               </th>
-              <th class="text-start" data-sort="time" data-type="datetime">
+              <th
+                class="text-start d-lg-table-cell d-none"
+                data-sort="time"
+                data-type="datetime"
+              >
                 <a href="#">Čas</a>
               </th>
-              <th class="text-start"><a href="#">Přihazující</a></th>
+              <th class="text-start d-lg-table-cell d-none">
+                <a href="#">Přihazující</a>
+              </th>
               <th>Akce</th>
             </tr>
           </thead>
           <tbody>
             <tr>
+              <td class="auctionTable-btn d-lg-none">
+                <button class="auctionHistory__btn">
+                  <img
+                    src="images/ico/chevron-dark.svg"
+                    width="24"
+                    height="24"
+                    class="object-fit-contain"
+                    alt=""
+                  />
+                </button>
+              </td>
               <td>
                 <div class="fw-semibold">
                   Aukce dresů ze sedmého ročníku projektu PIRÁTI CHOMUTOV PRO
                   NEMOCNICI
                 </div>
               </td>
-
-              <td class="fw-semibold">1 500 Kč</td>
-              <td class="text-gray-400 fw-medium">13:00:00 23.2.2021</td>
-              <td class="fw-semibold">Petr F.</td>
+              <td class="fw-semibold item-price">1 500 Kč</td>
+              <td class="text-gray-400 fw-medium d-lg-table-cell d-none">
+                13:00:00 23.2.2021
+              </td>
+              <td class="fw-semibold d-lg-table-cell d-none">Petr F.</td>
               <td>
                 <button
                   data-bs-toggle="modal"
@@ -45,16 +64,36 @@
                 </button>
               </td>
             </tr>
+            <tr class="auction-history-details d-none">
+              <td class="d-lg-none"></td>
+              <td colspan="4" class="text-start">
+                <div class="fw-semibold">Čas příhozu</div>
+                <div class="fw-medium mt-1">13:00:00 23.2.2021</div>
+              </td>
+            </tr>
+
             <tr>
+              <td class="auctionTable-btn d-lg-none">
+                <button class="auctionHistory__btn">
+                  <img
+                    src="images/ico/chevron-dark.svg"
+                    width="24"
+                    height="24"
+                    class="object-fit-contain"
+                    alt=""
+                  />
+                </button>
+              </td>
               <td>
                 <div class="fw-semibold">
                   Benefiční aukce dresů z utkání Zlín Stars vs. Real Top Praha
                 </div>
               </td>
-
-              <td class="fw-semibold">1 500 Kč</td>
-              <td class="text-gray-400 fw-medium">11:00:00 23.2.2025</td>
-              <td class="fw-semibold">Jarmil P.</td>
+              <td class="fw-semibold item-price">1 500 Kč</td>
+              <td class="text-gray-400 fw-medium d-lg-table-cell d-none">
+                11:00:00 23.2.2025
+              </td>
+              <td class="fw-semibold d-lg-table-cell d-none">Jarmil P.</td>
               <td>
                 <button
                   data-bs-toggle="modal"
@@ -65,65 +104,11 @@
                 </button>
               </td>
             </tr>
-            <tr>
-              <td>
-                <div class="fw-semibold">
-                  Charitativní aukce dresů fotbalového klubu FK Teplice
-                </div>
-              </td>
-
-              <td class="fw-semibold">2 000 Kč</td>
-              <td class="text-gray-400 fw-medium">13:00:00 23.1.2024</td>
-              <td class="fw-semibold">Antonín S.</td>
-              <td>
-                <button
-                  data-bs-toggle="modal"
-                  data-bs-target="#bidsModal"
-                  class="button-gray-800 button-sm"
-                >
-                  Přihodit
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="fw-semibold">
-                  Aukce dresů z utkání HC Vítkovice Ridera
-                </div>
-              </td>
-
-              <td class="fw-semibold">1 800 Kč</td>
-              <td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
-              <td class="fw-semibold">Martin P.</td>
-              <td>
-                <button
-                  data-bs-toggle="modal"
-                  data-bs-target="#bidsModal"
-                  class="button-gray-800 button-sm"
-                >
-                  Přihodit
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="fw-semibold">
-                  Aukce dresů ze sedmého ročníku projektu PIRÁTI CHOMUTOV PRO
-                  NEMOCNICI
-                </div>
-              </td>
-
-              <td class="fw-semibold">1 500 Kč</td>
-              <td class="text-gray-400 fw-medium">13:00:00 23.2.2025</td>
-              <td class="fw-semibold">Petr F.</td>
-              <td>
-                <button
-                  data-bs-toggle="modal"
-                  data-bs-target="#bidsModal"
-                  class="button-gray-800 button-sm"
-                >
-                  Přihodit
-                </button>
+            <tr class="auction-history-details d-none">
+              <td class="d-lg-none"></td>
+              <td colspan="4" class="text-start">
+                <div class="fw-semibold">Čas příhozu</div>
+                <div class="fw-medium mt-1">11:00:00 23.2.2025</div>
               </td>
             </tr>
           </tbody>

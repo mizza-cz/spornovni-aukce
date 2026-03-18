@@ -6,8 +6,14 @@
         <thead>
           <tr>
             <th class="itemBtn"></th>
-            <th class="itemNum text-start d-lg-table-cell d-none" data-sort="num" data-type="num"><a href="#">Číslo</a></th>
-            <th class="text-start   itemName " data-sort="name" data-type="text">
+            <th
+              class="itemNum text-start d-lg-table-cell d-none"
+              data-sort="num"
+              data-type="num"
+            >
+              <a href="#">Číslo</a>
+            </th>
+            <th class="text-start itemName" data-sort="name" data-type="text">
               <a class="d-flex align-items-center gap-1" href="#"
                 >Název předmětu / dresu
                 <img
@@ -18,8 +24,10 @@
                   alt=""
               /></a>
             </th>
-            <th class="text-start" data-sort="price" data-type="price"><a href="#">Cena</a></th>
-            <th class="text-start d-lg-table-cell d-none"> Příhozů</th>
+            <th class="text-start" data-sort="price" data-type="price">
+              <a href="#">Cena</a>
+            </th>
+            <th class="text-start d-lg-table-cell d-none">Příhozů</th>
             <th class="text-start d-lg-table-cell d-none">Poslední příhoz</th>
             <th class="text-start d-lg-table-cell d-none">Vyhrávající</th>
             <th class="text-start">Akce</th>
@@ -27,7 +35,6 @@
           </tr>
         </thead>
         <tbody>
-            
           <tr>
             <td class="itemBtn">
               <button class="auctionItems__btn">
@@ -41,30 +48,29 @@
               </button>
             </td>
             <td class="itemNum fw-medium d-lg-table-cell d-none">#68</td>
-            <td  >
-              <div class="itemName">
+            <td>
+              <a href="#" class="itemName">
                 Jaromír Jágr (hokej Kladno, po návratu z NHL)
-              </div>
+              </a>
             </td>
 
             <td class="fw-medium item-price">499 Kč</td>
             <td class="fw-medium d-lg-table-cell d-none">0x</td>
             <td class="fw-medium d-lg-table-cell d-none">
               50 Kč
-              <div class="text-gray-400 mt-1  ">10:58:44 20.2.2025</div>
+              <div class="text-gray-400 mt-1">10:58:44 20.2.2025</div>
             </td>
-            <td class="text-gray-400 fw-medium d-lg-table-cell d-none">Zatím nikdo</td>
+            <td class="text-gray-400 fw-medium d-lg-table-cell d-none">
+              Zatím nikdo
+            </td>
             <td>
               <button
                 data-bs-toggle="modal"
                 data-bs-target="#bidsModal"
                 class="button-gray-800 button-sm"
               >
-                 <span class="d-none d-lg-flex">
-                                            Přihodit
-                                        </span><span class="d-flex d-lg-none">
-                                            +
-                                        </span>
+                <span class="d-none d-lg-flex"> Přihodit </span
+                ><span class="d-flex d-lg-none"> + </span>
               </button>
             </td>
             <td class="fw-medium"></td>
@@ -81,10 +87,10 @@
             </td>
 
             <td>
-              <div class="fw-semibold ">Min. příhoz</div>
+              <div class="fw-semibold">Min. příhoz</div>
               <div class="fw-medium mt-1">50 Kč</div>
             </td>
-            <td colspan="2" class="text-start ">
+            <td colspan="2" class="text-start">
               <div class="fw-semibold">Konec</div>
               <div class="fw-medium mt-1">20:00:00 26.2.2025</div>
             </td>
@@ -105,22 +111,21 @@
             <td class="itemNum fw-medium d-lg-table-cell d-none">#14</td>
             <td>
               <div class="itemName">
-                 <a
-                class="itemName-img"
-                data-fslightbox="gallery-1"
-                href="https://i.imgur.com/fsyrScY.jpg"
-              >
-                <img
-                  srcset="https://picsum.photos/56/56"
-                  width="56"
-                  height="56"
-                  class="rounded-sm object-fit-cover"
-                  alt=""
-                />
-              </a>
-                Tomáš Kaberle (OH 2010, Vancouver, s podpisem)
+                <a
+                  class="itemName-img"
+                  data-fslightbox="gallery-1"
+                  href="https://i.imgur.com/fsyrScY.jpg"
+                >
+                  <img
+                    srcset="https://picsum.photos/56/56"
+                    width="56"
+                    height="56"
+                    class="rounded-sm object-fit-cover"
+                    alt=""
+                  />
+                </a>
+                <a href="#"> Tomáš Kaberle (OH 2010, Vancouver, s podpisem)</a>
               </div>
-              
             </td>
 
             <td class="fw-medium item-price">499 Kč</td>
@@ -128,18 +133,17 @@
             <td class="fw-medium d-lg-table-cell d-none">
               <div class="text-gray-400 mt-1"></div>
             </td>
-            <td class="text-gray-400 fw-medium d-lg-table-cell d-none">Zatím nikdo</td>
+            <td class="text-gray-400 fw-medium d-lg-table-cell d-none">
+              Zatím nikdo
+            </td>
             <td>
               <button
                 data-bs-toggle="modal"
                 data-bs-target="#bidsModal"
                 class="button-gray-800 button-sm"
               >
-                 <span class="d-none d-lg-flex">
-                                            Přihodit
-                                        </span><span class="d-flex d-lg-none">
-                                            +
-                                        </span>
+                <span class="d-none d-lg-flex"> Přihodit </span
+                ><span class="d-flex d-lg-none"> + </span>
               </button>
             </td>
             <td>
@@ -155,7 +159,9 @@
           <tr class="auction-details d-none">
             <td class="d-lg-table-cell d-none"></td>
             <td></td>
-            <td><span class="itemNum fw-medium d-lg-none d-block">#312</span></td>
+            <td>
+              <span class="itemNum fw-medium d-lg-none d-block">#312</span>
+            </td>
             <td colspan="2">
               <div>
                 <div class="fw-semibold">Aktuální cena / vyvolávací cena</div>
@@ -187,10 +193,7 @@
             </td>
             <td class="itemNum fw-medium d-lg-table-cell d-none">#987</td>
             <td>
-              <div
-               
-                class="itemName"
-              >
+              <a href="#" class="itemName">
                 Cristiano Ronaldo (fotbalový génius, s podpisem)
               </a>
             </td>
@@ -199,20 +202,19 @@
             <td class="fw-medium d-lg-table-cell d-none">0x</td>
             <td class="fw-medium d-lg-table-cell d-none">
               50 Kč
-              <div class="text-gray-400 mt-1 ">10:58:44 20.2.2025</div>
+              <div class="text-gray-400 mt-1">10:58:44 20.2.2025</div>
             </td>
-            <td class="text-gray-400 fw-medium d-lg-table-cell d-none"  e>Zatím nikdo</td>
+            <td class="text-gray-400 fw-medium d-lg-table-cell d-none" e>
+              Zatím nikdo
+            </td>
             <td>
               <button
                 data-bs-toggle="modal"
                 data-bs-target="#bidsModal"
                 class="button-gray-800 button-sm"
               >
-                 <span class="d-none d-lg-flex">
-                                            Přihodit
-                                        </span><span class="d-flex d-lg-none">
-                                            +
-                                        </span>
+                <span class="d-none d-lg-flex"> Přihodit </span
+                ><span class="d-flex d-lg-none"> + </span>
               </button>
             </td>
             <td>
@@ -228,7 +230,9 @@
           <tr class="auction-details d-none">
             <td class="d-lg-table-cell d-none"></td>
             <td></td>
-            <td><span class="itemNum fw-medium d-lg-none d-block">#312</span></td>
+            <td>
+              <span class="itemNum fw-medium d-lg-none d-block">#312</span>
+            </td>
             <td colspan="2">
               <div>
                 <div class="fw-semibold">Aktuální cena / vyvolávací cena</div>
@@ -258,11 +262,8 @@
               </button>
             </td>
             <td class="itemNum fw-medium d-lg-table-cell d-none">#68</td>
-            <td  >
-              <div
-               
-                class="itemName"
-              >
+            <td>
+              <a href="#" class="itemName">
                 Jaromír Jágr (hokej Kladno, po návratu z NHL)
               </a>
             </td>
@@ -273,18 +274,17 @@
               50 Kč
               <div class="text-gray-400 mt-1">10:58:44 20.2.2025</div>
             </td>
-            <td class="text-gray-400 fw-medium d-lg-table-cell d-none" >Zatím nikdo</td>
+            <td class="text-gray-400 fw-medium d-lg-table-cell d-none">
+              Zatím nikdo
+            </td>
             <td>
               <button
                 data-bs-toggle="modal"
                 data-bs-target="#bidsModal"
                 class="button-gray-800 button-sm"
               >
-                 <span class="d-none d-lg-flex">
-                                            Přihodit
-                                        </span><span class="d-flex d-lg-none">
-                                            +
-                                        </span>
+                <span class="d-none d-lg-flex"> Přihodit </span
+                ><span class="d-flex d-lg-none"> + </span>
               </button>
             </td>
             <td class="fw-medium"></td>
@@ -292,7 +292,9 @@
           <tr class="auction-details d-none">
             <td class="d-lg-table-cell d-none"></td>
             <td></td>
-            <td><span class="itemNum fw-medium d-lg-none d-block">#312</span></td>
+            <td>
+              <span class="itemNum fw-medium d-lg-none d-block">#312</span>
+            </td>
             <td colspan="2">
               <div>
                 <div class="fw-semibold">Aktuální cena / vyvolávací cena</div>
@@ -309,13 +311,10 @@
               <div class="fw-medium mt-1">20:00:00 26.2.2025</div>
             </td>
           </tr>
-           
-         
         </tbody>
       </table>
     </div>
-    
+
     {% include "@components/modal/modal-bids.twig" %}
   </div>
 </div>
- 

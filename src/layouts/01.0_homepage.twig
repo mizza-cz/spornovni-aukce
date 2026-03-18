@@ -533,5 +533,500 @@ block main %} {% include "@components/header/header.twig" %}
   </div>
   {% include "@components/reference-section/reference-section.twig" %}
 </main>
+<style>
+  /* Fix: remove design-template max-height trick, we paginate server-side */
+  .products {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  .products::before {
+    display: none !important;
+  }
+  /* Fix: ensure button is clickable and visible */
+  .products-load-more {
+    pointer-events: auto;
+    cursor: pointer;
+    display: inline-flex !important;
+  }
+  /* CSS flex fallback - shows multi-column grid before Masonry.js initializes */
+  .masonry-products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 28px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  @media (min-width: 576px) {
+    .masonry-products-grid__item {
+      width: calc(50% - 14px);
+    }
+  }
+  @media (min-width: 992px) {
+    .masonry-products-grid__item {
+      width: calc(33.333% - 19px);
+    }
+  }
+  @media (min-width: 1200px) {
+    .masonry-products-grid__item {
+      width: calc(25% - 21px);
+    }
+  }
+  /* Loading overlay for auction grid */
+  .products-loading {
+    position: relative;
+    min-height: 200px;
+  }
+  .products-loading::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 100;
+  }
+  .products-loading::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0 -20px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    z-index: 101;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  /* Loading state for category tabs */
+  .category-filter.is-loading {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    "use strict";
 
+    /**
+     * Homepage Module - handles filtering, sorting, pagination and Masonry layout
+     */
+    var Homepage = {
+      // Configuration
+      config: {
+        selectors: {
+          productsGrid: ".products",
+          masonryGrid: ".masonry-products-grid",
+          masonryItem: ".masonry-products-grid__item",
+          categoryFilter: ".category-filter",
+          sortSelect: "#snippet--sortSelect",
+          loadMoreBtn: ".products-load-more",
+        },
+        classes: {
+          loading: "products-loading",
+          itemLoading: "is-loading",
+          hideBefore: "hide-before",
+        },
+        masonry: {
+          itemSelector: ".masonry-products-grid__item",
+          gutter: 28,
+          horizontalOrder: false,
+        },
+        delays: {
+          masonryInit: 150,
+          select2Init: 50,
+          resizeTrigger: 50,
+          imagesFallback: 500,
+          takeoverDelay: 100,
+        },
+      },
+
+      // State
+      masonryInstance: null,
+
+      /**
+       * Initialize the module
+       */
+      init: function () {
+        this.bindEvents();
+        this.initNajaHandlers();
+        this.takeoverMasonry();
+      },
+
+      /**
+       * Bind all event handlers
+       */
+      bindEvents: function () {
+        document.addEventListener("click", this.handleCategoryClick.bind(this));
+        document.addEventListener(
+          "click",
+          this.handleLoadMoreClick.bind(this),
+          true
+        );
+        $(document).on(
+          "change",
+          this.config.selectors.sortSelect,
+          this.handleSortChange.bind(this)
+        );
+      },
+
+      /**
+       * Initialize Naja snippet handlers
+       */
+      initNajaHandlers: function () {
+        if (typeof naja === "undefined") return;
+
+        var self = this;
+        naja.snippetHandler.addEventListener("afterUpdate", function (event) {
+          var snippetId = event.detail.snippet.id;
+
+          if (snippetId === "snippet--auctionGrid") {
+            setTimeout(function () {
+              self.reinitMasonry();
+            }, self.config.delays.masonryInit);
+          }
+
+          if (snippetId === "snippet--sortSelect") {
+            setTimeout(function () {
+              self.initSelect2();
+            }, self.config.delays.select2Init);
+          }
+        });
+      },
+
+      /**
+       * Take over Masonry instance from scripts.js, or create our own
+       */
+      takeoverMasonry: function () {
+        var self = this;
+        setTimeout(function () {
+          var grid = document.querySelector(self.config.selectors.masonryGrid);
+          if (!grid || typeof Masonry === "undefined") return;
+
+          var existing = Masonry.data(grid);
+          if (existing) {
+            self.masonryInstance = existing;
+          } else {
+            // scripts.js skips Masonry init when .products-load-more is absent
+            self.initMasonry(grid);
+          }
+        }, this.config.delays.takeoverDelay);
+      },
+
+      // ==================== UI Helpers ====================
+
+      /**
+       * Show loading state on products grid
+       */
+      showLoading: function () {
+        var grid = document.querySelector(this.config.selectors.productsGrid);
+        if (grid) grid.classList.add(this.config.classes.loading);
+      },
+
+      /**
+       * Hide loading state
+       */
+      hideLoading: function () {
+        var grid = document.querySelector(this.config.selectors.productsGrid);
+        if (grid) grid.classList.remove(this.config.classes.loading);
+      },
+
+      /**
+       * Disable category filters during loading
+       */
+      disableCategoryFilters: function () {
+        document
+          .querySelectorAll(this.config.selectors.categoryFilter)
+          .forEach(function (link) {
+            link.classList.add("is-loading");
+          });
+      },
+
+      /**
+       * Expand products container (remove max-height)
+       */
+      expandContainer: function () {
+        var container = document.querySelector(
+          this.config.selectors.productsGrid
+        );
+        if (container) {
+          container.style.maxHeight = "none";
+          container.style.overflow = "visible";
+          container.classList.add(this.config.classes.hideBefore);
+        }
+      },
+
+      /**
+       * Update browser URL without reload
+       */
+      updateUrl: function (url) {
+        if (url) history.pushState({}, "", url);
+      },
+
+      // ==================== AJAX Handlers ====================
+
+      /**
+       * Make AJAX request with loading state
+       */
+      ajaxRequest: function (url, prettyUrl) {
+        var self = this;
+
+        if (typeof naja === "undefined")
+          return Promise.reject("Naja not available");
+
+        this.showLoading();
+
+        return naja
+          .makeRequest("GET", url)
+          .then(function () {
+            self.updateUrl(prettyUrl);
+          })
+          .catch(function (err) {
+            console.error("AJAX error:", err);
+          })
+          .finally(function () {
+            self.hideLoading();
+          });
+      },
+
+      /**
+       * Handle category filter click
+       */
+      handleCategoryClick: function (e) {
+        var link = e.target.closest(this.config.selectors.categoryFilter);
+        if (!link) return;
+
+        e.preventDefault();
+
+        var ajaxUrl = link.dataset.ajaxUrl;
+        var prettyUrl = link.href;
+
+        if (ajaxUrl) {
+          this.disableCategoryFilters();
+          this.ajaxRequest(ajaxUrl, prettyUrl);
+        }
+      },
+
+      /**
+       * Handle sort select change
+       */
+      handleSortChange: function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        var select = e.target;
+        var option = select.options[select.selectedIndex];
+        var ajaxUrl = option.dataset.ajaxUrl;
+        var prettyUrl = option.dataset.prettyUrl;
+
+        if (ajaxUrl) {
+          this.ajaxRequest(ajaxUrl, prettyUrl);
+        }
+      },
+
+      /**
+       * Handle load more button click
+       */
+      handleLoadMoreClick: async function (e) {
+        var btn = e.target.closest(this.config.selectors.loadMoreBtn);
+        if (!btn) return;
+
+        e.preventDefault();
+        e.stopImmediatePropagation();
+
+        var url = btn.dataset.loadMoreUrl;
+        if (!url) return;
+
+        // Build request URL
+        var params = new URLSearchParams();
+        params.set("offset", btn.dataset.nextOffset || "0");
+        params.set("sort", btn.dataset.sort || "newest");
+
+        var category = btn.dataset.category;
+        if (category && category !== "null" && category !== "") {
+          params.set("category", category);
+        }
+
+        var fullUrl = url + (url.includes("?") ? "&" : "?") + params.toString();
+
+        // Show loading state
+        btn.disabled = true;
+        var originalText = btn.textContent;
+        btn.textContent = "Načítám...";
+
+        this.expandContainer();
+
+        try {
+          var response = await fetch(fullUrl, {
+            headers: { "X-Requested-With": "XMLHttpRequest" },
+          });
+          var data = await response.json();
+
+          if (data.html) {
+            this.appendItems(data.html);
+          }
+
+          // Update or remove button
+          if (data.hasMore) {
+            btn.dataset.nextOffset = data.nextOffset;
+            btn.disabled = false;
+            btn.textContent = originalText;
+          } else {
+            btn.remove();
+          }
+        } catch (error) {
+          console.error("Load more error:", error);
+          btn.disabled = false;
+          btn.textContent = originalText;
+        }
+      },
+
+      // ==================== Masonry ====================
+
+      /**
+       * Append new items to Masonry grid
+       */
+      appendItems: function (html) {
+        var grid = document.querySelector(this.config.selectors.masonryGrid);
+        if (!grid) return;
+
+        var fragment = document.createRange().createContextualFragment(html);
+        var newElements = Array.from(fragment.children);
+
+        grid.append(...newElements);
+
+        var msnry =
+          this.masonryInstance ||
+          (typeof Masonry !== "undefined" && Masonry.data(grid));
+
+        if (msnry) {
+          if (typeof imagesLoaded === "function") {
+            imagesLoaded(grid, function () {
+              msnry.appended(newElements);
+              msnry.layout();
+            });
+          } else {
+            msnry.appended(newElements);
+            msnry.layout();
+          }
+        } else {
+          this.initMasonry(grid);
+        }
+      },
+
+      /**
+       * Initialize Masonry on grid
+       */
+      initMasonry: function (grid, callback) {
+        if (!grid || typeof Masonry === "undefined") {
+          if (callback) callback(null);
+          return;
+        }
+
+        var self = this;
+
+        // Destroy existing instances
+        if (this.masonryInstance) {
+          this.masonryInstance.destroy();
+          this.masonryInstance = null;
+        }
+
+        var existing = Masonry.data(grid);
+        if (existing) existing.destroy();
+
+        // Force layout recalculation
+        grid.offsetHeight;
+
+        var createInstance = function () {
+          self.masonryInstance = new Masonry(grid, self.config.masonry);
+          if (callback) callback(self.masonryInstance);
+        };
+
+        // Wait for images
+        if (typeof imagesLoaded === "function") {
+          var imgLoad = imagesLoaded(grid);
+          var done = false;
+
+          imgLoad.on("always", function () {
+            if (!done) {
+              done = true;
+              createInstance();
+            }
+          });
+
+          setTimeout(function () {
+            if (!done) {
+              done = true;
+              createInstance();
+            }
+          }, self.config.delays.imagesFallback);
+        } else {
+          createInstance();
+        }
+      },
+
+      /**
+       * Reinitialize Masonry after AJAX update
+       */
+      reinitMasonry: function () {
+        var self = this;
+        var grid = document.querySelector(this.config.selectors.masonryGrid);
+
+        if (!grid || grid.children.length === 0) return;
+
+        // Reset inline styles
+        grid.style.height = "";
+        grid
+          .querySelectorAll(this.config.selectors.masonryItem)
+          .forEach(function (item) {
+            item.style.position = "";
+            item.style.left = "";
+            item.style.top = "";
+          });
+
+        this.initMasonry(grid, function (msnry) {
+          if (msnry) {
+            setTimeout(function () {
+              window.dispatchEvent(new Event("resize"));
+            }, self.config.delays.resizeTrigger);
+          }
+        });
+      },
+
+      // ==================== Select2 ====================
+
+      /**
+       * Initialize Select2 on sort dropdown
+       */
+      initSelect2: function () {
+        var $select = $(this.config.selectors.sortSelect);
+
+        if (!$select.length || typeof $.fn.select2 === "undefined") return;
+
+        if ($select.hasClass("select2-hidden-accessible")) {
+          $select.select2("destroy");
+        }
+
+        $select.select2({
+          width: "100%",
+          minimumResultsForSearch: -1,
+        });
+      },
+    };
+
+    // Initialize
+    Homepage.init();
+  });
+</script>
 {% endblock %}
