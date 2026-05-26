@@ -110,3 +110,34 @@ th.itemName.text-primary-500 img {
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
+
+.auctionTable--success {
+  td {
+    background: rgba(#d5f8c980, 0.5);
+    border-top: 1px solid var(--color-gray-300) !important;
+    border-bottom: 1px solid var(--color-gray-300) !important;
+  }
+  .auctionItems__btn svg path {
+    fill: var(--color-green-200);
+  }
+  .item-price,
+  .itemName,
+  .itemNum {
+    color: var(--color-green-200);
+  }
+}
+.auctionTable--error {
+  td {
+    background: rgba(#ffdbd699, 0.6);
+    border-top: 1px solid var(--color-gray-300) !important;
+    border-bottom: 1px solid var(--color-gray-300) !important;
+  }
+  .auctionItems__btn svg path {
+    fill: var(--color-primary-300);
+  }
+  .item-price,
+  .itemName,
+  .itemNum {
+    color: var(--color-primary-300);
+  }
+}
