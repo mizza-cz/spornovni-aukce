@@ -1,12 +1,12 @@
 .hero {
-  padding-top: 120px;
+  padding-top: 5.5rem;
   background-color: var(--color-gray-200);
   background-image: url("../images/content/top-gradient-to-gray.webp");
   background-repeat: no-repeat;
   background-position: top right;
 
   @include media-breakpoint-up(sm) {
-    padding-top: 176px;
+    padding-top: 120px;
   }
 
   .h2 {
